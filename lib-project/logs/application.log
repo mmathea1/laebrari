@@ -1,23 +1,216 @@
-2017-09-09 18:08:25,971 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-7 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2017-09-09 23:50:02,239 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-11 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-09-09 23:50:02,773 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-11 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2017-09-09 18:08:26,302 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-7 - Application started (Dev)
-2017-09-09 18:08:27,118 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in play-dev-mode-akka.actor.default-dispatcher-7 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2017-09-09 18:08:27,124 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in play-dev-mode-akka.actor.default-dispatcher-7 - The JWT signature in the cookie does not match the locally computed signature with the server.
-This usually indicates the browser has a leftover cookie from another Play application,
-so clearing cookies may resolve this error message.
-2017-09-09 18:08:28,267 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in play-dev-mode-akka.actor.default-dispatcher-7 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2017-09-09 18:08:28,267 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in play-dev-mode-akka.actor.default-dispatcher-7 - The JWT signature in the cookie does not match the locally computed signature with the server.
-This usually indicates the browser has a leftover cookie from another Play application,
-so clearing cookies may resolve this error message.
-2017-09-09 18:08:28,285 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in play-dev-mode-akka.actor.default-dispatcher-8 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2017-09-09 18:08:28,285 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in play-dev-mode-akka.actor.default-dispatcher-8 - The JWT signature in the cookie does not match the locally computed signature with the server.
-This usually indicates the browser has a leftover cookie from another Play application,
-so clearing cookies may resolve this error message.
-2017-09-09 18:08:30,921 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in play-dev-mode-akka.actor.default-dispatcher-10 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2017-09-09 18:08:30,922 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in play-dev-mode-akka.actor.default-dispatcher-10 - The JWT signature in the cookie does not match the locally computed signature with the server.
-This usually indicates the browser has a leftover cookie from another Play application,
-so clearing cookies may resolve this error message.
+2017-09-09 23:50:02,820 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-11 - Application started (Dev)
+2017-09-09 23:50:31,203 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-4 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-09-09 23:50:31,353 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-4 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-09-09 23:50:31,354 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-4 - Application started (Dev)
+2017-09-09 23:51:49,185 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-19 - 
+
+! @759m09nap - Internal server error, for (GET) [/] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[ error: method render in class index cannot be applied to given types;]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:123)
+	at play.core.server.Server.getHandlerFor(Server.scala:63)
+	at play.core.server.Server.getHandlerFor$(Server.scala:48)
+	at play.core.server.AkkaHttpServer.getHandlerFor(AkkaHttpServer.scala:41)
+	at play.core.server.AkkaHttpServer.getHandler(AkkaHttpServer.scala:214)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:194)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$3(AkkaHttpServer.scala:106)
+	at akka.stream.impl.fusing.MapAsync$$anon$23.onPush(Ops.scala:1172)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:499)
+	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:462)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:368)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:571)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:457)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:546)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:725)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:740)
+	at akka.actor.Actor.aroundReceive(Actor.scala:514)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:512)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:650)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:527)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:496)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:257)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:224)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:234)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2017-09-09 23:54:38,819 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-17 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-09-09 23:54:38,931 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-17 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-09-09 23:54:38,933 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-17 - Application started (Dev)
+2017-09-09 23:58:16,459 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-45 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-09-09 23:58:16,575 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-45 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-09-09 23:58:16,578 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-45 - Application started (Dev)
+2017-09-10 00:01:05,216 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-46 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-09-10 00:01:05,354 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-46 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-09-10 00:01:05,355 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-46 - Application started (Dev)
+2017-09-10 00:01:57,382 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-58 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-09-10 00:01:57,484 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-58 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-09-10 00:01:57,485 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-58 - Application started (Dev)
+2017-09-10 00:02:57,395 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-73 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-09-10 00:02:57,520 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-73 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-09-10 00:02:57,521 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-73 - Application started (Dev)
+2017-09-10 00:06:43,453 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-58 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-09-10 00:06:43,555 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-58 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-09-10 00:06:43,555 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-58 - Application started (Dev)
+2017-09-10 00:10:54,808 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-99 - 
+
+! @759m2n23a - Internal server error, for (GET) [/] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[value useruserPost is not a member of object controllers.UseruserController]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49)
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44)
+	at scala.Option.map(Option.scala:145)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17)
+	at scala.util.Either$LeftProjection.map(Either.scala:377)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$3.apply(PlayRun.scala:71)
+	at play.runsupport.Reloader$$anonfun$reload$1.apply(Reloader.scala:413)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:51)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:47)
+	at play.runsupport.Reloader.reload(Reloader.scala:411)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:123)
+	at play.core.server.Server.getHandlerFor(Server.scala:63)
+	at play.core.server.Server.getHandlerFor$(Server.scala:48)
+	at play.core.server.AkkaHttpServer.getHandlerFor(AkkaHttpServer.scala:41)
+	at play.core.server.AkkaHttpServer.getHandler(AkkaHttpServer.scala:214)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:194)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$3(AkkaHttpServer.scala:106)
+	at akka.stream.impl.fusing.MapAsync$$anon$23.onPush(Ops.scala:1172)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:499)
+	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:462)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:368)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:571)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:457)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:546)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:725)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:740)
+	at akka.actor.Actor.aroundReceive(Actor.scala:514)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:512)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:650)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:527)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:496)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:257)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:224)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:234)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2017-09-10 00:23:00,756 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-58 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-09-10 00:23:00,899 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-58 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-09-10 00:23:00,900 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-58 - Application started (Dev)
+2017-09-10 00:25:40,834 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-109 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-09-10 00:25:41,149 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-109 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-09-10 00:25:41,150 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-109 - Application started (Dev)
+2017-09-10 00:26:09,982 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-117 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-09-10 00:26:10,054 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-117 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-09-10 00:26:10,055 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-117 - Application started (Dev)
+2017-09-10 00:28:56,676 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-121 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-09-10 00:28:56,803 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-121 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-09-10 00:28:56,805 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-121 - Application started (Dev)
+2017-09-10 00:37:16,752 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-140 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-09-10 00:37:16,921 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-140 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-09-10 00:37:16,922 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-140 - Application started (Dev)
+2017-09-10 00:37:54,428 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-139 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-09-10 00:37:54,584 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-139 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-09-10 00:37:54,584 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-139 - Application started (Dev)

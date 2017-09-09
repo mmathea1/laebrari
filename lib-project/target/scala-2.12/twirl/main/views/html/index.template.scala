@@ -25,16 +25,20 @@ import play.core.j.PlayFormsMagicForJava._
 object index extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template0[play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/():play.twirl.api.HtmlFormat.Appendable = {
+  def apply():play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*1.4*/("""
-
-"""),_display_(/*3.2*/main("Welcome to Laebrari")/*3.29*/ {_display_(Seq[Any](format.raw/*3.31*/("""
+Seq[Any](_display_(/*3.2*/main("Welcome to Laebrari")/*3.29*/ {_display_(Seq[Any](format.raw/*3.31*/("""
   """),format.raw/*4.3*/("""<h1>Welcome to Laebrari!</h1>
-""")))}),format.raw/*5.2*/("""
+
+
+<form>
+    <button><a href=""""),_display_(/*8.23*/routes/*8.29*/.UseruserController.useruserPost),format.raw/*8.61*/("""" type="button" > Sign up </a></button>
+    <button><a href="loginButton" type="button"> Log in </a></button>
+</form>
+""")))}),format.raw/*11.2*/("""
 """))
       }
     }
@@ -51,11 +55,11 @@ Seq[Any](format.raw/*1.4*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sat Sep 09 18:07:00 EAT 2017
+                  DATE: Sun Sep 10 00:22:52 EAT 2017
                   SOURCE: C:/Users/Mingina/Workspace/laebrari/lib-project/app/views/index.scala.html
-                  HASH: 4acaf6a1f9ea3bf5c9eb2069fc72e1ad5e76a675
-                  MATRIX: 941->1|1037->3|1067->8|1102->35|1141->37|1171->41|1232->73
-                  LINES: 28->1|33->1|35->3|35->3|35->3|36->4|37->5
+                  HASH: b9c52774eda930592dc3496c29f8cfdd4f50af29
+                  MATRIX: 1030->5|1065->32|1104->34|1134->38|1225->103|1239->109|1291->141|1443->263
+                  LINES: 33->3|33->3|33->3|34->4|38->8|38->8|38->8|41->11
                   -- GENERATED --
               */
           
