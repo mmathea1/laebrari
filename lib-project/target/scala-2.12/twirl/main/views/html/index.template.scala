@@ -35,7 +35,7 @@ Seq[Any](_display_(/*3.2*/main("Welcome to Laebrari")/*3.29*/ {_display_(Seq[Any
 
 
 <form>
-    <button><a href=""""),_display_(/*8.23*/routes/*8.29*/.UseruserController.useruserPost),format.raw/*8.61*/("""" type="button" > Sign up </a></button>
+    <button><a href=""""),_display_(/*8.23*/routes/*8.29*/.UserController.userPost),format.raw/*8.53*/("""" type="button" > Sign up </a></button>
     <button><a href="loginButton" type="button"> Log in </a></button>
 </form>
 """)))}),format.raw/*11.2*/("""
@@ -55,10 +55,10 @@ Seq[Any](_display_(/*3.2*/main("Welcome to Laebrari")/*3.29*/ {_display_(Seq[Any
 
               /*
                   -- GENERATED --
-                  DATE: Sun Sep 10 00:22:52 EAT 2017
+                  DATE: Mon Sep 11 14:34:47 EAT 2017
                   SOURCE: C:/Users/Mingina/Workspace/laebrari/lib-project/app/views/index.scala.html
-                  HASH: b9c52774eda930592dc3496c29f8cfdd4f50af29
-                  MATRIX: 1030->5|1065->32|1104->34|1134->38|1225->103|1239->109|1291->141|1443->263
+                  HASH: 5d62d954830145ec994d9d7b65154c528521c89a
+                  MATRIX: 1030->5|1065->32|1104->34|1134->38|1225->103|1239->109|1283->133|1435->255
                   LINES: 33->3|33->3|33->3|34->4|38->8|38->8|38->8|41->11
                   -- GENERATED --
               */

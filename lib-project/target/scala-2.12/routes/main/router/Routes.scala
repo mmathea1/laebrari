@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Mingina/Workspace/laebrari/lib-project/conf/routes
-// @DATE:Sat Sep 09 23:50:25 EAT 2017
+// @DATE:Mon Sep 11 14:33:39 EAT 2017
 
 package router
 
@@ -18,9 +18,9 @@ class Routes(
   // @LINE:6
   HomeController_0: controllers.HomeController,
   // @LINE:7
-  UseruserController_2: controllers.UseruserController,
+  UserController_1: controllers.UserController,
   // @LINE:11
-  Assets_1: controllers.Assets,
+  Assets_2: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
 
@@ -29,14 +29,14 @@ class Routes(
     // @LINE:6
     HomeController_0: controllers.HomeController,
     // @LINE:7
-    UseruserController_2: controllers.UseruserController,
+    UserController_1: controllers.UserController,
     // @LINE:11
-    Assets_1: controllers.Assets
-  ) = this(errorHandler, HomeController_0, UseruserController_2, Assets_1, "/")
+    Assets_2: controllers.Assets
+  ) = this(errorHandler, HomeController_0, UserController_1, Assets_2, "/")
 
   def withPrefix(prefix: String): Routes = {
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, HomeController_0, UseruserController_2, Assets_1, prefix)
+    new Routes(errorHandler, HomeController_0, UserController_1, Assets_2, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -45,8 +45,8 @@ class Routes(
 
   def documentation = List(
     ("""GET""", this.prefix, """controllers.HomeController.index"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """user""", """controllers.UseruserController.useruserGet"""),
-    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """user""", """controllers.UseruserController.useruserPost"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """user""", """controllers.UserController.userGet"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """user""", """controllers.UserController.userPost"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -74,15 +74,15 @@ class Routes(
   )
 
   // @LINE:7
-  private[this] lazy val controllers_UseruserController_useruserGet1_route = Route("GET",
+  private[this] lazy val controllers_UserController_userGet1_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("user")))
   )
-  private[this] lazy val controllers_UseruserController_useruserGet1_invoker = createInvoker(
-    UseruserController_2.useruserGet,
+  private[this] lazy val controllers_UserController_userGet1_invoker = createInvoker(
+    UserController_1.userGet,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
-      "controllers.UseruserController",
-      "useruserGet",
+      "controllers.UserController",
+      "userGet",
       Nil,
       "GET",
       this.prefix + """user""",
@@ -92,15 +92,15 @@ class Routes(
   )
 
   // @LINE:8
-  private[this] lazy val controllers_UseruserController_useruserPost2_route = Route("POST",
+  private[this] lazy val controllers_UserController_userPost2_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("user")))
   )
-  private[this] lazy val controllers_UseruserController_useruserPost2_invoker = createInvoker(
-    UseruserController_2.useruserPost,
+  private[this] lazy val controllers_UserController_userPost2_invoker = createInvoker(
+    UserController_1.userPost,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
-      "controllers.UseruserController",
-      "useruserPost",
+      "controllers.UserController",
+      "userPost",
       Nil,
       "POST",
       this.prefix + """user""",
@@ -114,7 +114,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
   private[this] lazy val controllers_Assets_versioned3_invoker = createInvoker(
-    Assets_1.versioned(fakeValue[String], fakeValue[Asset]),
+    Assets_2.versioned(fakeValue[String], fakeValue[Asset]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Assets",
@@ -137,21 +137,21 @@ class Routes(
       }
   
     // @LINE:7
-    case controllers_UseruserController_useruserGet1_route(params) =>
+    case controllers_UserController_userGet1_route(params) =>
       call { 
-        controllers_UseruserController_useruserGet1_invoker.call(UseruserController_2.useruserGet)
+        controllers_UserController_userGet1_invoker.call(UserController_1.userGet)
       }
   
     // @LINE:8
-    case controllers_UseruserController_useruserPost2_route(params) =>
+    case controllers_UserController_userPost2_route(params) =>
       call { 
-        controllers_UseruserController_useruserPost2_invoker.call(UseruserController_2.useruserPost)
+        controllers_UserController_userPost2_invoker.call(UserController_1.userPost)
       }
   
     // @LINE:11
     case controllers_Assets_versioned3_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned3_invoker.call(Assets_1.versioned(path, file))
+        controllers_Assets_versioned3_invoker.call(Assets_2.versioned(path, file))
       }
   }
 }

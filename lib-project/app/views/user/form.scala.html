@@ -1,0 +1,22 @@
+@(userForm: Form[UserData])
+
+<h1>Create a Laebrari account</h1>
+
+@flash.getOrDefault("success", "")
+
+@helper.form(action = routes.UserController.userPost()) {
+  @helper.CSRF.formField
+  @helper.inputText(userForm("name"))
+  @helper.inputText(userForm("age"))
+  @helper.inputRadioGroup(userForm("sex"), Seq("male" -> "male", "female" -> "female"))
+  @helper.inputText(userForm("email"))
+  @helper.inputPassword(userForm("password"))
+
+
+
+  <input type="submit" value="submit"/>
+<button type="button"><a href="@routes.HomeController.index()"></a>Home</button>
+
+
+
+}
