@@ -10,14 +10,19 @@ public class UserData {
     @Constraints.Required
     private Integer age;
 
-    @Constraints.Required
-    private String gender;
+
 
     @Constraints.Required
     private String email;
 
     @Constraints.Required
     private String password;
+
+
+   /**
+
+
+    **/
 
     public UserData() {
     }
@@ -38,10 +43,6 @@ public class UserData {
         this.age = age;
     }
 
-    public String getGender(){return gender;}
-
-    public void setGender(String gender){this.gender = gender;}
-
     public String getEmail(){return email;}
 
     public void setEmail(String email){this.email = email;}
@@ -54,9 +55,15 @@ public class UserData {
         this.password = password;
     }
 
+
+   /**
+
+
+    **/
+
     @Override
     public String toString() {
-        return String.format("UserData(%s, %s, %s, %s)", name, age, gender, email);
+        return String.format("(%s, %s, %s, %s)", name, age, email, password);
     }
 
 }

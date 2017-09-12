@@ -4,13 +4,14 @@
 
 @flash.getOrDefault("success", "")
 
+
 @helper.form(action = routes.UserController.userPost()) {
   @helper.CSRF.formField
-  @helper.inputText(userForm("name"))
-  @helper.inputText(userForm("age"))
-  @helper.inputRadioGroup(userForm("sex"), Seq("male" -> "male", "female" -> "female"))
-  @helper.inputText(userForm("email"))
-  @helper.inputPassword(userForm("password"))
+  @helper.inputText(userForm("Name"))
+  @helper.inputText(userForm("Age"))
+  @helper.inputText(userForm("Email"))
+  @helper.inputPassword(userForm("Password"))
+
 
 
 

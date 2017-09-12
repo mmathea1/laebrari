@@ -33,6 +33,7 @@ public class UserController extends Controller {
         Form<UserData> boundForm = userForm.bindFromRequest();
         if (boundForm.hasErrors()) {
             return badRequest(views.html.user.form.render(boundForm));
+
         } else {
             UserData user = boundForm.get();
             flash("success", "User " + user);
