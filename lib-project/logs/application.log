@@ -258,3 +258,4 @@ You can make this conversion explicit by writing `format _` or `format(_)` inste
     play.filters.hosts.AllowedHostsFilter
 
 2017-09-13 02:30:47,696 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-35 - Application started (Dev)
+2017-09-13 02:32:56,139 [INFO] from play.core.server.AkkaHttpServer in pool-4-thread-6 - Stopping server...
