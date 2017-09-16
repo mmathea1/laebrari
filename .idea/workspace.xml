@@ -2,25 +2,120 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33ad2940-dfa1-4d26-8420-dc6b3792b0a8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$e02b777ea526f934bd72$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$e02b777ea526f934bd72$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$e02b777ea526f934bd72.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$e02b777ea526f934bd72.class" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_h2database_h2_1_4_193_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_ebean_2_12_4_0_2_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_enhancer_1_1_0_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__com_typesafe_play_play_jdbc_evolutions_2_12_2_6_3_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__io_ebean_ebean_10_3_1_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__io_ebean_ebean_agent_10_3_1_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__io_ebean_ebean_annotation_2_3_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__io_ebean_ebean_dbmigration_10_1_8_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__io_ebean_persistence_api_2_2_1_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__mysql_mysql_connector_java_5_1_41_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_antlr_antlr4_runtime_4_6_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_avaje_avaje_classpath_scanner_2_2_2_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_avaje_avaje_classpath_scanner_api_2_2_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_avaje_avaje_datasource_2_1_1_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_avaje_avaje_datasource_api_1_1_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_jetbrains_annotations_13_0_jar.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$141e55bf364a89a3365f$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$141e55bf364a89a3365f$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$141e55bf364a89a3365f.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$141e55bf364a89a3365f.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$1dd5d0d17803cf73a87a$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$1dd5d0d17803cf73a87a$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$1dd5d0d17803cf73a87a.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$1dd5d0d17803cf73a87a.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$4ea5e7eeb8fbd4f6738c$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$4ea5e7eeb8fbd4f6738c$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$4ea5e7eeb8fbd4f6738c.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$4ea5e7eeb8fbd4f6738c.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$6d6164107379ac3a318e$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$6d6164107379ac3a318e$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$6d6164107379ac3a318e.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$6d6164107379ac3a318e.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$7c4d1b6549fb295c52f4$$anonfun$root$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$7c4d1b6549fb295c52f4$$anonfun$root$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$7c4d1b6549fb295c52f4$$anonfun$root$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$7c4d1b6549fb295c52f4$$anonfun$root$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$7c4d1b6549fb295c52f4$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$7c4d1b6549fb295c52f4.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$7c4d1b6549fb295c52f4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$99c97ea08efd60bd5a67$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$99c97ea08efd60bd5a67$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$99c97ea08efd60bd5a67.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$99c97ea08efd60bd5a67.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$e11e6f0a46bfc43d550e$$anonfun$$sbtdef$1$$anonfun$apply$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$e11e6f0a46bfc43d550e$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$e11e6f0a46bfc43d550e$$anonfun$$sbtdef$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$e11e6f0a46bfc43d550e$$anonfun$$sbtdef$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$e11e6f0a46bfc43d550e$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$e11e6f0a46bfc43d550e.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$e11e6f0a46bfc43d550e.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/input_dsp" afterPath="$PROJECT_DIR$/lib-project/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/input_dsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/output_dsp" afterPath="$PROJECT_DIR$/lib-project/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/output_dsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" afterPath="$PROJECT_DIR$/lib-project/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" afterPath="$PROJECT_DIR$/lib-project/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/input_dsp" afterPath="$PROJECT_DIR$/lib-project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/input_dsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterPath="$PROJECT_DIR$/lib-project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" afterPath="$PROJECT_DIR$/lib-project/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterPath="$PROJECT_DIR$/lib-project/target/streams/$global/update/$global/streams/update_cache_2.12/output" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sbt.xml" afterPath="$PROJECT_DIR$/.idea/sbt.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/.idea/modules/root-build.iml" afterPath="$PROJECT_DIR$/lib-project/.idea/modules/root-build.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/.idea/modules/root.iml" afterPath="$PROJECT_DIR$/lib-project/.idea/modules/root.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/build.sbt" afterPath="$PROJECT_DIR$/lib-project/build.sbt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/conf/application.conf" afterPath="$PROJECT_DIR$/lib-project/conf/application.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/logs/application.log" afterPath="$PROJECT_DIR$/lib-project/logs/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/streams/compile/compileIncremental/$global/streams/out" afterPath="$PROJECT_DIR$/lib-project/project/target/streams/compile/compileIncremental/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/streams/compile/copyResources/$global/streams/out" afterPath="$PROJECT_DIR$/lib-project/project/target/streams/compile/copyResources/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/plugins.sbt" afterPath="$PROJECT_DIR$/lib-project/project/plugins.sbt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/default/lib-project-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/default/lib-project-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/default/lib-project-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/default/lib-project-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-compile-internal.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-compile-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-compile.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-compile.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-docs.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-docs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-optional.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-optional.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-plugin.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-pom.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-provided.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-provided.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-runtime-internal.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-runtime-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-runtime.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-runtime.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-scala-tool.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-scala-tool.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-sources.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-sources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-test-internal.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-test-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-test.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/streams/$global/ivyConfiguration/$global/streams/out" afterPath="$PROJECT_DIR$/lib-project/project/target/streams/$global/ivyConfiguration/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/lib-project/project/target/streams/$global/update/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/streams/compile/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/lib-project/project/target/streams/compile/dependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/lib-project/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/streams/compile/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/lib-project/project/target/streams/compile/managedClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/streams/runtime/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/lib-project/project/target/streams/runtime/dependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/lib-project/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/streams/runtime/fullClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/lib-project/project/target/streams/runtime/fullClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/streams/runtime/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/lib-project/project/target/streams/runtime/managedClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/com.project/lib-project$sources_2.12/1.0-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/com.project/lib-project$sources_2.12/1.0-SNAPSHOT/resolved.xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/com.project/lib-project$sources_2.12/1.0-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/com.project/lib-project$sources_2.12/1.0-SNAPSHOT/resolved.xml.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/com.project/lib-project_2.12/1.0-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/com.project/lib-project_2.12/1.0-SNAPSHOT/resolved.xml.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/com.project/lib-project_2.12/1.0-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/com.project/lib-project_2.12/1.0-SNAPSHOT/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-compile-internal.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-compile-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-compile.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-compile.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-debian.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-debian.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-docker.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-docker.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-docs.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-docs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-linux.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-linux.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-optional.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-optional.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-plugin.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-pom.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-provided.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-provided.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-rpm.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-rpm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-runtime-internal.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-runtime-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-runtime.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-runtime.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-scala-tool.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-scala-tool.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-sources.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-sources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-test-internal.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-test-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-test.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-universal-docs.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-universal-docs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-universal-src.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-universal-src.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-universal.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-universal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-windows.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project$sources_2.12-windows.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-compile-internal.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-compile-internal.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-compile.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-compile.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-debian.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-debian.xml" />
@@ -42,12 +137,14 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-universal-src.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-universal-src.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-universal.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-universal.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-windows.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-windows.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/streams/$global/ivyConfiguration/$global/streams/out" afterPath="$PROJECT_DIR$/lib-project/target/streams/$global/ivyConfiguration/$global/streams/out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/lib-project/target/streams/$global/update/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/streams/$global/updateClassifiers/$global/streams/out" afterPath="$PROJECT_DIR$/lib-project/target/streams/$global/updateClassifiers/$global/streams/out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/lib-project/target/streams/compile/externalDependencyClasspath/$global/streams/export" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/streams/compile/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/lib-project/target/streams/compile/managedClasspath/$global/streams/export" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/lib-project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/streams/runtime/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/lib-project/target/streams/runtime/managedClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/streams/test/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/lib-project/target/streams/test/externalDependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/streams/test/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/lib-project/target/streams/test/managedClasspath/$global/streams/export" />
     </list>
     <ignored path="$PROJECT_DIR$/lib-project/target/resolution-cache/" />
     <ignored path="$PROJECT_DIR$/lib-project/target/streams/" />
@@ -75,17 +172,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="application.conf" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application.conf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib-project/conf/application.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+            <state relative-caret-position="200">
+              <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsersDBConnection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib-project/app/models/UsersDBConnection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib-project/app/models/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plugins.sbt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib-project/project/plugins.sbt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Singleton" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -107,11 +246,16 @@
         <option value="$PROJECT_DIR$/lib-project/app/controllers/UserData.java" />
         <option value="$PROJECT_DIR$/lib-project/app/views/user/form.scala.html" />
         <option value="$PROJECT_DIR$/lib-project/build.sbt" />
+        <option value="$PROJECT_DIR$/lib-project/app/models/DatabaseExecutionContext.java" />
+        <option value="$PROJECT_DIR$/lib-project/project/plugins.sbt" />
+        <option value="$PROJECT_DIR$/lib-project/app/models/DbConnection.java" />
+        <option value="$PROJECT_DIR$/lib-project/app/models/UsersDBConnection.java" />
         <option value="$PROJECT_DIR$/lib-project/conf/application.conf" />
+        <option value="$PROJECT_DIR$/lib-project/app/models/User.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="775" />
@@ -132,6 +276,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -153,34 +300,41 @@
             <path>
               <item name="laebrari" type="b2602c69:ProjectViewProjectNode" />
               <item name="laebrari" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="lib-project" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="laebrari" type="b2602c69:ProjectViewProjectNode" />
               <item name="laebrari" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="streams" type="462c0819:PsiDirectoryNode" />
+              <item name="lib-project" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="laebrari" type="b2602c69:ProjectViewProjectNode" />
               <item name="laebrari" type="462c0819:PsiDirectoryNode" />
+              <item name="lib-project" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="laebrari" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laebrari" type="462c0819:PsiDirectoryNode" />
+              <item name="lib-project" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="streams" type="462c0819:PsiDirectoryNode" />
-              <item name="$global" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -278,7 +432,7 @@
     </configuration>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1505292680856" />
+    <option name="lastUpdateTimestamp" value="1505324161016" />
     <option name="availableProjects">
       <map>
         <entry>
@@ -333,11 +487,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="676" y="0" width="697" height="775" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -345,10 +499,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30672926" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30246913" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21507065" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16111952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -398,11 +553,34 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lib-project/conf/application.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib-project/project/plugins.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib-project/app/models/DbConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib-project/app/views/index.scala.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="48" lean-forward="false" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -411,7 +589,7 @@
         <state relative-caret-position="646">
           <caret line="38" column="29" lean-forward="false" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -420,7 +598,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="952">
           <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -428,7 +605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -436,7 +612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="48" lean-forward="false" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -445,7 +620,7 @@
         <state relative-caret-position="646">
           <caret line="38" column="29" lean-forward="false" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -454,7 +629,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -462,7 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -470,7 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="60" lean-forward="false" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -486,7 +658,7 @@
         <state relative-caret-position="629">
           <caret line="37" column="34" lean-forward="false" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -495,7 +667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -517,7 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -525,7 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -554,7 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="48" lean-forward="false" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -569,7 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -577,15 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib-project/build.sbt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -594,24 +752,147 @@
         <state relative-caret-position="200">
           <caret line="38" column="29" lean-forward="false" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib-project/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="72" lean-forward="false" selection-start-line="5" selection-start-column="72" selection-end-line="5" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib-project/app/models/DatabaseExecutionContext.java" />
+    <entry file="file://$PROJECT_DIR$/lib-project/project/plugins.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib-project/app/models/DbConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_51/src.zip!/java/util/function/Supplier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="47" column="6" lean-forward="false" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib-project/conf/application.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        <state relative-caret-position="200">
+          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib-project/app/models/UsersDBConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib-project/app/models/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>root-build</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>SBT: aopalliance:aopalliance:1.0:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
