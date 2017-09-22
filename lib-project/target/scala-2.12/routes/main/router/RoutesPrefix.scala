@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Mingina/Workspace/laebrari/lib-project/conf/routes
-// @DATE:Mon Sep 11 14:33:39 EAT 2017
+// @DATE:Fri Sep 22 17:52:35 EAT 2017
 
 
 package router {

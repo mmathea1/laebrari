@@ -2,7 +2,131 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4062b81-924e-4623-b01a-df32128d85ab" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/project/target/config-classes/$1d1cb9e3feb7fee2e9c1$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/project/target/config-classes/$1d1cb9e3feb7fee2e9c1.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/project/target/config-classes/$1d1cb9e3feb7fee2e9c1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/project/target/config-classes/$8fb81da0c4b60104f228$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/project/target/config-classes/$8fb81da0c4b60104f228.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/project/target/config-classes/$8fb81da0c4b60104f228.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/project/target/config-classes/$a8315ac55a10147afac7$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/project/target/config-classes/$a8315ac55a10147afac7.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/project/target/config-classes/$a8315ac55a10147afac7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$023d2fbbc4a17e257c03$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$023d2fbbc4a17e257c03$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$023d2fbbc4a17e257c03.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$023d2fbbc4a17e257c03.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$0ebd8b273d1e58c2e427$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$0ebd8b273d1e58c2e427$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$0ebd8b273d1e58c2e427.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$0ebd8b273d1e58c2e427.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$2545b8b8ad0eb61f73a6$$anonfun$$sbtdef$1$$anonfun$apply$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$2545b8b8ad0eb61f73a6$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$2545b8b8ad0eb61f73a6$$anonfun$$sbtdef$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$2545b8b8ad0eb61f73a6$$anonfun$$sbtdef$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$2545b8b8ad0eb61f73a6$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$2545b8b8ad0eb61f73a6.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$2545b8b8ad0eb61f73a6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$32de645926855e63a856$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$32de645926855e63a856$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$32de645926855e63a856.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$32de645926855e63a856.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$5390c4fc18e7cbac67cd$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$5390c4fc18e7cbac67cd$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$5390c4fc18e7cbac67cd.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$5390c4fc18e7cbac67cd.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$54338f76aceb6e209171$$anonfun$root$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$54338f76aceb6e209171$$anonfun$root$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$54338f76aceb6e209171$$anonfun$root$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$54338f76aceb6e209171$$anonfun$root$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$54338f76aceb6e209171$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$54338f76aceb6e209171.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$54338f76aceb6e209171.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$635a56441887995c93ea$$anonfun$root$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$635a56441887995c93ea$$anonfun$root$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$635a56441887995c93ea$$anonfun$root$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$635a56441887995c93ea$$anonfun$root$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$635a56441887995c93ea$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$635a56441887995c93ea.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$635a56441887995c93ea.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$638ea16dcde04955e4ff$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$638ea16dcde04955e4ff$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$638ea16dcde04955e4ff.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$638ea16dcde04955e4ff.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$7995cc915665e026e938$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$7995cc915665e026e938$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$7995cc915665e026e938.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$7995cc915665e026e938.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$82610296f98201b3362c$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$82610296f98201b3362c$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$82610296f98201b3362c.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$82610296f98201b3362c.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$bd60813fb6013994f4ba$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$bd60813fb6013994f4ba$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$bd60813fb6013994f4ba.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$bd60813fb6013994f4ba.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$be9601ea0a816f6a8489$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$be9601ea0a816f6a8489$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$be9601ea0a816f6a8489.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$be9601ea0a816f6a8489.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$c24e92e862f39f1dfabc$$anonfun$$sbtdef$1$$anonfun$apply$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$c24e92e862f39f1dfabc$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$c24e92e862f39f1dfabc$$anonfun$$sbtdef$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$c24e92e862f39f1dfabc$$anonfun$$sbtdef$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$c24e92e862f39f1dfabc$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$c24e92e862f39f1dfabc.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$c24e92e862f39f1dfabc.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$c9a2f364df28387ef82d$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$c9a2f364df28387ef82d$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$c9a2f364df28387ef82d.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/project/target/config-classes/$c9a2f364df28387ef82d.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/com.project/lib-project_2.12/1.0-SNAPSHOT/resolved.xml.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/com.project/lib-project_2.12/1.0-SNAPSHOT/resolved.xml.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-compile-internal.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-compile.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-debian.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-docker.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-docs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-linux.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-optional.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-plugin.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-provided.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-rpm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-runtime-internal.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-runtime.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-scala-tool.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-sources.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-test-internal.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-test.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-universal-docs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-universal-src.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-universal.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-windows.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" afterPath="$PROJECT_DIR$/lib-project/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" afterPath="$PROJECT_DIR$/lib-project/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/default/lib-project-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/default/lib-project-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/default/lib-project-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/default/lib-project-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-compile-internal.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-compile-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-compile.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-compile.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-docs.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-docs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-optional.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-optional.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-plugin.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-pom.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-provided.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-provided.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-runtime-internal.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-runtime-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-runtime.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-runtime.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-scala-tool.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-scala-tool.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-sources.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-sources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-test-internal.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-test-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-test.xml" afterPath="$PROJECT_DIR$/lib-project/project/target/resolution-cache/reports/default-lib-project-build-test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/streams/$global/ivyConfiguration/$global/streams/out" afterPath="$PROJECT_DIR$/lib-project/project/target/streams/$global/ivyConfiguration/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/lib-project/project/target/streams/$global/update/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/streams/compile/compileIncremental/$global/streams/out" afterPath="$PROJECT_DIR$/lib-project/project/target/streams/compile/compileIncremental/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/streams/compile/copyResources/$global/streams/out" afterPath="$PROJECT_DIR$/lib-project/project/target/streams/compile/copyResources/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/streams/compile/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/lib-project/project/target/streams/compile/dependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/streams/runtime/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/lib-project/project/target/streams/runtime/dependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/project/target/streams/runtime/fullClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/lib-project/project/target/streams/runtime/fullClasspath/$global/streams/export" />
     </list>
     <ignored path="$PROJECT_DIR$/lib-project/target/resolution-cache/" />
     <ignored path="$PROJECT_DIR$/lib-project/target/streams/" />
@@ -347,10 +471,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287037" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287037" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2526475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2526475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />

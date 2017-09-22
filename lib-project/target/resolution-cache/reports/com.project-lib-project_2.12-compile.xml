@@ -7,7 +7,7 @@
 		revision="1.0-SNAPSHOT"
 		conf="compile"
 		confs="universal, universal-docs, universal-src, compile, runtime, test, provided, optional, windows, docker, linux, rpm, debian, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170913203348"/>
+		date="20170922175049"/>
 	<dependencies>
 		<module organisation="mysql" name="mysql-connector-java">
 			<revision name="5.1.41" status="release" pubdate="20170214232759" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://dev.mysql.com/doc/connector-j/en/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="85">
@@ -716,9 +716,9 @@
 					</artifact>
 				</artifacts>
 			</revision>
-			<revision name="2.6.5" status="release" pubdate="20160119075155" resolver="public" artresolver="public" evicted="latest-revision" evicted-reason="" homepage="https://github.com/FasterXML/jackson-core" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+			<revision name="2.6.5" status="release" pubdate="20160119075155" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="https://github.com/FasterXML/jackson-core" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="4867" time="4412" location="C:\Users\Mingina\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\ivy-2.6.5.xml" searched="true" original-local-location="C:\Users\Mingina\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\ivy-2.6.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.6.5/jackson-core-2.6.5.pom"/>
+				<metadata-artifact status="no" details="" size="7101" time="0" location="C:\Users\Mingina\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.6.5/jackson-core-2.6.5.pom"/>
 				<evicted-by rev="2.8.9"/>
 				<caller organisation="io.ebean" name="ebean" conf="compile, runtime" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="10.3.1"/>
 				<artifacts>
