@@ -4,7 +4,7 @@
 		module="lib-project_2.12"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20170922175049"
+		publication="20171030185422"
 	>
 		<description>
 		lib-project
@@ -53,8 +53,9 @@
 		<dependency org="com.typesafe.play" name="play-logback_2.12" rev="2.6.3" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-akka-http-server_2.12" rev="2.6.3" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-guice_2.12" rev="2.6.3" conf="compile->default(compile)"/>
-		<dependency org="com.typesafe.play" name="play-jdbc-evolutions_2.12" rev="2.6.3" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-jdbc_2.12" rev="2.6.3" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-java-jdbc_2.12" rev="2.6.3" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-jdbc-evolutions_2.12" rev="2.6.3" conf="compile->default(compile)"/>
 		<dependency org="mysql" name="mysql-connector-java" rev="5.1.41" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

@@ -6,7 +6,6 @@ import javax.inject.Inject;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.sql.Statement;
 import java.util.concurrent.CompletableFuture;
 
 
@@ -24,15 +23,16 @@ class UsersDBConnection {
     public CompletableFuture<Void> displayConnection(){
         return CompletableFuture.runAsync(() ->{
             try {
-                Connection conn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:9000/?user=root&password=rootpassword");
-                PreparedStatement state = conn.prepareStatement("CREATE DATABASE playdbfirst");
-                int result = state.executeUpdate();
+                Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/laebrariDB", "root", "root");
+                PreparedStatement state = conn.prepareStatement("CREATE TABLE laebrariBook");
+                //int result = state.executeUpdate();
+                System.out.println("Connected Boss");
             }
             catch (Exception e){
                 e.printStackTrace();
             }
 
-           return;
+            return;
         });
 
     }

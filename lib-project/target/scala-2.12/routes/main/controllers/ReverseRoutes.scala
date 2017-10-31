@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Mingina/Workspace/laebrari/lib-project/conf/routes
-// @DATE:Fri Sep 22 17:52:35 EAT 2017
+// @DATE:Mon Oct 30 18:58:46 EAT 2017
 
 import play.api.mvc.Call
 

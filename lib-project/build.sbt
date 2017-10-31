@@ -1,3 +1,5 @@
+import play.sbt.PlayJava
+
 name := """lib-project"""
 organization := "com.project"
 
@@ -7,8 +9,11 @@ lazy val root = (project in file(".")).enablePlugins(PlayJava, PlayEbean)
 
 scalaVersion := "2.12.2"
 
-libraryDependencies ++= Seq(guice,
-                            evolutions,
-                            javaJdbc,
-                            "mysql" % "mysql-connector-java" % "5.1.41")
+libraryDependencies += guice
+libraryDependencies += jdbc
+libraryDependencies += javaJdbc
+
+libraryDependencies += evolutions
+
+libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.41"
 
