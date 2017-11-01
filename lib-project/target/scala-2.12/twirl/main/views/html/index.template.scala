@@ -55,7 +55,7 @@ Seq[Any](_display_(/*3.2*/main("Welcome to Laebrari")/*3.29*/ {_display_(Seq[Any
 
               /*
                   -- GENERATED --
-                  DATE: Mon Oct 30 18:58:47 EAT 2017
+                  DATE: Wed Nov 01 14:11:27 EAT 2017
                   SOURCE: C:/Users/Mingina/Workspace/laebrari/lib-project/app/views/index.scala.html
                   HASH: 5d62d954830145ec994d9d7b65154c528521c89a
                   MATRIX: 1030->5|1065->32|1104->34|1134->38|1225->103|1239->109|1283->133|1435->255

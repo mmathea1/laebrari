@@ -68,7 +68,7 @@ Seq[Any](format.raw/*7.32*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Mon Oct 30 18:58:47 EAT 2017
+                  DATE: Wed Nov 01 14:11:28 EAT 2017
                   SOURCE: C:/Users/Mingina/Workspace/laebrari/lib-project/app/views/main.scala.html
                   HASH: 1c6ff78675beee071e369b305cd8e888a02716d8
                   MATRIX: 1211->266|1336->296|1366->300|1449->408|1486->418|1521->426|1547->431|1637->494|1652->500|1715->541|1804->603|1819->609|1880->648|1945->776|1983->787|2011->794|2050->806|2091->820|2106->826|2167->866
