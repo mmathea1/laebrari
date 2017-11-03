@@ -1,0 +1,18 @@
+@(bookForm : Form[BooksModel])
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create Books</title>
+</head>
+<body>
+<h1> Add Book to library</h1>
+    @helper.form(action = routes.BookController.create()){
+    @helper.inputText(bookForm("Title"))
+    @helper.inputText(bookForm("Price"))
+    @helper.inputText(bookForm("Author"))
+
+    <input type="submit" value="Add to Library">
+
+}
+
+</body>

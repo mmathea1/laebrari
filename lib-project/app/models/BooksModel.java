@@ -11,6 +11,8 @@ public class BooksModel {
     public String author;
     public Integer price;
 
+    //default constructor
+    public BooksModel(){}
     //constructor
     public BooksModel(Integer id, String title, String author, Integer price){
         this.title =title;
