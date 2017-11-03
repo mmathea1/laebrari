@@ -61,7 +61,7 @@ public class BookController extends Controller {
         oldBook.title = book.title;
         oldBook.price = book.price;
         oldBook.author = book.author;
-        
+
         return redirect(routes.BookController.index());
     }
 
@@ -72,6 +72,11 @@ public class BookController extends Controller {
 
     //show books details
     public Result show(Integer id){
-        return TODO;
+        BooksModel booksModel = BooksModel.findById(id);
+        if (booksModel == null){
+            return notFound("Book Not Found");
+        }
+
+        return ok(views.html.books.show.render(booksModel));
     }
 }

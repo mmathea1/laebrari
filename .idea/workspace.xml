@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4062b81-924e-4623-b01a-df32128d85ab" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/target/scala-2.12/classes/controllers/BookController.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterPath="$PROJECT_DIR$/lib-project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/app/controllers/BookController.java" afterPath="$PROJECT_DIR$/lib-project/app/controllers/BookController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/logs/application.log" afterPath="$PROJECT_DIR$/lib-project/logs/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/streams/compile/compileIncremental/$global/streams/export" afterPath="$PROJECT_DIR$/lib-project/target/streams/compile/compileIncremental/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/streams/compile/compileIncremental/$global/streams/out" afterPath="$PROJECT_DIR$/lib-project/target/streams/compile/compileIncremental/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/app/views/books/index.scala.html" afterPath="$PROJECT_DIR$/lib-project/app/views/books/index.scala.html" />
     </list>
     <ignored path="$PROJECT_DIR$/lib-project/project/project/target/" />
     <ignored path="$PROJECT_DIR$/lib-project/project/target/" />
@@ -44,23 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib-project/app/controllers/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="37" column="44" lean-forward="false" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BooksModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib-project/app/models/BooksModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-74">
-              <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            <state relative-caret-position="232">
+              <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,11 +54,21 @@
       <file leaf-file-name="index.scala.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib-project/app/views/books/index.scala.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="7" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="14" selection-end-column="7" />
+            <state relative-caret-position="204">
+              <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
               <folding>
-                <marker date="1509695129671" expanded="true" signature="145:233" ph="{...}" />
+                <marker date="1509752643179" expanded="true" signature="145:268" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.scala.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib-project/app/views/books/show.scala.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -83,21 +76,11 @@
       <file leaf-file-name="BookController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib-project/app/controllers/BookController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="63" column="8" lean-forward="false" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
+            <state relative-caret-position="334">
+              <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.scala.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib-project/app/views/books/edit.scala.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -140,11 +123,12 @@
         <option value="$PROJECT_DIR$/lib-project/app/models/UsersDBConnection.java" />
         <option value="$PROJECT_DIR$/lib-project/conf/routes" />
         <option value="$PROJECT_DIR$/lib-project/app/views/books/index.html" />
-        <option value="$PROJECT_DIR$/lib-project/app/views/books/index.scala.html" />
         <option value="$PROJECT_DIR$/lib-project/app/models/BooksModel.java" />
         <option value="$PROJECT_DIR$/lib-project/conf/application.conf" />
         <option value="$PROJECT_DIR$/lib-project/app/views/books/create.scala.html" />
         <option value="$PROJECT_DIR$/lib-project/app/views/books/edit.scala.html" />
+        <option value="$PROJECT_DIR$/lib-project/app/views/books/show.scala.html" />
+        <option value="$PROJECT_DIR$/lib-project/app/views/books/index.scala.html" />
         <option value="$PROJECT_DIR$/lib-project/app/controllers/BookController.java" />
       </list>
     </option>
@@ -492,13 +476,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib-project/app/controllers/UserData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib-project/app/views/user/form.scala.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -760,16 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib-project/app/views/books/index.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="7" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="14" selection-end-column="7" />
-          <folding>
-            <marker date="1509695129671" expanded="true" signature="145:233" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib-project/conf/application.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -786,20 +753,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib-project/app/models/BooksModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-74">
-          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib-project/app/views/books/create.scala.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib-project/app/views/books/edit.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -814,18 +779,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib-project/app/views/books/edit.scala.html">
+    <entry file="file://$PROJECT_DIR$/lib-project/app/models/BooksModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        <state relative-caret-position="232">
+          <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib-project/app/views/books/show.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib-project/app/views/books/index.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <marker date="1509752643179" expanded="true" signature="145:268" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib-project/app/controllers/BookController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="63" column="8" lean-forward="false" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
+        <state relative-caret-position="334">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

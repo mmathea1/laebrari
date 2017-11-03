@@ -7,7 +7,7 @@
 <body>
 <h1> All Books</h1>
 @for(book <- books){
-<a href="#">@book.title</a>
+<a href="@routes.BookController.show(book.id)">@book.title</a>
 <p> Price : @book.price</p>
 <p> Author: @book.author</p>
 }
