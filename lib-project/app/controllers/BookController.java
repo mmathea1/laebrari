@@ -14,7 +14,7 @@ import play.data.FormFactory;
 
 public class BookController extends Controller {
 
-    private final  Form<BooksModel> bookForm;
+    private final  Form<BooksModel> modelForm;
 
     //show all books
     public Result index(){
@@ -24,17 +24,17 @@ public class BookController extends Controller {
 
     @Inject
     public BookController(FormFactory formFactory){
-        this.bookForm = formFactory.form(BooksModel.class);
+        this.modelForm = formFactory.form(BooksModel.class);
     }
     //new book
     public Result create(){
 
-        return ok(views.html.books.create.render(bookForm));
+        return ok(views.html.books.create.render(modelForm));
     }
 
     //save book
     public Result save(){
-    Form<BooksModel> boundForm = bookForm.bindFromRequest();
+    Form<BooksModel> boundForm = modelForm.bindFromRequest();
     BooksModel book = boundForm.get();
     BooksModel.add(book);
         return redirect(routes.BookController.index());
@@ -42,12 +42,27 @@ public class BookController extends Controller {
 
     //edit book
     public Result edit(Integer id){
-        return TODO;
+        BooksModel book = BooksModel.findById(id);
+        if (book == null){
+            return notFound("Book Not Found");
+        }
+        Form<BooksModel> editBookForm = modelForm.fill(book);
+        return ok(views.html.books.edit.render(editBookForm));
     }
 
     //update book
     public Result update(){
-        return TODO;
+        Form<BooksModel> updateForm = modelForm.bindFromRequest();
+        BooksModel book = updateForm.get();
+        BooksModel oldBook = BooksModel.findById(book.id);
+        if (oldBook == null){
+            return notFound("Book Not Found");
+        }
+        oldBook.title = book.title;
+        oldBook.price = book.price;
+        oldBook.author = book.author;
+        
+        return redirect(routes.BookController.index());
     }
 
     //delete book

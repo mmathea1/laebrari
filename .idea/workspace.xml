@@ -2,58 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4062b81-924e-4623-b01a-df32128d85ab" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/.history" afterPath="$PROJECT_DIR$/lib-project/target/.history" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/scala-2.12/classes/controllers/BookController.class" afterPath="$PROJECT_DIR$/lib-project/target/scala-2.12/classes/controllers/BookController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/scala-2.12/classes/models/BooksModel.class" afterPath="$PROJECT_DIR$/lib-project/target/scala-2.12/classes/models/BooksModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/scala-2.12/classes/views/html/books/create$.class" afterPath="$PROJECT_DIR$/lib-project/target/scala-2.12/classes/views/html/books/create$.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib-project/target/scala-2.12/classes/controllers/BookController.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterPath="$PROJECT_DIR$/lib-project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterPath="$PROJECT_DIR$/lib-project/target/streams/$global/update/$global/streams/update_cache_2.12/output" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/streams/compile/playRoutes/$global/streams/op-cache" afterPath="$PROJECT_DIR$/lib-project/target/streams/compile/playRoutes/$global/streams/op-cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/app/controllers/BookController.java" afterPath="$PROJECT_DIR$/lib-project/app/controllers/BookController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/app/models/BooksModel.java" afterPath="$PROJECT_DIR$/lib-project/app/models/BooksModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/app/views/books/create.scala.html" afterPath="$PROJECT_DIR$/lib-project/app/views/books/create.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/conf/application.conf" afterPath="$PROJECT_DIR$/lib-project/conf/application.conf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/logs/application.log" afterPath="$PROJECT_DIR$/lib-project/logs/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/com.project/lib-project_2.12/1.0-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/com.project/lib-project_2.12/1.0-SNAPSHOT/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/com.project/lib-project_2.12/1.0-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/com.project/lib-project_2.12/1.0-SNAPSHOT/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-compile-internal.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-compile-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-compile.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-compile.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-debian.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-debian.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-docker.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-docker.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-docs.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-linux.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-linux.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-optional.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-optional.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-plugin.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-pom.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-provided.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-provided.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-rpm.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-rpm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-runtime-internal.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-runtime-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-runtime.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-runtime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-scala-tool.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-scala-tool.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-sources.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-sources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-test-internal.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-test-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-test.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-universal-docs.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-universal-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-universal-src.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-universal-src.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-universal.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-universal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-windows.xml" afterPath="$PROJECT_DIR$/lib-project/target/resolution-cache/reports/com.project-lib-project_2.12-windows.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/scala-2.12/routes/main/controllers/ReverseRoutes.scala" afterPath="$PROJECT_DIR$/lib-project/target/scala-2.12/routes/main/controllers/ReverseRoutes.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/scala-2.12/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" afterPath="$PROJECT_DIR$/lib-project/target/scala-2.12/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/scala-2.12/routes/main/controllers/routes.java" afterPath="$PROJECT_DIR$/lib-project/target/scala-2.12/routes/main/controllers/routes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/scala-2.12/routes/main/router/Routes.scala" afterPath="$PROJECT_DIR$/lib-project/target/scala-2.12/routes/main/router/Routes.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/scala-2.12/routes/main/router/RoutesPrefix.scala" afterPath="$PROJECT_DIR$/lib-project/target/scala-2.12/routes/main/router/RoutesPrefix.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/scala-2.12/twirl/main/views/html/books/create.template.scala" afterPath="$PROJECT_DIR$/lib-project/target/scala-2.12/twirl/main/views/html/books/create.template.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/scala-2.12/twirl/main/views/html/books/index.template.scala" afterPath="$PROJECT_DIR$/lib-project/target/scala-2.12/twirl/main/views/html/books/index.template.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/scala-2.12/twirl/main/views/html/index.template.scala" afterPath="$PROJECT_DIR$/lib-project/target/scala-2.12/twirl/main/views/html/index.template.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/scala-2.12/twirl/main/views/html/main.template.scala" afterPath="$PROJECT_DIR$/lib-project/target/scala-2.12/twirl/main/views/html/main.template.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/scala-2.12/twirl/main/views/html/user/form.template.scala" afterPath="$PROJECT_DIR$/lib-project/target/scala-2.12/twirl/main/views/html/user/form.template.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/streams/$global/playCommonClassloader/$global/streams/out" afterPath="$PROJECT_DIR$/lib-project/target/streams/$global/playCommonClassloader/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/lib-project/target/streams/$global/update/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/streams/compile/compileIncremental/$global/streams/export" afterPath="$PROJECT_DIR$/lib-project/target/streams/compile/compileIncremental/$global/streams/export" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/streams/compile/compileIncremental/$global/streams/out" afterPath="$PROJECT_DIR$/lib-project/target/streams/compile/compileIncremental/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" afterPath="$PROJECT_DIR$/lib-project/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/streams/compile/playEnhancerGenerateAccessors/$global/streams/play_instrumentation_2.12" afterPath="$PROJECT_DIR$/lib-project/target/streams/compile/playEnhancerGenerateAccessors/$global/streams/play_instrumentation_2.12" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/target/streams/compile/playEnhancerRewriteAccessors/$global/streams/play_instrumentation_2.12" afterPath="$PROJECT_DIR$/lib-project/target/streams/compile/playEnhancerRewriteAccessors/$global/streams/play_instrumentation_2.12" />
     </list>
     <ignored path="$PROJECT_DIR$/lib-project/project/project/target/" />
     <ignored path="$PROJECT_DIR$/lib-project/project/target/" />
@@ -101,52 +56,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create.scala.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib-project/app/views/books/create.scala.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib-project/conf/application.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="52" lean-forward="false" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form.scala.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib-project/app/views/user/form.scala.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UsersDBConnection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib-project/app/models/UsersDBConnection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BooksModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib-project/app/models/BooksModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-68">
+            <state relative-caret-position="-74">
               <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -167,14 +80,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BookController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib-project/app/controllers/BookController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="36" column="58" lean-forward="false" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
+            <state relative-caret-position="266">
+              <caret line="63" column="8" lean-forward="false" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.scala.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib-project/app/views/books/edit.scala.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -219,9 +142,10 @@
         <option value="$PROJECT_DIR$/lib-project/app/views/books/index.html" />
         <option value="$PROJECT_DIR$/lib-project/app/views/books/index.scala.html" />
         <option value="$PROJECT_DIR$/lib-project/app/models/BooksModel.java" />
-        <option value="$PROJECT_DIR$/lib-project/app/controllers/BookController.java" />
         <option value="$PROJECT_DIR$/lib-project/conf/application.conf" />
         <option value="$PROJECT_DIR$/lib-project/app/views/books/create.scala.html" />
+        <option value="$PROJECT_DIR$/lib-project/app/views/books/edit.scala.html" />
+        <option value="$PROJECT_DIR$/lib-project/app/controllers/BookController.java" />
       </list>
     </option>
   </component>
@@ -325,6 +249,11 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mingina\Workspace\laebrari\lib-project\app\views\books" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -563,13 +492,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib-project/app/views/main.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib-project/app/controllers/UserData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
@@ -848,36 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib-project/app/models/BooksModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib-project/app/controllers/BookController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="36" column="58" lean-forward="false" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib-project/app/controllers/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="37" column="44" lean-forward="false" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib-project/conf/application.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -894,11 +786,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib-project/app/models/BooksModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-74">
+          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib-project/app/views/books/create.scala.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        <state relative-caret-position="147">
+          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib-project/app/controllers/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="37" column="44" lean-forward="false" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib-project/app/views/books/edit.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib-project/app/controllers/BookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="63" column="8" lean-forward="false" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

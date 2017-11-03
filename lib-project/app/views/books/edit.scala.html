@@ -1,0 +1,20 @@
+@(bookForm : Form[BooksModel])
+
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Books</title>
+</head>
+<body>
+<h1> Edit Book</h1>
+    @helper.form(action = routes.BookController.update()){
+    @helper.CSRF.formField
+    @helper.inputText(bookForm("Id"))
+    @helper.inputText(bookForm("Title"))
+    @helper.inputText(bookForm("Price"))
+    @helper.inputText(bookForm("Author"))
+
+    <input type="submit" value="Edit Book">
+
+}
+
+</body>
