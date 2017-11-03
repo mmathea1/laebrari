@@ -29,13 +29,15 @@ public class BookController extends Controller {
     //new book
     public Result create(){
 
-
         return ok(views.html.books.create.render(bookForm));
     }
 
     //save book
     public Result save(){
-        return TODO;
+    Form<BooksModel> boundForm = bookForm.bindFromRequest();
+    BooksModel book = boundForm.get();
+    BooksModel.add(book);
+        return redirect(routes.BookController.index());
     }
 
     //edit book

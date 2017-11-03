@@ -38,16 +38,18 @@ Seq[Any](format.raw/*1.31*/("""
 </head>
 <body>
 <h1> Add Book to library</h1>
-    """),_display_(/*9.6*/helper/*9.12*/.form(action = routes.BookController.create())/*9.58*/{_display_(Seq[Any](format.raw/*9.59*/("""
-    """),_display_(/*10.6*/helper/*10.12*/.inputText(bookForm("Title"))),format.raw/*10.41*/("""
-    """),_display_(/*11.6*/helper/*11.12*/.inputText(bookForm("Price"))),format.raw/*11.41*/("""
-    """),_display_(/*12.6*/helper/*12.12*/.inputText(bookForm("Author"))),format.raw/*12.42*/("""
+    """),_display_(/*9.6*/helper/*9.12*/.form(action = routes.BookController.save())/*9.56*/{_display_(Seq[Any](format.raw/*9.57*/("""
+    """),_display_(/*10.6*/helper/*10.12*/.CSRF.formField),format.raw/*10.27*/("""
+    """),_display_(/*11.6*/helper/*11.12*/.inputText(bookForm("Id"))),format.raw/*11.38*/("""
+    """),_display_(/*12.6*/helper/*12.12*/.inputText(bookForm("Title"))),format.raw/*12.41*/("""
+    """),_display_(/*13.6*/helper/*13.12*/.inputText(bookForm("Price"))),format.raw/*13.41*/("""
+    """),_display_(/*14.6*/helper/*14.12*/.inputText(bookForm("Author"))),format.raw/*14.42*/("""
 
-    """),format.raw/*14.5*/("""<input type="submit" value="Add to Library">
+    """),format.raw/*16.5*/("""<input type="submit" value="Add to Library">
 
-""")))}),format.raw/*16.2*/("""
+""")))}),format.raw/*18.2*/("""
 
-"""),format.raw/*18.1*/("""</body>"""))
+"""),format.raw/*20.1*/("""</body>"""))
       }
     }
   }
@@ -63,11 +65,11 @@ Seq[Any](format.raw/*1.31*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Fri Nov 03 16:06:03 EAT 2017
+                  DATE: Sat Nov 04 01:30:25 EAT 2017
                   SOURCE: C:/Users/Mingina/Workspace/laebrari/lib-project/app/views/books/create.scala.html
-                  HASH: d9258638d14cd21f1a5b84b64df0f49b512f4964
-                  MATRIX: 965->1|1089->30|1119->34|1266->156|1280->162|1334->208|1372->209|1405->216|1420->222|1470->251|1503->258|1518->264|1568->293|1601->300|1616->306|1667->336|1702->344|1781->393|1812->397
-                  LINES: 28->1|33->1|35->3|41->9|41->9|41->9|41->9|42->10|42->10|42->10|43->11|43->11|43->11|44->12|44->12|44->12|46->14|48->16|50->18
+                  HASH: 7b30de998b4be8abb0bc097ac0af705c0aa720e5
+                  MATRIX: 965->1|1089->30|1119->34|1266->156|1280->162|1332->206|1370->207|1403->214|1418->220|1454->235|1487->242|1502->248|1549->274|1582->281|1597->287|1647->316|1680->323|1695->329|1745->358|1778->365|1793->371|1844->401|1879->409|1958->458|1989->462
+                  LINES: 28->1|33->1|35->3|41->9|41->9|41->9|41->9|42->10|42->10|42->10|43->11|43->11|43->11|44->12|44->12|44->12|45->13|45->13|45->13|46->14|46->14|46->14|48->16|50->18|52->20
                   -- GENERATED --
               */
           

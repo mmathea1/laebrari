@@ -6,7 +6,9 @@
 </head>
 <body>
 <h1> Add Book to library</h1>
-    @helper.form(action = routes.BookController.create()){
+    @helper.form(action = routes.BookController.save()){
+    @helper.CSRF.formField
+    @helper.inputText(bookForm("Id"))
     @helper.inputText(bookForm("Title"))
     @helper.inputText(bookForm("Price"))
     @helper.inputText(bookForm("Author"))

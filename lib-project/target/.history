@@ -1,2 +1,4 @@
 compile
 run
+clean
+run
