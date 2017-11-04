@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0mUsing parent loader for play common classloader: sun.misc.Launcher$ExtClassLoader@4bbd42aa[0m
+=======
+[0m[[0mdebug[0m] [0mUsing parent loader for play common classloader: sun.misc.Launcher$ExtClassLoader@5bcd3023[0m
+>>>>>>> 2195fdf... update model and make CRUD operations

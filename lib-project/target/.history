@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 compile
 run
 clean
@@ -7,3 +8,8 @@ run
 compile
 update
 run
+=======
+run
+compile
+run
+>>>>>>> 2195fdf... update model and make CRUD operations

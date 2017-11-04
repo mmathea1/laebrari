@@ -58,7 +58,11 @@ Seq[Any](format.raw/*1.31*/("""
 
               /*
                   -- GENERATED --
+<<<<<<< HEAD
                   DATE: Sat Nov 04 11:57:30 EAT 2017
+=======
+                  DATE: Sat Nov 04 18:05:05 EAT 2017
+>>>>>>> 2195fdf... update model and make CRUD operations
                   SOURCE: C:/Users/Mingina/Workspace/laebrari/lib-project/app/views/books/edit.scala.html
                   HASH: 027a90e33350cbfc191ca80c9347aeaff7c88765
                   MATRIX: 963->1|1087->30|1115->33|1143->53|1181->54|1213->60|1264->86|1278->92|1332->138|1370->139|1402->146|1416->152|1451->167|1483->174|1497->180|1543->206|1575->213|1589->219|1638->248|1670->255|1684->261|1733->290|1765->297|1779->303|1829->333|1865->339|1898->345|1970->387
