@@ -175,3 +175,4 @@ play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evoluti
     play.filters.csrf.CSRFFilter
 
 2017-11-04 12:38:17,255 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-9 - Application started (Dev)
+2017-11-04 13:21:22,648 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-10 housekeeper - HikariPool-10 - Thread starvation or clock leap detected (housekeeper delta=34m50s293ms471µs320ns).
