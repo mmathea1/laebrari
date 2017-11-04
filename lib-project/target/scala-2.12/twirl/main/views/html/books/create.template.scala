@@ -31,25 +31,20 @@ object create extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Htm
 
 
 Seq[Any](format.raw/*1.31*/("""
+"""),_display_(/*2.2*/layout("Create Book")/*2.23*/{_display_(Seq[Any](format.raw/*2.24*/("""
+"""),format.raw/*3.1*/("""<h1> Add Book to library</h1>
+"""),_display_(/*4.2*/helper/*4.8*/.form(action = routes.BookController.save())/*4.52*/{_display_(Seq[Any](format.raw/*4.53*/("""
+"""),_display_(/*5.2*/helper/*5.8*/.CSRF.formField),format.raw/*5.23*/("""
+"""),_display_(/*6.2*/helper/*6.8*/.inputText(bookForm("Id"))),format.raw/*6.34*/("""
+"""),_display_(/*7.2*/helper/*7.8*/.inputText(bookForm("Title"))),format.raw/*7.37*/("""
+"""),_display_(/*8.2*/helper/*8.8*/.inputText(bookForm("Price"))),format.raw/*8.37*/("""
+"""),_display_(/*9.2*/helper/*9.8*/.inputText(bookForm("Author"))),format.raw/*9.38*/("""
 
-"""),format.raw/*3.1*/("""<head>
-    <meta charset="UTF-8">
-    <title>Create Books</title>
-</head>
-<body>
-<h1> Add Book to library</h1>
-    """),_display_(/*9.6*/helper/*9.12*/.form(action = routes.BookController.save())/*9.56*/{_display_(Seq[Any](format.raw/*9.57*/("""
-    """),_display_(/*10.6*/helper/*10.12*/.CSRF.formField),format.raw/*10.27*/("""
-    """),_display_(/*11.6*/helper/*11.12*/.inputText(bookForm("Id"))),format.raw/*11.38*/("""
-    """),_display_(/*12.6*/helper/*12.12*/.inputText(bookForm("Title"))),format.raw/*12.41*/("""
-    """),_display_(/*13.6*/helper/*13.12*/.inputText(bookForm("Price"))),format.raw/*13.41*/("""
-    """),_display_(/*14.6*/helper/*14.12*/.inputText(bookForm("Author"))),format.raw/*14.42*/("""
+"""),format.raw/*11.1*/("""<input type="submit" value="Add to Library">
 
-    """),format.raw/*16.5*/("""<input type="submit" value="Add to Library">
-
-""")))}),format.raw/*18.2*/("""
-
-"""),format.raw/*20.1*/("""</body>"""))
+""")))}),format.raw/*13.2*/("""
+""")))}),format.raw/*14.2*/("""
+"""))
       }
     }
   }
@@ -65,11 +60,11 @@ Seq[Any](format.raw/*1.31*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sat Nov 04 01:30:25 EAT 2017
+                  DATE: Sat Nov 04 11:54:35 EAT 2017
                   SOURCE: C:/Users/Mingina/Workspace/laebrari/lib-project/app/views/books/create.scala.html
-                  HASH: 7b30de998b4be8abb0bc097ac0af705c0aa720e5
-                  MATRIX: 965->1|1089->30|1119->34|1266->156|1280->162|1332->206|1370->207|1403->214|1418->220|1454->235|1487->242|1502->248|1549->274|1582->281|1597->287|1647->316|1680->323|1695->329|1745->358|1778->365|1793->371|1844->401|1879->409|1958->458|1989->462
-                  LINES: 28->1|33->1|35->3|41->9|41->9|41->9|41->9|42->10|42->10|42->10|43->11|43->11|43->11|44->12|44->12|44->12|45->13|45->13|45->13|46->14|46->14|46->14|48->16|50->18|52->20
+                  HASH: 6aaa26203caf97ec5846008fc7ed31b1532360bd
+                  MATRIX: 965->1|1089->30|1117->33|1146->54|1184->55|1212->57|1269->89|1282->95|1334->139|1372->140|1400->143|1413->149|1448->164|1476->167|1489->173|1535->199|1563->202|1576->208|1625->237|1653->240|1666->246|1715->275|1743->278|1756->284|1806->314|1837->318|1916->367|1949->370
+                  LINES: 28->1|33->1|34->2|34->2|34->2|35->3|36->4|36->4|36->4|36->4|37->5|37->5|37->5|38->6|38->6|38->6|39->7|39->7|39->7|40->8|40->8|40->8|41->9|41->9|41->9|43->11|45->13|46->14
                   -- GENERATED --
               */
           

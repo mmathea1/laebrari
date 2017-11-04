@@ -1,10 +1,6 @@
 
 @(books : Set[BooksModel])
-<head>
-    <meta charset="UTF-8">
-    <title>All Books</title>
-</head>
-<body>
+@layout("All Books"){
 <h1> All Books</h1>
 @for(book <- books){
 <a href="@routes.BookController.show(book.id)">@book.title</a>
@@ -13,5 +9,4 @@
 }
 <button type="button"><a href="@routes.BookController.create()"> Add book to library</a></button>
 
-</body>
-
+}

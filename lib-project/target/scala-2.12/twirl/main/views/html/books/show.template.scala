@@ -31,19 +31,16 @@ object show extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlF
 
 
 Seq[Any](format.raw/*2.20*/("""
-"""),format.raw/*3.1*/("""<head>
-    <meta charset="UTF-8">
-    <title>Edit """),_display_(/*5.18*/book/*5.22*/.title),format.raw/*5.28*/("""</title>
-</head>
-<body>
-<h1> """),_display_(/*8.7*/book/*8.11*/.title),format.raw/*8.17*/("""</h1>
-    <p> Price : """),_display_(/*9.18*/book/*9.22*/.price),format.raw/*9.28*/("""</p>
-    <p> Author: """),_display_(/*10.18*/book/*10.22*/.author),format.raw/*10.29*/("""</p>
+"""),_display_(/*3.2*/layout("Edit " + book.title)/*3.30*/{_display_(Seq[Any](format.raw/*3.31*/("""
+
+"""),format.raw/*5.1*/("""<h1> """),_display_(/*5.7*/book/*5.11*/.title),format.raw/*5.17*/("""</h1>
+<p> Price : """),_display_(/*6.14*/book/*6.18*/.price),format.raw/*6.24*/("""</p>
+<p> Author: """),_display_(/*7.14*/book/*7.18*/.author),format.raw/*7.25*/("""</p>
 
 
-<button type="button"><a href=""""),_display_(/*13.33*/routes/*13.39*/.BookController.edit(book.id)),format.raw/*13.68*/("""">Edit Book</a></button>
-<button type="button"><a href=""""),_display_(/*14.33*/routes/*14.39*/.BookController.destroy(book.id)),format.raw/*14.71*/("""">Delete Book</a></button>
-</body>
+<button type="button"><a href=""""),_display_(/*10.33*/routes/*10.39*/.BookController.edit(book.id)),format.raw/*10.68*/("""">Edit Book</a></button>
+<button type="button"><a href=""""),_display_(/*11.33*/routes/*11.39*/.BookController.destroy(book.id)),format.raw/*11.71*/("""">Delete Book</a></button>
+""")))}),format.raw/*12.2*/("""
 
 """))
       }
@@ -61,11 +58,11 @@ Seq[Any](format.raw/*2.20*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sat Nov 04 11:11:25 EAT 2017
+                  DATE: Sat Nov 04 12:01:16 EAT 2017
                   SOURCE: C:/Users/Mingina/Workspace/laebrari/lib-project/app/views/books/show.scala.html
-                  HASH: de3783b08048fb476cf633428a0729a67fe10070
-                  MATRIX: 957->3|1070->21|1098->23|1177->76|1189->80|1215->86|1273->119|1285->123|1311->129|1361->153|1373->157|1399->163|1449->186|1462->190|1490->197|1559->239|1574->245|1624->274|1709->332|1724->338|1777->370
-                  LINES: 28->2|33->2|34->3|36->5|36->5|36->5|39->8|39->8|39->8|40->9|40->9|40->9|41->10|41->10|41->10|44->13|44->13|44->13|45->14|45->14|45->14
+                  HASH: 799d6885dc6125c9eac42872f0d1d812cc201c64
+                  MATRIX: 957->3|1070->21|1098->24|1134->52|1172->53|1202->57|1233->63|1245->67|1271->73|1317->93|1329->97|1355->103|1400->122|1412->126|1439->133|1508->175|1523->181|1573->210|1658->268|1673->274|1726->306|1785->335
+                  LINES: 28->2|33->2|34->3|34->3|34->3|36->5|36->5|36->5|36->5|37->6|37->6|37->6|38->7|38->7|38->7|41->10|41->10|41->10|42->11|42->11|42->11|43->12
                   -- GENERATED --
               */
           

@@ -31,26 +31,18 @@ object edit extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlF
 
 
 Seq[Any](format.raw/*1.31*/("""
-
-"""),format.raw/*3.1*/("""<head>
-    <meta charset="UTF-8">
-    <title>Edit Books</title>
-</head>
-<body>
-<h1> Edit Book</h1>
-    """),_display_(/*9.6*/helper/*9.12*/.form(action = routes.BookController.update())/*9.58*/{_display_(Seq[Any](format.raw/*9.59*/("""
-    """),_display_(/*10.6*/helper/*10.12*/.CSRF.formField),format.raw/*10.27*/("""
-    """),_display_(/*11.6*/helper/*11.12*/.inputText(bookForm("Id"))),format.raw/*11.38*/("""
-    """),_display_(/*12.6*/helper/*12.12*/.inputText(bookForm("Title"))),format.raw/*12.41*/("""
-    """),_display_(/*13.6*/helper/*13.12*/.inputText(bookForm("Price"))),format.raw/*13.41*/("""
-    """),_display_(/*14.6*/helper/*14.12*/.inputText(bookForm("Author"))),format.raw/*14.42*/("""
-
-    """),format.raw/*16.5*/("""<input type="submit" value="Edit Book">
-
-
-""")))}),format.raw/*19.2*/("""
-
-"""),format.raw/*21.1*/("""</body>"""))
+"""),_display_(/*2.2*/layout("Edit Books")/*2.22*/{_display_(Seq[Any](format.raw/*2.23*/("""
+    """),format.raw/*3.5*/("""<h1> Edit Book</h1>
+    """),_display_(/*4.6*/helper/*4.12*/.form(action = routes.BookController.update())/*4.58*/{_display_(Seq[Any](format.raw/*4.59*/("""
+    """),_display_(/*5.6*/helper/*5.12*/.CSRF.formField),format.raw/*5.27*/("""
+    """),_display_(/*6.6*/helper/*6.12*/.inputText(bookForm("Id"))),format.raw/*6.38*/("""
+    """),_display_(/*7.6*/helper/*7.12*/.inputText(bookForm("Title"))),format.raw/*7.41*/("""
+    """),_display_(/*8.6*/helper/*8.12*/.inputText(bookForm("Price"))),format.raw/*8.41*/("""
+    """),_display_(/*9.6*/helper/*9.12*/.inputText(bookForm("Author"))),format.raw/*9.42*/("""
+   """)))}),format.raw/*10.5*/("""
+    """),format.raw/*11.5*/("""<input type="submit" value="Edit Book">
+""")))}),format.raw/*12.2*/("""
+"""))
       }
     }
   }
@@ -66,11 +58,11 @@ Seq[Any](format.raw/*1.31*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sat Nov 04 10:56:45 EAT 2017
+                  DATE: Sat Nov 04 11:57:30 EAT 2017
                   SOURCE: C:/Users/Mingina/Workspace/laebrari/lib-project/app/views/books/edit.scala.html
-                  HASH: 82c704b083a575b3e80f6a8c3593ae1ab7f4af20
-                  MATRIX: 963->1|1087->30|1117->34|1252->144|1266->150|1320->196|1358->197|1391->204|1406->210|1442->225|1475->232|1490->238|1537->264|1570->271|1585->277|1635->306|1668->313|1683->319|1733->348|1766->355|1781->361|1832->391|1867->399|1943->445|1974->449
-                  LINES: 28->1|33->1|35->3|41->9|41->9|41->9|41->9|42->10|42->10|42->10|43->11|43->11|43->11|44->12|44->12|44->12|45->13|45->13|45->13|46->14|46->14|46->14|48->16|51->19|53->21
+                  HASH: 027a90e33350cbfc191ca80c9347aeaff7c88765
+                  MATRIX: 963->1|1087->30|1115->33|1143->53|1181->54|1213->60|1264->86|1278->92|1332->138|1370->139|1402->146|1416->152|1451->167|1483->174|1497->180|1543->206|1575->213|1589->219|1638->248|1670->255|1684->261|1733->290|1765->297|1779->303|1829->333|1865->339|1898->345|1970->387
+                  LINES: 28->1|33->1|34->2|34->2|34->2|35->3|36->4|36->4|36->4|36->4|37->5|37->5|37->5|38->6|38->6|38->6|39->7|39->7|39->7|40->8|40->8|40->8|41->9|41->9|41->9|42->10|43->11|44->12
                   -- GENERATED --
               */
           

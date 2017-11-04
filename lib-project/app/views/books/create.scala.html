@@ -1,20 +1,14 @@
 @(bookForm : Form[BooksModel])
-
-<head>
-    <meta charset="UTF-8">
-    <title>Create Books</title>
-</head>
-<body>
+@layout("Create Book"){
 <h1> Add Book to library</h1>
-    @helper.form(action = routes.BookController.save()){
-    @helper.CSRF.formField
-    @helper.inputText(bookForm("Id"))
-    @helper.inputText(bookForm("Title"))
-    @helper.inputText(bookForm("Price"))
-    @helper.inputText(bookForm("Author"))
+@helper.form(action = routes.BookController.save()){
+@helper.CSRF.formField
+@helper.inputText(bookForm("Id"))
+@helper.inputText(bookForm("Title"))
+@helper.inputText(bookForm("Price"))
+@helper.inputText(bookForm("Author"))
 
-    <input type="submit" value="Add to Library">
+<input type="submit" value="Add to Library">
 
 }
-
-</body>
+}

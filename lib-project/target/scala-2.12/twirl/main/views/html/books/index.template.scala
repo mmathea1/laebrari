@@ -31,21 +31,16 @@ object index extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Html
 
 
 Seq[Any](format.raw/*2.27*/("""
-"""),format.raw/*3.1*/("""<head>
-    <meta charset="UTF-8">
-    <title>All Books</title>
-</head>
-<body>
-<h1> All Books</h1>
-"""),_display_(/*9.2*/for(book <- books) yield /*9.20*/{_display_(Seq[Any](format.raw/*9.21*/("""
-"""),format.raw/*10.1*/("""<a href=""""),_display_(/*10.11*/routes/*10.17*/.BookController.show(book.id)),format.raw/*10.46*/("""">"""),_display_(/*10.49*/book/*10.53*/.title),format.raw/*10.59*/("""</a>
-<p> Price : """),_display_(/*11.14*/book/*11.18*/.price),format.raw/*11.24*/("""</p>
-<p> Author: """),_display_(/*12.14*/book/*12.18*/.author),format.raw/*12.25*/("""</p>
-""")))}),format.raw/*13.2*/("""
-"""),format.raw/*14.1*/("""<button type="button"><a href=""""),_display_(/*14.33*/routes/*14.39*/.BookController.create()),format.raw/*14.63*/(""""> Add book to library</a></button>
+"""),_display_(/*3.2*/layout("All Books")/*3.21*/{_display_(Seq[Any](format.raw/*3.22*/("""
+"""),format.raw/*4.1*/("""<h1> All Books</h1>
+"""),_display_(/*5.2*/for(book <- books) yield /*5.20*/{_display_(Seq[Any](format.raw/*5.21*/("""
+"""),format.raw/*6.1*/("""<a href=""""),_display_(/*6.11*/routes/*6.17*/.BookController.show(book.id)),format.raw/*6.46*/("""">"""),_display_(/*6.49*/book/*6.53*/.title),format.raw/*6.59*/("""</a>
+<p> Price : """),_display_(/*7.14*/book/*7.18*/.price),format.raw/*7.24*/("""</p>
+<p> Author: """),_display_(/*8.14*/book/*8.18*/.author),format.raw/*8.25*/("""</p>
+""")))}),format.raw/*9.2*/("""
+"""),format.raw/*10.1*/("""<button type="button"><a href=""""),_display_(/*10.33*/routes/*10.39*/.BookController.create()),format.raw/*10.63*/(""""> Add book to library</a></button>
 
-</body>
-
+""")))}),format.raw/*12.2*/("""
 """))
       }
     }
@@ -62,11 +57,11 @@ Seq[Any](format.raw/*2.27*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sat Nov 04 11:01:44 EAT 2017
+                  DATE: Sat Nov 04 11:57:30 EAT 2017
                   SOURCE: C:/Users/Mingina/Workspace/laebrari/lib-project/app/views/books/index.scala.html
-                  HASH: ac6b7d392003fe9299e8b657f1f88017b2e9bd01
-                  MATRIX: 963->3|1083->28|1111->30|1241->135|1274->153|1312->154|1341->156|1378->166|1393->172|1443->201|1473->204|1486->208|1513->214|1559->233|1572->237|1599->243|1645->262|1658->266|1686->273|1723->280|1752->282|1811->314|1826->320|1871->344
-                  LINES: 28->2|33->2|34->3|40->9|40->9|40->9|41->10|41->10|41->10|41->10|41->10|41->10|41->10|42->11|42->11|42->11|43->12|43->12|43->12|44->13|45->14|45->14|45->14|45->14
+                  HASH: 9b042d68192db10de6c85ff9173df00764f09e75
+                  MATRIX: 963->3|1083->28|1111->31|1138->50|1176->51|1204->53|1251->75|1284->93|1322->94|1350->96|1386->106|1400->112|1449->141|1478->144|1490->148|1516->154|1561->173|1573->177|1599->183|1644->202|1656->206|1683->213|1719->220|1748->222|1807->254|1822->260|1867->284|1937->324
+                  LINES: 28->2|33->2|34->3|34->3|34->3|35->4|36->5|36->5|36->5|37->6|37->6|37->6|37->6|37->6|37->6|37->6|38->7|38->7|38->7|39->8|39->8|39->8|40->9|41->10|41->10|41->10|41->10|43->12
                   -- GENERATED --
               */
           
