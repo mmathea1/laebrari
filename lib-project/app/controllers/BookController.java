@@ -67,7 +67,13 @@ public class BookController extends Controller {
 
     //delete book
     public Result destroy(Integer id){
-        return TODO;
+        BooksModel bookModel = BooksModel.findById(id);
+        if (bookModel == null){
+            return notFound("Book not found");
+        }
+        bookModel.remove(bookModel);
+
+        return redirect(routes.BookController.index());
     }
 
     //show books details

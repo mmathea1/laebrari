@@ -2,3 +2,5 @@ compile
 run
 clean
 run
+^Z
+run
