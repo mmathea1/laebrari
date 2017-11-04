@@ -4,3 +4,6 @@ clean
 run
 ^Z
 run
+compile
+update
+run

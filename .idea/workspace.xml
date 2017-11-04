@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4062b81-924e-4623-b01a-df32128d85ab" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/app/views/books/create.scala.html" afterPath="$PROJECT_DIR$/lib-project/app/views/books/create.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/app/views/books/edit.scala.html" afterPath="$PROJECT_DIR$/lib-project/app/views/books/edit.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/app/views/books/index.scala.html" afterPath="$PROJECT_DIR$/lib-project/app/views/books/index.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/app/views/books/show.scala.html" afterPath="$PROJECT_DIR$/lib-project/app/views/books/show.scala.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/app/models/BooksModel.java" afterPath="$PROJECT_DIR$/lib-project/app/models/BooksModel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib-project/logs/application.log" afterPath="$PROJECT_DIR$/lib-project/logs/application.log" />
     </list>
     <ignored path="$PROJECT_DIR$/lib-project/project/project/target/" />
@@ -42,11 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BooksModel.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BooksModel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib-project/app/models/BooksModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+            <state relative-caret-position="170">
+              <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,11 +61,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.scala.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.scala.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib-project/app/views/books/show.scala.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plugins.sbt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib-project/project/plugins.sbt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.conf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib-project/conf/application.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -123,7 +140,6 @@
         <option value="$PROJECT_DIR$/lib-project/app/models/UsersDBConnection.java" />
         <option value="$PROJECT_DIR$/lib-project/conf/routes" />
         <option value="$PROJECT_DIR$/lib-project/app/views/books/index.html" />
-        <option value="$PROJECT_DIR$/lib-project/app/models/BooksModel.java" />
         <option value="$PROJECT_DIR$/lib-project/conf/application.conf" />
         <option value="$PROJECT_DIR$/lib-project/app/controllers/BookController.java" />
         <option value="$PROJECT_DIR$/lib-project/app/views/user/form.scala.html" />
@@ -132,6 +148,7 @@
         <option value="$PROJECT_DIR$/lib-project/app/views/books/create.scala.html" />
         <option value="$PROJECT_DIR$/lib-project/app/views/books/edit.scala.html" />
         <option value="$PROJECT_DIR$/lib-project/app/views/books/show.scala.html" />
+        <option value="$PROJECT_DIR$/lib-project/app/models/BooksModel.java" />
       </list>
     </option>
   </component>
@@ -194,22 +211,13 @@
               <item name="laebrari" type="b2602c69:ProjectViewProjectNode" />
               <item name="laebrari" type="462c0819:PsiDirectoryNode" />
               <item name="lib-project" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="laebrari" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laebrari" type="462c0819:PsiDirectoryNode" />
-              <item name="lib-project" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="books" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="laebrari" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laebrari" type="462c0819:PsiDirectoryNode" />
-              <item name="lib-project" type="462c0819:PsiDirectoryNode" />
               <item name="conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="laebrari" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laebrari" type="462c0819:PsiDirectoryNode" />
+              <item name="lib-project" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -396,7 +404,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -408,7 +415,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.4969743" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30555555" sideWeight="0.61724657" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30555555" sideWeight="0.61724657" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22012103" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -663,13 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib-project/project/plugins.sbt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib-project/app/controllers/BooksController.java" />
     <entry file="file://$PROJECT_DIR$/lib-project/.g8/form/generated-test/controllers/$model__Camel$ControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -707,13 +707,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib-project/app/views/books/index.html" />
-    <entry file="file://$PROJECT_DIR$/lib-project/conf/application.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="52" lean-forward="false" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib-project/app/controllers/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -779,16 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib-project/app/models/BooksModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib-project/app/views/books/edit.scala.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -802,6 +785,32 @@
         <state relative-caret-position="34">
           <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib-project/project/plugins.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib-project/conf/application.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib-project/app/models/BooksModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

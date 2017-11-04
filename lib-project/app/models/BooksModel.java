@@ -4,10 +4,16 @@ package models;
 import java.util.HashSet;
 import java.util.Set;
 
-public class BooksModel {
+import io.ebean.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
-    public String title;
+@Entity
+public class BooksModel extends Model{
+
+    @Id
     public Integer id;
+    public String title;
     public String author;
     public Integer price;
 
