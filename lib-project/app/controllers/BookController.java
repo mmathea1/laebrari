@@ -59,10 +59,10 @@ public class BookController extends Controller {
         if (oldBook == null){
             return notFound("Book Not Found");
         }
+        oldBook.id = book.id;
         oldBook.title = book.title;
         oldBook.price = book.price;
         oldBook.author = book.author;
-
         oldBook.update();
 
 
