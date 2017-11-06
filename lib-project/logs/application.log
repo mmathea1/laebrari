@@ -1,17 +1,25 @@
-2017-11-04 19:15:27,514 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-4 - Creating Pool for datasource 'default'
-2017-11-04 19:15:28,871 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-4 - datasource [default] bound to JNDI as DefaultDS
-2017-11-04 19:15:28,913 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-4 - Database [default] connected at jdbc:mysql://127.0.0.13:3306/laebrariDB?autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8
-2017-11-04 19:15:32,070 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-4 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2017-11-04 19:15:32,660 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-4 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2017-11-06 16:29:13,657 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-3 - Creating Pool for datasource 'default'
+2017-11-06 16:29:17,615 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-3 - datasource [default] bound to JNDI as DefaultDS
+2017-11-06 16:29:17,703 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-3 - Database [default] connected at jdbc:mysql://127.0.0.13:3306/laebrariDB?autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+2017-11-06 16:29:22,910 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-3 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-11-06 16:29:24,918 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-3 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     play.filters.csrf.CSRFFilter
 
-<<<<<<< HEAD
-2017-11-04 12:38:17,255 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-9 - Application started (Dev)
-2017-11-04 13:21:22,648 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-10 housekeeper - HikariPool-10 - Thread starvation or clock leap detected (housekeeper delta=34m50s293ms471µs320ns).
-=======
-2017-11-04 19:15:32,684 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-4 - Application started (Dev)
->>>>>>> 2195fdf... update model and make CRUD operations
+2017-11-06 16:29:25,093 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-3 - Application started (Dev)
+2017-11-06 16:52:06,358 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-16 - Shutting down connection pool.
+2017-11-06 16:52:07,745 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-16 - Creating Pool for datasource 'default'
+2017-11-06 16:52:07,991 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-16 - datasource [default] bound to JNDI as DefaultDS
+2017-11-06 16:52:07,993 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-16 - Database [default] connected at jdbc:mysql://127.0.0.13:3306/laebrariDB?autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+2017-11-06 16:52:09,358 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-16 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-11-06 16:52:09,565 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-16 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.csrf.CSRFFilter
+
+2017-11-06 16:52:09,566 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-16 - Application started (Dev)

@@ -1,15 +1,7 @@
-<<<<<<< HEAD
-compile
-run
-clean
-run
-^Z
-run
-compile
 update
 run
-=======
-run
+sbt clean
+clean
+refresh
 compile
 run
->>>>>>> 2195fdf... update model and make CRUD operations
