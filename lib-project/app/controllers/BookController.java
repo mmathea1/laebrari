@@ -59,6 +59,7 @@ public class BookController extends Controller {
         if (oldBook == null){
             return notFound("Book Not Found");
         }
+//        TODO: review tutorial, why have book.id if it's uneditable?
         oldBook.id = book.id;
         oldBook.title = book.title;
         oldBook.price = book.price;
