@@ -2,7 +2,7 @@ package controllers;
 
 import play.data.validation.Constraints;
 
-public class $model;format="Camel"$Data {
+public class $model format="Camel"$Data {
 
     @Constraints.Required
     private String name;

@@ -1,7 +1,4 @@
 update
-run
-sbt clean
-clean
-refresh
 compile
+clean
 run

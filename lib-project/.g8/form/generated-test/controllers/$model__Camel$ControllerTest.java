@@ -15,7 +15,7 @@ import static play.mvc.Http.Status.OK;
 import static play.test.Helpers.*;
 import static play.api.test.CSRFTokenHelper.*;
 
-public class $model;format="Camel"$ControllerTest extends WithApplication {
+public class $model format="Camel"$ControllerTest extends WithApplication {
 
     @Override
     protected Application provideApplication() {
