@@ -54,7 +54,7 @@ Seq[Any](_display_(/*1.2*/layout("Laebrari")/*1.20*/{_display_(Seq[Any](format.r
 
               /*
                   -- GENERATED --
-                  DATE: Tue Nov 07 19:37:14 EAT 2017
+                  DATE: Tue Nov 07 21:27:36 EAT 2017
                   SOURCE: C:/Users/Mingina/Workspace/laebrari/lib-project/app/views/index.scala.html
                   HASH: eafe0cc40f29ea78ece7e364ea3c34da408fad18
                   MATRIX: 1030->1|1056->19|1094->20|1124->24
