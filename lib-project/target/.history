@@ -5,3 +5,7 @@ clean
 refresh
 compile
 run
+clean
+run
+update
+run

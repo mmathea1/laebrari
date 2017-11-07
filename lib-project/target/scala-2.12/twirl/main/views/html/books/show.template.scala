@@ -58,7 +58,7 @@ Seq[Any](format.raw/*2.20*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Mon Nov 06 15:33:36 EAT 2017
+                  DATE: Tue Nov 07 18:33:19 EAT 2017
                   SOURCE: C:/Users/Mingina/Workspace/laebrari/lib-project/app/views/books/show.scala.html
                   HASH: 799d6885dc6125c9eac42872f0d1d812cc201c64
                   MATRIX: 957->3|1070->21|1098->24|1134->52|1172->53|1202->57|1233->63|1245->67|1271->73|1317->93|1329->97|1355->103|1400->122|1412->126|1439->133|1508->175|1523->181|1573->210|1658->268|1673->274|1726->306|1785->335

@@ -16,9 +16,9 @@ POST    /$model;format="camel"$        controllers.$model;format="Camel"$Control
 /**
  * $model;format="Camel"$ form controller for Play Java
  */
-public class $model;format="Camel"$Controller extends Controller {
+public class $model format="Camel"$Controller extends Controller {
 
-    private final Form<$model;format="Camel"$Data> $model;format="camel"$Form;
+    private final Form<$model format="Camel"$Data> $model;format="camel"$Form;
 
     @Inject
     public $model;format="Camel"$Controller(FormFactory formFactory) {
@@ -30,7 +30,7 @@ public class $model;format="Camel"$Controller extends Controller {
     }
 
     public Result $model;format="camel"$Post() {
-        Form<$model;format="Camel"$Data> boundForm = $model;format="camel"$Form.bindFromRequest();
+        Form<$model format="Camel"$Data> boundForm = $model;format="camel"$Form.bindFromRequest();
         if (boundForm.hasErrors()) {
             return badRequest(views.html.$model;format="camel"$.form.render(boundForm));
         } else {
