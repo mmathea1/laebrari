@@ -28,24 +28,22 @@ object create extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Htm
   def apply/*1.2*/(bookForm : Form[BooksModel]):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
+/*2.2*/import views.html.partials._booksFormFields
 
 
 Seq[Any](format.raw/*1.31*/("""
-"""),_display_(/*2.2*/layout("Create Book")/*2.23*/{_display_(Seq[Any](format.raw/*2.24*/("""
-"""),format.raw/*3.1*/("""<h1> Add Book to library</h1>
-"""),_display_(/*4.2*/helper/*4.8*/.form(action = routes.BookController.save())/*4.52*/{_display_(Seq[Any](format.raw/*4.53*/("""
-"""),_display_(/*5.2*/helper/*5.8*/.CSRF.formField),format.raw/*5.23*/("""
-"""),_display_(/*6.2*/helper/*6.8*/.inputText(bookForm("Id"), 'class -> "form-control")),format.raw/*6.60*/("""
-"""),_display_(/*7.2*/helper/*7.8*/.inputText(bookForm("Title"), 'class -> "form-control")),format.raw/*7.63*/("""
-"""),_display_(/*8.2*/helper/*8.8*/.inputText(bookForm("Price"), 'class -> "form-control")),format.raw/*8.63*/("""
-"""),_display_(/*9.2*/helper/*9.8*/.inputText(bookForm("Author"), 'class -> "form-control")),format.raw/*9.64*/("""
+"""),format.raw/*3.1*/("""
+"""),_display_(/*4.2*/layout("Create Book")/*4.23*/{_display_(Seq[Any](format.raw/*4.24*/("""
+"""),format.raw/*5.1*/("""<h1> Add Book to library</h1>
+"""),_display_(/*6.2*/helper/*6.8*/.form(action = routes.BookController.save())/*6.52*/{_display_(Seq[Any](format.raw/*6.53*/("""
 
+"""),_display_(/*8.2*/_booksFormFields(bookForm)),format.raw/*8.28*/("""
 
-"""),format.raw/*12.1*/("""<button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-plus"> </i> Add to Library</button>
+"""),format.raw/*10.1*/("""<button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-plus"> </i> Add to Library</button>
+
+""")))}),format.raw/*12.2*/("""
 
 """)))}),format.raw/*14.2*/("""
-
-""")))}),format.raw/*16.2*/("""
 """))
       }
     }
@@ -62,11 +60,11 @@ Seq[Any](format.raw/*1.31*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Wed Nov 08 14:44:54 EAT 2017
+                  DATE: Wed Nov 08 15:12:40 EAT 2017
                   SOURCE: C:/Users/Mingina/Workspace/laebrari/lib-project/app/views/books/create.scala.html
-                  HASH: 82fc8c42cfd5278d12e638c1d4cb4ae4475ebab9
-                  MATRIX: 965->1|1089->30|1117->33|1146->54|1184->55|1212->57|1269->89|1282->95|1334->139|1372->140|1400->143|1413->149|1448->164|1476->167|1489->173|1561->225|1589->228|1602->234|1677->289|1705->292|1718->298|1793->353|1821->356|1834->362|1910->418|1943->424|2089->540|2124->545
-                  LINES: 28->1|33->1|34->2|34->2|34->2|35->3|36->4|36->4|36->4|36->4|37->5|37->5|37->5|38->6|38->6|38->6|39->7|39->7|39->7|40->8|40->8|40->8|41->9|41->9|41->9|44->12|46->14|48->16
+                  HASH: 7b82a1b9372e4f6da0fa2a685e56729c0f34f362
+                  MATRIX: 965->1|1067->33|1140->30|1168->78|1196->81|1225->102|1263->103|1291->105|1348->137|1361->143|1413->187|1451->188|1481->193|1527->219|1558->223|1704->339|1739->344
+                  LINES: 28->1|31->2|34->1|35->3|36->4|36->4|36->4|37->5|38->6|38->6|38->6|38->6|40->8|40->8|42->10|44->12|46->14
                   -- GENERATED --
               */
           

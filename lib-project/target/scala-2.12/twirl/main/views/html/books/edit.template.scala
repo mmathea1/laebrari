@@ -28,22 +28,20 @@ object edit extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlF
   def apply/*1.2*/(bookForm : Form[BooksModel]):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
+/*2.2*/import views.html.partials._booksFormFields
 
 
 Seq[Any](format.raw/*1.31*/("""
-"""),_display_(/*2.2*/layout("Edit Books")/*2.22*/{_display_(Seq[Any](format.raw/*2.23*/("""
-    """),format.raw/*3.5*/("""<h1> Edit Book</h1>
-    """),_display_(/*4.6*/helper/*4.12*/.form(action = routes.BookController.update())/*4.58*/{_display_(Seq[Any](format.raw/*4.59*/("""
-    """),_display_(/*5.6*/helper/*5.12*/.CSRF.formField),format.raw/*5.27*/("""
-    """),_display_(/*6.6*/helper/*6.12*/.inputText(bookForm("Id"), 'class -> "form-control")),format.raw/*6.64*/("""
-    """),_display_(/*7.6*/helper/*7.12*/.inputText(bookForm("Title"), 'class -> "form-control")),format.raw/*7.67*/("""
-    """),_display_(/*8.6*/helper/*8.12*/.inputText(bookForm("Price"), 'class -> "form-control")),format.raw/*8.67*/("""
-    """),_display_(/*9.6*/helper/*9.12*/.inputText(bookForm("Author"), 'class -> "form-control")),format.raw/*9.68*/("""
+"""),_display_(/*3.2*/layout("Edit Books")/*3.22*/{_display_(Seq[Any](format.raw/*3.23*/("""
+    """),format.raw/*4.5*/("""<h1> Edit Book</h1>
+    """),_display_(/*5.6*/helper/*5.12*/.form(action = routes.BookController.update())/*5.58*/{_display_(Seq[Any](format.raw/*5.59*/("""
+        """),_display_(/*6.10*/_booksFormFields(bookForm)),format.raw/*6.36*/("""
 
-"""),format.raw/*11.1*/("""<button class="btn btn-success" type="submit"><i class="glyphicon glyphicon-floppy-saved"></i> Save</button>
-   """)))}),format.raw/*12.5*/("""
 
-""")))}),format.raw/*14.2*/("""
+"""),format.raw/*9.1*/("""<button class="btn btn-success" type="submit"><i class="glyphicon glyphicon-floppy-saved"></i> Save</button>
+   """)))}),format.raw/*10.5*/("""
+
+""")))}),format.raw/*12.2*/("""
 """))
       }
     }
@@ -60,11 +58,11 @@ Seq[Any](format.raw/*1.31*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Wed Nov 08 14:53:25 EAT 2017
+                  DATE: Wed Nov 08 15:08:19 EAT 2017
                   SOURCE: C:/Users/Mingina/Workspace/laebrari/lib-project/app/views/books/edit.scala.html
-                  HASH: 190afc47f0b70cd8c765cfb08b36351eb465d14a
-                  MATRIX: 963->1|1087->30|1115->33|1143->53|1181->54|1213->60|1264->86|1278->92|1332->138|1370->139|1402->146|1416->152|1451->167|1483->174|1497->180|1569->232|1601->239|1615->245|1690->300|1722->307|1736->313|1811->368|1843->375|1857->381|1933->437|1964->441|2108->555|2143->560
-                  LINES: 28->1|33->1|34->2|34->2|34->2|35->3|36->4|36->4|36->4|36->4|37->5|37->5|37->5|38->6|38->6|38->6|39->7|39->7|39->7|40->8|40->8|40->8|41->9|41->9|41->9|43->11|44->12|46->14
+                  HASH: d6b382884eb1fa895fe4eddf19f3d9bc3d94e0bf
+                  MATRIX: 963->1|1065->33|1138->30|1166->79|1194->99|1232->100|1264->106|1315->132|1329->138|1383->184|1421->185|1458->196|1504->222|1536->228|1680->342|1715->347
+                  LINES: 28->1|31->2|34->1|35->3|35->3|35->3|36->4|37->5|37->5|37->5|37->5|38->6|38->6|41->9|42->10|44->12
                   -- GENERATED --
               */
           

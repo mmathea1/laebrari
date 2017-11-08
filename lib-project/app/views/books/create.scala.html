@@ -1,13 +1,11 @@
 @(bookForm : Form[BooksModel])
+@import views.html.partials._booksFormFields
+
 @layout("Create Book"){
 <h1> Add Book to library</h1>
 @helper.form(action = routes.BookController.save()){
-@helper.CSRF.formField
-@helper.inputText(bookForm("Id"), 'class -> "form-control")
-@helper.inputText(bookForm("Title"), 'class -> "form-control")
-@helper.inputText(bookForm("Price"), 'class -> "form-control")
-@helper.inputText(bookForm("Author"), 'class -> "form-control")
 
+@_booksFormFields(bookForm)
 
 <button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-plus"> </i> Add to Library</button>
 

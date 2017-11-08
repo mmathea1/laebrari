@@ -1,12 +1,10 @@
 @(bookForm : Form[BooksModel])
+@import views.html.partials._booksFormFields
 @layout("Edit Books"){
     <h1> Edit Book</h1>
     @helper.form(action = routes.BookController.update()){
-    @helper.CSRF.formField
-    @helper.inputText(bookForm("Id"), 'class -> "form-control")
-    @helper.inputText(bookForm("Title"), 'class -> "form-control")
-    @helper.inputText(bookForm("Price"), 'class -> "form-control")
-    @helper.inputText(bookForm("Author"), 'class -> "form-control")
+        @_booksFormFields(bookForm)
+
 
 <button class="btn btn-success" type="submit"><i class="glyphicon glyphicon-floppy-saved"></i> Save</button>
    }
