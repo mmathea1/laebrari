@@ -31,8 +31,8 @@ object layout extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Htm
 
 
 Seq[Any](format.raw/*1.32*/("""
-"""),format.raw/*2.1*/("""<!DOCTYPE html>
-<html lang="en">
+"""),format.raw/*2.1*/("""<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
 <head>
     <meta charset="UTF-8">
     <title>"""),_display_(/*6.13*/title),format.raw/*6.18*/("""</title>
@@ -58,15 +58,18 @@ Seq[Any](format.raw/*1.32*/("""
      </div>
  </div>
 </header>
-"""),_display_(/*29.2*/body),format.raw/*29.6*/("""
+<div class =" container">
+    """),_display_(/*30.6*/body),format.raw/*30.10*/("""
+"""),format.raw/*31.1*/("""</div>
 
 
-"""),format.raw/*32.1*/("""<script src=""""),_display_(/*32.15*/routes/*32.21*/.Assets.versioned("js/jquery-3.2.1.min.js")),format.raw/*32.64*/("""" type="text/javascript"></script>
-<script src=""""),_display_(/*33.15*/routes/*33.21*/.Assets.versioned("js/bootstrap.min.js")),format.raw/*33.61*/("""" type="text/javascript"></script>
-<script src=""""),_display_(/*34.15*/routes/*34.21*/.Assets.versioned("js/main.js")),format.raw/*34.52*/("""" type="text/javascript"></script>
+
+<script src=""""),_display_(/*35.15*/routes/*35.21*/.Assets.versioned("js/jquery-3.2.1.min.js")),format.raw/*35.64*/("""" type="text/javascript"></script>
+<script src=""""),_display_(/*36.15*/routes/*36.21*/.Assets.versioned("js/bootstrap.min.js")),format.raw/*36.61*/("""" type="text/javascript"></script>
+<script src=""""),_display_(/*37.15*/routes/*37.21*/.Assets.versioned("js/main.js")),format.raw/*37.52*/("""" type="text/javascript"></script>
 
 </body>
-</html>"""))
+<!--</html>-->"""))
       }
     }
   }
@@ -82,11 +85,11 @@ Seq[Any](format.raw/*1.32*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Tue Nov 07 21:27:37 EAT 2017
+                  DATE: Wed Nov 08 11:46:51 EAT 2017
                   SOURCE: C:/Users/Mingina/Workspace/laebrari/lib-project/app/views/layout.scala.html
-                  HASH: d0648b419d33494c566484592a250f94b740fce3
-                  MATRIX: 954->1|1079->31|1107->33|1216->116|1241->121|1311->165|1325->171|1387->213|1451->251|1465->257|1533->305|1597->343|1611->349|1664->382|1751->442|1766->448|1827->487|2014->647|2029->653|2073->676|2279->855|2294->861|2338->884|2419->938|2434->944|2479->968|2597->1060|2621->1064|2654->1070|2695->1084|2710->1090|2774->1133|2851->1183|2866->1189|2927->1229|3004->1279|3019->1285|3071->1316
-                  LINES: 28->1|33->1|34->2|38->6|38->6|39->7|39->7|39->7|40->8|40->8|40->8|41->9|41->9|41->9|43->11|43->11|43->11|50->18|50->18|50->18|54->22|54->22|54->22|55->23|55->23|55->23|61->29|61->29|64->32|64->32|64->32|64->32|65->33|65->33|65->33|66->34|66->34|66->34
+                  HASH: e2f0e8e6302f7a4e388fcafc545ba828c242b892
+                  MATRIX: 954->1|1079->31|1107->33|1230->130|1255->135|1325->179|1339->185|1401->227|1465->265|1479->271|1547->319|1611->357|1625->363|1678->396|1765->456|1780->462|1841->501|2028->661|2043->667|2087->690|2293->869|2308->875|2352->898|2433->952|2448->958|2493->982|2642->1105|2667->1109|2696->1111|2751->1139|2766->1145|2830->1188|2907->1238|2922->1244|2983->1284|3060->1334|3075->1340|3127->1371
+                  LINES: 28->1|33->1|34->2|38->6|38->6|39->7|39->7|39->7|40->8|40->8|40->8|41->9|41->9|41->9|43->11|43->11|43->11|50->18|50->18|50->18|54->22|54->22|54->22|55->23|55->23|55->23|62->30|62->30|63->31|67->35|67->35|67->35|68->36|68->36|68->36|69->37|69->37|69->37
                   -- GENERATED --
               */
           
