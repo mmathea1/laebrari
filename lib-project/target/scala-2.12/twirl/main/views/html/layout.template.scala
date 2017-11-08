@@ -47,26 +47,29 @@ Seq[Any](format.raw/*1.32*/("""
  <div class="navbar navbar-default">
      <div class="container">
          <div class="navbar-header">
-             <a href=""""),_display_(/*18.24*/routes/*18.30*/.HomeController.index()),format.raw/*18.53*/("""" class="navbar-brand">Laebrari</a>
+             <a href=""""),_display_(/*18.24*/routes/*18.30*/.HomeController.index()),format.raw/*18.53*/("""" class="navbar-brand">
+                 <i class="glyphicon glyphicon-home"></i> Laebrari</a>
          </div>
          <div class="navbar-collapse">
              <ul class="nav navbar-nav navbar-left">
-                 <li><a href=""""),_display_(/*22.32*/routes/*22.38*/.BookController.index()),format.raw/*22.61*/("""">All Books</a> </li>
-                 <li><a href=""""),_display_(/*23.32*/routes/*23.38*/.BookController.create()),format.raw/*23.62*/("""">New Book</a></li>
+                 <li><a href=""""),_display_(/*23.32*/routes/*23.38*/.BookController.index()),format.raw/*23.61*/("""">
+                     <i class="glyphicon glyphicon-book"> </i> All Books</a> </li>
+                 <li><a href=""""),_display_(/*25.32*/routes/*25.38*/.BookController.create()),format.raw/*25.62*/("""">
+                     <i class="glyphicon glyphicon-plus"> </i> New Book</a></li>
              </ul>
          </div>
      </div>
  </div>
 </header>
 <div class =" container">
-    """),_display_(/*30.6*/body),format.raw/*30.10*/("""
-"""),format.raw/*31.1*/("""</div>
+    """),_display_(/*33.6*/body),format.raw/*33.10*/("""
+"""),format.raw/*34.1*/("""</div>
 
 
 
-<script src=""""),_display_(/*35.15*/routes/*35.21*/.Assets.versioned("js/jquery-3.2.1.min.js")),format.raw/*35.64*/("""" type="text/javascript"></script>
-<script src=""""),_display_(/*36.15*/routes/*36.21*/.Assets.versioned("js/bootstrap.min.js")),format.raw/*36.61*/("""" type="text/javascript"></script>
-<script src=""""),_display_(/*37.15*/routes/*37.21*/.Assets.versioned("js/main.js")),format.raw/*37.52*/("""" type="text/javascript"></script>
+<script src=""""),_display_(/*38.15*/routes/*38.21*/.Assets.versioned("js/jquery-3.2.1.min.js")),format.raw/*38.64*/("""" type="text/javascript"></script>
+<script src=""""),_display_(/*39.15*/routes/*39.21*/.Assets.versioned("js/bootstrap.min.js")),format.raw/*39.61*/("""" type="text/javascript"></script>
+<script src=""""),_display_(/*40.15*/routes/*40.21*/.Assets.versioned("js/main.js")),format.raw/*40.52*/("""" type="text/javascript"></script>
 
 </body>
 <!--</html>-->"""))
@@ -85,11 +88,11 @@ Seq[Any](format.raw/*1.32*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Wed Nov 08 11:46:51 EAT 2017
+                  DATE: Wed Nov 08 14:25:32 EAT 2017
                   SOURCE: C:/Users/Mingina/Workspace/laebrari/lib-project/app/views/layout.scala.html
-                  HASH: e2f0e8e6302f7a4e388fcafc545ba828c242b892
-                  MATRIX: 954->1|1079->31|1107->33|1230->130|1255->135|1325->179|1339->185|1401->227|1465->265|1479->271|1547->319|1611->357|1625->363|1678->396|1765->456|1780->462|1841->501|2028->661|2043->667|2087->690|2293->869|2308->875|2352->898|2433->952|2448->958|2493->982|2642->1105|2667->1109|2696->1111|2751->1139|2766->1145|2830->1188|2907->1238|2922->1244|2983->1284|3060->1334|3075->1340|3127->1371
-                  LINES: 28->1|33->1|34->2|38->6|38->6|39->7|39->7|39->7|40->8|40->8|40->8|41->9|41->9|41->9|43->11|43->11|43->11|50->18|50->18|50->18|54->22|54->22|54->22|55->23|55->23|55->23|62->30|62->30|63->31|67->35|67->35|67->35|68->36|68->36|68->36|69->37|69->37|69->37
+                  HASH: 8bb3155f7c781367ff258e1b282c28a16fb7359d
+                  MATRIX: 954->1|1079->31|1107->33|1230->130|1255->135|1325->179|1339->185|1401->227|1465->265|1479->271|1547->319|1611->357|1625->363|1678->396|1765->456|1780->462|1841->501|2028->661|2043->667|2087->690|2353->929|2368->935|2412->958|2558->1077|2573->1083|2618->1107|2832->1295|2857->1299|2886->1301|2941->1329|2956->1335|3020->1378|3097->1428|3112->1434|3173->1474|3250->1524|3265->1530|3317->1561
+                  LINES: 28->1|33->1|34->2|38->6|38->6|39->7|39->7|39->7|40->8|40->8|40->8|41->9|41->9|41->9|43->11|43->11|43->11|50->18|50->18|50->18|55->23|55->23|55->23|57->25|57->25|57->25|65->33|65->33|66->34|70->38|70->38|70->38|71->39|71->39|71->39|72->40|72->40|72->40
                   -- GENERATED --
               */
           

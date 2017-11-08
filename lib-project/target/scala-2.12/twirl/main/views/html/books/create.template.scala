@@ -35,16 +35,17 @@ Seq[Any](format.raw/*1.31*/("""
 """),format.raw/*3.1*/("""<h1> Add Book to library</h1>
 """),_display_(/*4.2*/helper/*4.8*/.form(action = routes.BookController.save())/*4.52*/{_display_(Seq[Any](format.raw/*4.53*/("""
 """),_display_(/*5.2*/helper/*5.8*/.CSRF.formField),format.raw/*5.23*/("""
-"""),_display_(/*6.2*/helper/*6.8*/.inputText(bookForm("Id"))),format.raw/*6.34*/("""
-"""),_display_(/*7.2*/helper/*7.8*/.inputText(bookForm("Title"))),format.raw/*7.37*/("""
-"""),_display_(/*8.2*/helper/*8.8*/.inputText(bookForm("Price"))),format.raw/*8.37*/("""
-"""),_display_(/*9.2*/helper/*9.8*/.inputText(bookForm("Author"))),format.raw/*9.38*/("""
+"""),_display_(/*6.2*/helper/*6.8*/.inputText(bookForm("Id"), 'class -> "form-control")),format.raw/*6.60*/("""
+"""),_display_(/*7.2*/helper/*7.8*/.inputText(bookForm("Title"), 'class -> "form-control")),format.raw/*7.63*/("""
+"""),_display_(/*8.2*/helper/*8.8*/.inputText(bookForm("Price"), 'class -> "form-control")),format.raw/*8.63*/("""
+"""),_display_(/*9.2*/helper/*9.8*/.inputText(bookForm("Author"), 'class -> "form-control")),format.raw/*9.64*/("""
 
 
-"""),format.raw/*12.1*/("""<input type="submit" value="Add to Library">
-""")))}),format.raw/*13.2*/("""
+"""),format.raw/*12.1*/("""<button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-plus"> </i> Add to Library</button>
 
-""")))}),format.raw/*15.2*/("""
+""")))}),format.raw/*14.2*/("""
+
+""")))}),format.raw/*16.2*/("""
 """))
       }
     }
@@ -61,11 +62,11 @@ Seq[Any](format.raw/*1.31*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Tue Nov 07 21:27:37 EAT 2017
+                  DATE: Wed Nov 08 14:44:54 EAT 2017
                   SOURCE: C:/Users/Mingina/Workspace/laebrari/lib-project/app/views/books/create.scala.html
-                  HASH: a091b24e0754b738e09c225c316d1c74d6c1469d
-                  MATRIX: 965->1|1089->30|1117->33|1146->54|1184->55|1212->57|1269->89|1282->95|1334->139|1372->140|1400->143|1413->149|1448->164|1476->167|1489->173|1535->199|1563->202|1576->208|1625->237|1653->240|1666->246|1715->275|1743->278|1756->284|1806->314|1839->320|1916->367|1951->372
-                  LINES: 28->1|33->1|34->2|34->2|34->2|35->3|36->4|36->4|36->4|36->4|37->5|37->5|37->5|38->6|38->6|38->6|39->7|39->7|39->7|40->8|40->8|40->8|41->9|41->9|41->9|44->12|45->13|47->15
+                  HASH: 82fc8c42cfd5278d12e638c1d4cb4ae4475ebab9
+                  MATRIX: 965->1|1089->30|1117->33|1146->54|1184->55|1212->57|1269->89|1282->95|1334->139|1372->140|1400->143|1413->149|1448->164|1476->167|1489->173|1561->225|1589->228|1602->234|1677->289|1705->292|1718->298|1793->353|1821->356|1834->362|1910->418|1943->424|2089->540|2124->545
+                  LINES: 28->1|33->1|34->2|34->2|34->2|35->3|36->4|36->4|36->4|36->4|37->5|37->5|37->5|38->6|38->6|38->6|39->7|39->7|39->7|40->8|40->8|40->8|41->9|41->9|41->9|44->12|46->14|48->16
                   -- GENERATED --
               */
           

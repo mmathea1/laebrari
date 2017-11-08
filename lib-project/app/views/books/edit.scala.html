@@ -3,12 +3,12 @@
     <h1> Edit Book</h1>
     @helper.form(action = routes.BookController.update()){
     @helper.CSRF.formField
-    @helper.inputText(bookForm("Id"))
-    @helper.inputText(bookForm("Title"))
-    @helper.inputText(bookForm("Price"))
-    @helper.inputText(bookForm("Author"))
+    @helper.inputText(bookForm("Id"), 'class -> "form-control")
+    @helper.inputText(bookForm("Title"), 'class -> "form-control")
+    @helper.inputText(bookForm("Price"), 'class -> "form-control")
+    @helper.inputText(bookForm("Author"), 'class -> "form-control")
 
-<input type="submit" value="Save">
+<button class="btn btn-success" type="submit"><i class="glyphicon glyphicon-floppy-saved"></i> Save</button>
    }
 
 }

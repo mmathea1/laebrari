@@ -7,7 +7,7 @@
 <p> Author: @book.author</p>
 
 
-<a href="@routes.BookController.edit(book.id)">Edit Book</a>
-<a href="@routes.BookController.destroy(book.id)">Delete Book</a>
+<a class="btn btn-success" href="@routes.BookController.edit(book.id)"><i class="glyphicon glyphicon-pencil"></i> Edit Book</a>
+<a class="btn btn-danger" href="@routes.BookController.destroy(book.id)"><i class="glyphicon glyphicon-trash"></i> Delete Book</a>
 }
 
