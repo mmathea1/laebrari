@@ -39,11 +39,12 @@ Seq[Any](format.raw/*1.31*/("""
 
 """),_display_(/*8.2*/_booksFormFields(bookForm)),format.raw/*8.28*/("""
 
-"""),format.raw/*10.1*/("""<button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-plus"> </i> Add to Library</button>
 
-""")))}),format.raw/*12.2*/("""
+"""),format.raw/*11.1*/("""<button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-plus"> </i> Add to Library</button>
 
-""")))}),format.raw/*14.2*/("""
+""")))}),format.raw/*13.2*/("""
+
+""")))}),format.raw/*15.2*/("""
 """))
       }
     }
@@ -60,11 +61,11 @@ Seq[Any](format.raw/*1.31*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Wed Nov 08 15:12:40 EAT 2017
+                  DATE: Wed Nov 08 16:22:45 EAT 2017
                   SOURCE: C:/Users/Mingina/Workspace/laebrari/lib-project/app/views/books/create.scala.html
-                  HASH: 7b82a1b9372e4f6da0fa2a685e56729c0f34f362
-                  MATRIX: 965->1|1067->33|1140->30|1168->78|1196->81|1225->102|1263->103|1291->105|1348->137|1361->143|1413->187|1451->188|1481->193|1527->219|1558->223|1704->339|1739->344
-                  LINES: 28->1|31->2|34->1|35->3|36->4|36->4|36->4|37->5|38->6|38->6|38->6|38->6|40->8|40->8|42->10|44->12|46->14
+                  HASH: 29c157821ba20292910e43736884a10c59a3c667
+                  MATRIX: 965->1|1067->33|1140->30|1168->78|1196->81|1225->102|1263->103|1291->105|1348->137|1361->143|1413->187|1451->188|1481->193|1527->219|1560->225|1706->341|1741->346
+                  LINES: 28->1|31->2|34->1|35->3|36->4|36->4|36->4|37->5|38->6|38->6|38->6|38->6|40->8|40->8|43->11|45->13|47->15
                   -- GENERATED --
               */
           

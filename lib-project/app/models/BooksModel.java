@@ -1,11 +1,10 @@
 package models;
 
 
-import java.time.Instant;
-import java.util.HashSet;
-import java.util.Set;
+import io.ebean.Finder;
+import io.ebean.Model;
+import play.data.validation.Constraints;
 
-import io.ebean.*;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -13,9 +12,13 @@ import javax.persistence.Id;
 public class BooksModel extends Model{
 
     @Id
+    @Constraints.Required
     public Integer id;
+    @Constraints.Required
     public String title;
+    @Constraints.Required
     public String author;
+    @Constraints.Required
     public Integer price;
 
    public static Finder<Integer, BooksModel> finder = new Finder<>(BooksModel.class);

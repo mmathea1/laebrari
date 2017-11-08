@@ -34,8 +34,13 @@ public class BookController extends Controller {
     //save book
     public Result save(){
     Form<BooksModel> boundForm = modelForm.bindFromRequest();
+    flash("danger", "Failed! Correct your form, some values might be missing");
+    if(boundForm.hasErrors()){
+        return badRequest(views.html.books.create.render(boundForm));
+    }
     BooksModel book = boundForm.get();
     book.save();
+        flash("success", "Success!" + book.title + "has been added to your library");
         return redirect(routes.BookController.index());
     }
 
