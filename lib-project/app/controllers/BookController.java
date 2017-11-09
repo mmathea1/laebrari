@@ -34,8 +34,13 @@ public class BookController extends Controller {
     //save book
     public Result save(){
     Form<BooksModel> boundForm = modelForm.bindFromRequest();
+    if(boundForm.hasErrors()){
+        flash("danger", "Failed! Correct your form, some values might be missing");
+        return badRequest(views.html.books.create.render(boundForm));
+    }
     BooksModel book = boundForm.get();
     book.save();
+        flash("success", "Success! " + book.title + " has been added to your library");
         return redirect(routes.BookController.index());
     }
 
@@ -52,6 +57,10 @@ public class BookController extends Controller {
     //update book
     public Result update(){
         Form<BooksModel> updateForm = modelForm.bindFromRequest();
+        if(updateForm.hasErrors()){
+            flash("danger", "Something is wrong with your form");
+            return badRequest(views.html.books.edit.render(updateForm));
+        }
         BooksModel book = updateForm.get();
         BooksModel oldBook = BooksModel.finder.byId(book.id);
         if (oldBook == null){
@@ -63,6 +72,7 @@ public class BookController extends Controller {
         oldBook.price = book.price;
         oldBook.author = book.author;
         oldBook.update();
+        flash("success", oldBook.title + " edited successfully!");
 
 
         return redirect(routes.BookController.index());
@@ -75,6 +85,7 @@ public class BookController extends Controller {
             return notFound("Book not found");
         }
         bookModel.delete();
+        flash("warning", bookModel.title + " deleted successfully!");
 
         return redirect(routes.BookController.index());
     }

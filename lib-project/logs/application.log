@@ -1,30 +1,75 @@
-2017-11-07 21:28:16,190 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-2 - Creating Pool for datasource 'default'
-2017-11-07 21:28:18,147 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-2 - datasource [default] bound to JNDI as DefaultDS
-2017-11-07 21:28:18,247 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-2 - Database [default] connected at jdbc:mysql://127.0.0.13:3306/laebrariDB?autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8
-2017-11-07 21:28:24,299 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-2 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2017-11-07 21:28:25,405 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-2 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2017-11-09 11:45:23,133 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-7 - Creating Pool for datasource 'default'
+2017-11-09 11:45:30,129 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-7 - datasource [default] bound to JNDI as DefaultDS
+2017-11-09 11:45:30,225 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-7 - Database [default] connected at jdbc:mysql://127.0.0.13:3306/laebrariDB?autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+2017-11-09 11:45:51,920 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-7 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-11-09 11:45:54,077 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-7 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     play.filters.csrf.CSRFFilter
 
-2017-11-07 21:28:25,449 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-2 - Application started (Dev)
-2017-11-07 21:34:15,315 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-20 - Shutting down connection pool.
-2017-11-07 21:34:19,010 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-20 - Creating Pool for datasource 'default'
-2017-11-07 21:34:19,152 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-20 - datasource [default] bound to JNDI as DefaultDS
-2017-11-07 21:34:19,154 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-20 - Database [default] connected at jdbc:mysql://127.0.0.13:3306/laebrariDB?autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8
-2017-11-07 21:34:20,524 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-20 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2017-11-07 21:34:21,002 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-20 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2017-11-09 11:45:54,176 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-7 - Application started (Dev)
+2017-11-09 11:46:16,258 [WARN] from play in application-akka.actor.default-dispatcher-7 - You are using status code '400' with flashing, which should only be used with a redirect status!
+2017-11-09 11:54:17,002 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-33 - Shutting down connection pool.
+2017-11-09 11:54:17,481 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-33 - Creating Pool for datasource 'default'
+2017-11-09 11:54:17,565 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-33 - datasource [default] bound to JNDI as DefaultDS
+2017-11-09 11:54:17,565 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-33 - Database [default] connected at jdbc:mysql://127.0.0.13:3306/laebrariDB?autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+2017-11-09 11:54:18,517 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-33 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-11-09 11:54:18,949 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-33 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     play.filters.csrf.CSRFFilter
 
+<<<<<<< HEAD
 2017-11-07 21:34:21,005 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-20 - Application started (Dev)
 <<<<<<< HEAD
 2017-11-07 21:40:41,264 [INFO] from play.core.server.AkkaHttpServer in pool-8-thread-3 - Stopping server...
 2017-11-07 21:40:41,874 [INFO] from application in pool-8-thread-3 - Shutting down connection pool.
 =======
+>>>>>>> exp-bootstrap
+=======
+2017-11-09 11:54:18,953 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-33 - Application started (Dev)
+2017-11-09 11:55:43,268 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-38 - Shutting down connection pool.
+2017-11-09 11:55:43,638 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-38 - Creating Pool for datasource 'default'
+2017-11-09 11:55:43,717 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-38 - datasource [default] bound to JNDI as DefaultDS
+2017-11-09 11:55:43,718 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-38 - Database [default] connected at jdbc:mysql://127.0.0.13:3306/laebrariDB?autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+2017-11-09 11:55:44,082 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-38 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-11-09 11:55:44,238 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-38 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.csrf.CSRFFilter
+
+2017-11-09 11:55:44,239 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-38 - Application started (Dev)
+2017-11-09 11:57:20,866 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-35 - Shutting down connection pool.
+2017-11-09 11:57:21,493 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-35 - Creating Pool for datasource 'default'
+2017-11-09 11:57:21,509 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-35 - datasource [default] bound to JNDI as DefaultDS
+2017-11-09 11:57:21,525 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-35 - Database [default] connected at jdbc:mysql://127.0.0.13:3306/laebrariDB?autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+2017-11-09 11:57:22,005 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-35 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-11-09 11:57:22,188 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-35 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.csrf.CSRFFilter
+
+2017-11-09 11:57:22,189 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-35 - Application started (Dev)
+2017-11-09 11:57:30,454 [WARN] from play in application-akka.actor.default-dispatcher-2 - You are using status code '400' with flashing, which should only be used with a redirect status!
+2017-11-09 12:06:29,394 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-61 - Shutting down connection pool.
+2017-11-09 12:06:29,828 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-61 - Creating Pool for datasource 'default'
+2017-11-09 12:06:29,848 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-61 - datasource [default] bound to JNDI as DefaultDS
+2017-11-09 12:06:29,850 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-61 - Database [default] connected at jdbc:mysql://127.0.0.13:3306/laebrariDB?autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+2017-11-09 12:06:30,225 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-61 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-11-09 12:06:30,434 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-61 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.csrf.CSRFFilter
+
+2017-11-09 12:06:30,451 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-61 - Application started (Dev)
 >>>>>>> exp-bootstrap

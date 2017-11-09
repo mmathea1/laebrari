@@ -35,7 +35,7 @@ Seq[Any](_display_(/*1.2*/layout("Laebrari")/*1.20*/{_display_(Seq[Any](format.r
 """),format.raw/*3.1*/("""<div class="container">
     <div class="jumbotron">
         <h1> Welcome to Laebrari</h1>
-        <h3> A Digital Home Library built with Play! Framework 2.6 </h3>
+        <h3> A digital Home Library built with Play! Framework 2.6 </h3>
     </div>
 </div>
 """)))}))
@@ -54,9 +54,9 @@ Seq[Any](_display_(/*1.2*/layout("Laebrari")/*1.20*/{_display_(Seq[Any](format.r
 
               /*
                   -- GENERATED --
-                  DATE: Tue Nov 07 21:27:36 EAT 2017
+                  DATE: Wed Nov 08 14:55:34 EAT 2017
                   SOURCE: C:/Users/Mingina/Workspace/laebrari/lib-project/app/views/index.scala.html
-                  HASH: eafe0cc40f29ea78ece7e364ea3c34da408fad18
+                  HASH: 43d1e7dd8ace203097ea53f80b0a4b6926ac5d41
                   MATRIX: 1030->1|1056->19|1094->20|1124->24
                   LINES: 33->1|33->1|33->1|35->3
                   -- GENERATED --

@@ -31,8 +31,8 @@ object layout extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Htm
 
 
 Seq[Any](format.raw/*1.32*/("""
-"""),format.raw/*2.1*/("""<!DOCTYPE html>
-<html lang="en">
+"""),format.raw/*2.1*/("""<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
 <head>
     <meta charset="UTF-8">
     <title>"""),_display_(/*6.13*/title),format.raw/*6.18*/("""</title>
@@ -47,26 +47,40 @@ Seq[Any](format.raw/*1.32*/("""
  <div class="navbar navbar-default">
      <div class="container">
          <div class="navbar-header">
-             <a href=""""),_display_(/*18.24*/routes/*18.30*/.HomeController.index()),format.raw/*18.53*/("""" class="navbar-brand">Laebrari</a>
+             <a href=""""),_display_(/*18.24*/routes/*18.30*/.HomeController.index()),format.raw/*18.53*/("""" class="navbar-brand">
+                 <i class="glyphicon glyphicon-home"></i> Laebrari</a>
          </div>
          <div class="navbar-collapse">
              <ul class="nav navbar-nav navbar-left">
-                 <li><a href=""""),_display_(/*22.32*/routes/*22.38*/.BookController.index()),format.raw/*22.61*/("""">All Books</a> </li>
-                 <li><a href=""""),_display_(/*23.32*/routes/*23.38*/.BookController.create()),format.raw/*23.62*/("""">New Book</a></li>
+                 <li><a href=""""),_display_(/*23.32*/routes/*23.38*/.BookController.index()),format.raw/*23.61*/("""">
+                     <i class="glyphicon glyphicon-book"> </i> All Books</a> </li>
+                 <li><a href=""""),_display_(/*25.32*/routes/*25.38*/.BookController.create()),format.raw/*25.62*/("""">
+                     <i class="glyphicon glyphicon-plus"> </i> New Book</a></li>
              </ul>
          </div>
      </div>
  </div>
 </header>
-"""),_display_(/*29.2*/body),format.raw/*29.6*/("""
+<div class =" container">
+    """),_display_(/*33.6*/for(key <- Array("danger","success", "warning")) yield /*33.54*/{_display_(Seq[Any](format.raw/*33.55*/("""
+        """),_display_(/*34.10*/if(flash.containsKey(key))/*34.36*/{_display_(Seq[Any](format.raw/*34.37*/("""
+            """),format.raw/*35.13*/("""<div class="alert alert-"""),_display_(/*35.38*/key),format.raw/*35.41*/("""">
+                """),_display_(/*36.18*/flash/*36.23*/.get(key)),format.raw/*36.32*/("""
+                """),format.raw/*37.17*/("""<a href="#" class="close" data-dismiss="alert" aria-label="close"><i class="glyphicon glyphicon-remove"></i></a>
+            </div>
+        """)))}),format.raw/*39.10*/("""
+    """)))}),format.raw/*40.6*/("""
+    """),_display_(/*41.6*/body),format.raw/*41.10*/("""
+"""),format.raw/*42.1*/("""</div>
 
 
-"""),format.raw/*32.1*/("""<script src=""""),_display_(/*32.15*/routes/*32.21*/.Assets.versioned("js/jquery-3.2.1.min.js")),format.raw/*32.64*/("""" type="text/javascript"></script>
-<script src=""""),_display_(/*33.15*/routes/*33.21*/.Assets.versioned("js/bootstrap.min.js")),format.raw/*33.61*/("""" type="text/javascript"></script>
-<script src=""""),_display_(/*34.15*/routes/*34.21*/.Assets.versioned("js/main.js")),format.raw/*34.52*/("""" type="text/javascript"></script>
+
+<script src=""""),_display_(/*46.15*/routes/*46.21*/.Assets.versioned("js/jquery-3.2.1.min.js")),format.raw/*46.64*/("""" type="text/javascript"></script>
+<script src=""""),_display_(/*47.15*/routes/*47.21*/.Assets.versioned("js/bootstrap.min.js")),format.raw/*47.61*/("""" type="text/javascript"></script>
+<script src=""""),_display_(/*48.15*/routes/*48.21*/.Assets.versioned("js/main.js")),format.raw/*48.52*/("""" type="text/javascript"></script>
 
 </body>
-</html>"""))
+<!--</html>-->"""))
       }
     }
   }
@@ -82,11 +96,11 @@ Seq[Any](format.raw/*1.32*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Tue Nov 07 21:27:37 EAT 2017
+                  DATE: Thu Nov 09 12:05:28 EAT 2017
                   SOURCE: C:/Users/Mingina/Workspace/laebrari/lib-project/app/views/layout.scala.html
-                  HASH: d0648b419d33494c566484592a250f94b740fce3
-                  MATRIX: 954->1|1079->31|1107->33|1216->116|1241->121|1311->165|1325->171|1387->213|1451->251|1465->257|1533->305|1597->343|1611->349|1664->382|1751->442|1766->448|1827->487|2014->647|2029->653|2073->676|2279->855|2294->861|2338->884|2419->938|2434->944|2479->968|2597->1060|2621->1064|2654->1070|2695->1084|2710->1090|2774->1133|2851->1183|2866->1189|2927->1229|3004->1279|3019->1285|3071->1316
-                  LINES: 28->1|33->1|34->2|38->6|38->6|39->7|39->7|39->7|40->8|40->8|40->8|41->9|41->9|41->9|43->11|43->11|43->11|50->18|50->18|50->18|54->22|54->22|54->22|55->23|55->23|55->23|61->29|61->29|64->32|64->32|64->32|64->32|65->33|65->33|65->33|66->34|66->34|66->34
+                  HASH: 6bd09f0598895d121ed723973f3108870fcd0851
+                  MATRIX: 954->1|1079->31|1107->33|1230->130|1255->135|1325->179|1339->185|1401->227|1465->265|1479->271|1547->319|1611->357|1625->363|1678->396|1765->456|1780->462|1841->501|2028->661|2043->667|2087->690|2353->929|2368->935|2412->958|2558->1077|2573->1083|2618->1107|2832->1295|2896->1343|2935->1344|2973->1355|3008->1381|3047->1382|3089->1396|3141->1421|3165->1424|3213->1445|3227->1450|3257->1459|3303->1477|3477->1620|3514->1627|3547->1634|3572->1638|3601->1640|3656->1668|3671->1674|3735->1717|3812->1767|3827->1773|3888->1813|3965->1863|3980->1869|4032->1900
+                  LINES: 28->1|33->1|34->2|38->6|38->6|39->7|39->7|39->7|40->8|40->8|40->8|41->9|41->9|41->9|43->11|43->11|43->11|50->18|50->18|50->18|55->23|55->23|55->23|57->25|57->25|57->25|65->33|65->33|65->33|66->34|66->34|66->34|67->35|67->35|67->35|68->36|68->36|68->36|69->37|71->39|72->40|73->41|73->41|74->42|78->46|78->46|78->46|79->47|79->47|79->47|80->48|80->48|80->48
                   -- GENERATED --
               */
           

@@ -38,8 +38,8 @@ Seq[Any](format.raw/*2.20*/("""
 <p> Author: """),_display_(/*7.14*/book/*7.18*/.author),format.raw/*7.25*/("""</p>
 
 
-<a href=""""),_display_(/*10.11*/routes/*10.17*/.BookController.edit(book.id)),format.raw/*10.46*/("""">Edit Book</a>
-<a href=""""),_display_(/*11.11*/routes/*11.17*/.BookController.destroy(book.id)),format.raw/*11.49*/("""">Delete Book</a>
+<a class="btn btn-success" href=""""),_display_(/*10.35*/routes/*10.41*/.BookController.edit(book.id)),format.raw/*10.70*/(""""><i class="glyphicon glyphicon-pencil"></i> Edit Book</a>
+<a class="btn btn-danger" href=""""),_display_(/*11.34*/routes/*11.40*/.BookController.destroy(book.id)),format.raw/*11.72*/(""""><i class="glyphicon glyphicon-trash"></i> Delete Book</a>
 """)))}),format.raw/*12.2*/("""
 
 """))
@@ -58,10 +58,10 @@ Seq[Any](format.raw/*2.20*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Tue Nov 07 21:27:37 EAT 2017
+                  DATE: Wed Nov 08 14:53:25 EAT 2017
                   SOURCE: C:/Users/Mingina/Workspace/laebrari/lib-project/app/views/books/show.scala.html
-                  HASH: 3c081a2b338cd05fd1a688de1bcf1f862c93341d
-                  MATRIX: 957->3|1070->21|1098->24|1134->52|1172->53|1202->57|1233->63|1245->67|1271->73|1317->93|1329->97|1355->103|1400->122|1412->126|1439->133|1486->153|1501->159|1551->188|1605->215|1620->221|1673->253|1723->273
+                  HASH: 16dc43c23641a04ffc5e095fc44bb982a5fe5425
+                  MATRIX: 957->3|1070->21|1098->24|1134->52|1172->53|1202->57|1233->63|1245->67|1271->73|1317->93|1329->97|1355->103|1400->122|1412->126|1439->133|1510->177|1525->183|1575->212|1695->305|1710->311|1763->343|1855->405
                   LINES: 28->2|33->2|34->3|34->3|34->3|36->5|36->5|36->5|36->5|37->6|37->6|37->6|38->7|38->7|38->7|41->10|41->10|41->10|42->11|42->11|42->11|43->12
                   -- GENERATED --
               */

@@ -28,20 +28,20 @@ object create extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Htm
   def apply/*1.2*/(bookForm : Form[BooksModel]):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
+/*2.2*/import views.html.partials._booksFormFields
 
 
 Seq[Any](format.raw/*1.31*/("""
-"""),_display_(/*2.2*/layout("Create Book")/*2.23*/{_display_(Seq[Any](format.raw/*2.24*/("""
-"""),format.raw/*3.1*/("""<h1> Add Book to library</h1>
-"""),_display_(/*4.2*/helper/*4.8*/.form(action = routes.BookController.save())/*4.52*/{_display_(Seq[Any](format.raw/*4.53*/("""
-"""),_display_(/*5.2*/helper/*5.8*/.CSRF.formField),format.raw/*5.23*/("""
-"""),_display_(/*6.2*/helper/*6.8*/.inputText(bookForm("Id"))),format.raw/*6.34*/("""
-"""),_display_(/*7.2*/helper/*7.8*/.inputText(bookForm("Title"))),format.raw/*7.37*/("""
-"""),_display_(/*8.2*/helper/*8.8*/.inputText(bookForm("Price"))),format.raw/*8.37*/("""
-"""),_display_(/*9.2*/helper/*9.8*/.inputText(bookForm("Author"))),format.raw/*9.38*/("""
+"""),format.raw/*3.1*/("""
+"""),_display_(/*4.2*/layout("Create Book")/*4.23*/{_display_(Seq[Any](format.raw/*4.24*/("""
+"""),format.raw/*5.1*/("""<h1> Add Book to library</h1>
+"""),_display_(/*6.2*/helper/*6.8*/.form(action = routes.BookController.save())/*6.52*/{_display_(Seq[Any](format.raw/*6.53*/("""
+
+"""),_display_(/*8.2*/_booksFormFields(bookForm)),format.raw/*8.28*/("""
 
 
-"""),format.raw/*12.1*/("""<input type="submit" value="Add to Library">
+"""),format.raw/*11.1*/("""<button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-plus"> </i> Add to Library</button>
+
 """)))}),format.raw/*13.2*/("""
 
 """)))}),format.raw/*15.2*/("""
@@ -61,11 +61,11 @@ Seq[Any](format.raw/*1.31*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Tue Nov 07 21:27:37 EAT 2017
+                  DATE: Wed Nov 08 16:22:45 EAT 2017
                   SOURCE: C:/Users/Mingina/Workspace/laebrari/lib-project/app/views/books/create.scala.html
-                  HASH: a091b24e0754b738e09c225c316d1c74d6c1469d
-                  MATRIX: 965->1|1089->30|1117->33|1146->54|1184->55|1212->57|1269->89|1282->95|1334->139|1372->140|1400->143|1413->149|1448->164|1476->167|1489->173|1535->199|1563->202|1576->208|1625->237|1653->240|1666->246|1715->275|1743->278|1756->284|1806->314|1839->320|1916->367|1951->372
-                  LINES: 28->1|33->1|34->2|34->2|34->2|35->3|36->4|36->4|36->4|36->4|37->5|37->5|37->5|38->6|38->6|38->6|39->7|39->7|39->7|40->8|40->8|40->8|41->9|41->9|41->9|44->12|45->13|47->15
+                  HASH: 29c157821ba20292910e43736884a10c59a3c667
+                  MATRIX: 965->1|1067->33|1140->30|1168->78|1196->81|1225->102|1263->103|1291->105|1348->137|1361->143|1413->187|1451->188|1481->193|1527->219|1560->225|1706->341|1741->346
+                  LINES: 28->1|31->2|34->1|35->3|36->4|36->4|36->4|37->5|38->6|38->6|38->6|38->6|40->8|40->8|43->11|45->13|47->15
                   -- GENERATED --
               */
           

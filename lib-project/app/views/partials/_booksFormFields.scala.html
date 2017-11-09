@@ -1,0 +1,6 @@
+@(bookForm : Form[BooksModel])
+@helper.CSRF.formField
+@helper.inputText(bookForm("Id"), 'class -> "form-control")
+@helper.inputText(bookForm("Title"), 'class -> "form-control")
+@helper.inputText(bookForm("Price"), 'class -> "form-control")
+@helper.inputText(bookForm("Author"), 'class -> "form-control")
