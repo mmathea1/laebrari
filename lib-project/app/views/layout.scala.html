@@ -30,19 +30,13 @@
  </div>
 </header>
 <div class =" container">
-    @if(flash.containsKey("danger")){
-        <div class="alert alert-danger">
-            @flash.get("danger")
-            <a href="#" class="close" data-dismiss="alert" aria-label="close"><i class="glyphicon glyphicon-remove"></i></a>
-        </div>
-
-    }
-    @if(flash.containsKey("success")){
-    <div class="alert alert-success">
-        @flash.get("success")
-        <a href="#" class="close" data-dismiss="alert" aria-label="close"><i class="glyphicon glyphicon-remove"></i></a>
-    </div>
-
+    @for(key <- Array("danger","success", "warning")){
+        @if(flash.containsKey(key)){
+            <div class="alert alert-@key">
+                @flash.get(key)
+                <a href="#" class="close" data-dismiss="alert" aria-label="close"><i class="glyphicon glyphicon-remove"></i></a>
+            </div>
+        }
     }
     @body
 </div>

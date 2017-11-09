@@ -1,11 +1,19 @@
 
 @(books : List[BooksModel])
 @layout("All Books"){
+<div class="container">
 <h1> All Books</h1>
-@for(book <- books){
-<a href="@routes.BookController.show(book.id)">@book.title</a>
-<p> Price : @book.price</p>
-<p> Author: @book.author</p>
-}
+    <div class="row">
 
+
+@for(book <- books){
+ <div class="col-md-6">
+     <a href="@routes.BookController.show(book.id)">@book.title</a>
+     <p> Price : @book.price</p>
+     <p> Author: @book.author</p>
+ </div>
+
+}
+    </div>
+</div>
 }
