@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Mingina/Workspace/laebrari/lib-project/conf/routes
-// @DATE:Tue Nov 07 22:41:15 EAT 2017
+// @DATE:Thu Nov 09 12:52:39 EAT 2017
 
 import play.api.mvc.Call
 
@@ -40,7 +40,7 @@ package controllers {
     // @LINE:18
     def destroy(id:Integer): Call = {
       
-      Call("GET", _prefix + { _defaultPrefix } + "books/delete/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Integer]].unbind("id", id)))
+      Call("DELETE", _prefix + { _defaultPrefix } + "books/delete/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Integer]].unbind("id", id)))
     }
   
     // @LINE:17

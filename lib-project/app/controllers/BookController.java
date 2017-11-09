@@ -82,11 +82,11 @@ public class BookController extends Controller {
     public Result destroy(Integer id){
         BooksModel bookModel = BooksModel.finder.byId(id);
         if (bookModel == null){
-            return notFound("Book not found");
+            flash("warning", "Book not found");
+            return notFound();
         }
         bookModel.delete();
         flash("warning", bookModel.title + " deleted successfully!");
-
         return redirect(routes.BookController.index());
     }
 

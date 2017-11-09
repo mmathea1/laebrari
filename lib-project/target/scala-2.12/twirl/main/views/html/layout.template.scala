@@ -36,11 +36,11 @@ Seq[Any](format.raw/*1.32*/("""
 <head>
     <meta charset="UTF-8">
     <title>"""),_display_(/*6.13*/title),format.raw/*6.18*/("""</title>
-    <link rel="stylesheet" href=""""),_display_(/*7.35*/routes/*7.41*/.Assets.versioned("css/bootstrap.min.css")),format.raw/*7.83*/("""">
-    <link rel="stylesheet" href=""""),_display_(/*8.35*/routes/*8.41*/.Assets.versioned("css/bootstrap.theme.min.css")),format.raw/*8.89*/("""">
-    <link rel="stylesheet" href=""""),_display_(/*9.35*/routes/*9.41*/.Assets.versioned("css/main.css")),format.raw/*9.74*/("""">
+    <link rel="stylesheet" href='"""),_display_(/*7.35*/routes/*7.41*/.Assets.versioned("css/bootstrap.min.css")),format.raw/*7.83*/("""'>
+    <link rel="stylesheet" href='"""),_display_(/*8.35*/routes/*8.41*/.Assets.versioned("css/bootstrap.theme.min.css")),format.raw/*8.89*/("""'>
+    <link rel="stylesheet" href='"""),_display_(/*9.35*/routes/*9.41*/.Assets.versioned("css/main.css")),format.raw/*9.74*/("""'>
 
-    <link rel="shortcut icon" type="image/png" href=""""),_display_(/*11.55*/routes/*11.61*/.Assets.versioned("images/favicon.png")),format.raw/*11.100*/("""">
+    <link rel="shortcut icon" type="image/png" href='"""),_display_(/*11.55*/routes/*11.61*/.Assets.versioned("images/favicon.png")),format.raw/*11.100*/("""'>
 </head>
 <body>
 <header>
@@ -75,9 +75,9 @@ Seq[Any](format.raw/*1.32*/("""
 
 
 
-<script src=""""),_display_(/*46.15*/routes/*46.21*/.Assets.versioned("js/jquery-3.2.1.min.js")),format.raw/*46.64*/("""" type="text/javascript"></script>
-<script src=""""),_display_(/*47.15*/routes/*47.21*/.Assets.versioned("js/bootstrap.min.js")),format.raw/*47.61*/("""" type="text/javascript"></script>
-<script src=""""),_display_(/*48.15*/routes/*48.21*/.Assets.versioned("js/main.js")),format.raw/*48.52*/("""" type="text/javascript"></script>
+<script type="text/javascript" src='"""),_display_(/*46.38*/routes/*46.44*/.Assets.versioned("js/jquery-3.2.1.min.js")),format.raw/*46.87*/("""'></script>
+<script type="text/javascript" src='"""),_display_(/*47.38*/routes/*47.44*/.Assets.versioned("js/bootstrap.min.js")),format.raw/*47.84*/("""'></script>
+<script type="text/javascript" src='"""),_display_(/*48.38*/routes/*48.44*/.Assets.versioned("js/main.js")),format.raw/*48.75*/("""'></script>
 
 </body>
 <!--</html>-->"""))
@@ -96,10 +96,10 @@ Seq[Any](format.raw/*1.32*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Thu Nov 09 12:05:28 EAT 2017
+                  DATE: Thu Nov 09 13:24:01 EAT 2017
                   SOURCE: C:/Users/Mingina/Workspace/laebrari/lib-project/app/views/layout.scala.html
-                  HASH: 6bd09f0598895d121ed723973f3108870fcd0851
-                  MATRIX: 954->1|1079->31|1107->33|1230->130|1255->135|1325->179|1339->185|1401->227|1465->265|1479->271|1547->319|1611->357|1625->363|1678->396|1765->456|1780->462|1841->501|2028->661|2043->667|2087->690|2353->929|2368->935|2412->958|2558->1077|2573->1083|2618->1107|2832->1295|2896->1343|2935->1344|2973->1355|3008->1381|3047->1382|3089->1396|3141->1421|3165->1424|3213->1445|3227->1450|3257->1459|3303->1477|3477->1620|3514->1627|3547->1634|3572->1638|3601->1640|3656->1668|3671->1674|3735->1717|3812->1767|3827->1773|3888->1813|3965->1863|3980->1869|4032->1900
+                  HASH: 6e2de1eee44e79d92c2eb8ff481b99515a6b249d
+                  MATRIX: 954->1|1079->31|1107->33|1230->130|1255->135|1325->179|1339->185|1401->227|1465->265|1479->271|1547->319|1611->357|1625->363|1678->396|1765->456|1780->462|1841->501|2028->661|2043->667|2087->690|2353->929|2368->935|2412->958|2558->1077|2573->1083|2618->1107|2832->1295|2896->1343|2935->1344|2973->1355|3008->1381|3047->1382|3089->1396|3141->1421|3165->1424|3213->1445|3227->1450|3257->1459|3303->1477|3477->1620|3514->1627|3547->1634|3572->1638|3601->1640|3679->1691|3694->1697|3758->1740|3835->1790|3850->1796|3911->1836|3988->1886|4003->1892|4055->1923
                   LINES: 28->1|33->1|34->2|38->6|38->6|39->7|39->7|39->7|40->8|40->8|40->8|41->9|41->9|41->9|43->11|43->11|43->11|50->18|50->18|50->18|55->23|55->23|55->23|57->25|57->25|57->25|65->33|65->33|65->33|66->34|66->34|66->34|67->35|67->35|67->35|68->36|68->36|68->36|69->37|71->39|72->40|73->41|73->41|74->42|78->46|78->46|78->46|79->47|79->47|79->47|80->48|80->48|80->48
                   -- GENERATED --
               */

@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Mingina/Workspace/laebrari/lib-project/conf/routes
-// @DATE:Tue Nov 07 22:41:15 EAT 2017
+// @DATE:Thu Nov 09 12:52:39 EAT 2017
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -55,7 +55,7 @@ package controllers.javascript {
       "controllers.BookController.destroy",
       """
         function(id0) {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "books/delete/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Integer]].javascriptUnbind + """)("id", id0))})
+          return _wA({method:"DELETE", url:"""" + _prefix + { _defaultPrefix } + """" + "books/delete/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Integer]].javascriptUnbind + """)("id", id0))})
         }
       """
     )
