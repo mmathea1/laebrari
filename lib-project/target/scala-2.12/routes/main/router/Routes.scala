@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Mingina/Workspace/laebrari/lib-project/conf/routes
-// @DATE:Thu Nov 09 18:18:56 EAT 2017
+// @DATE:Sat Nov 11 17:48:04 EAT 2017
 
 package router
 
@@ -21,7 +21,7 @@ class Routes(
   UserController_2: controllers.UserController,
   // @LINE:12
   BookController_0: controllers.BookController,
-  // @LINE:21
+  // @LINE:22
   Assets_3: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -34,7 +34,7 @@ class Routes(
     UserController_2: controllers.UserController,
     // @LINE:12
     BookController_0: controllers.BookController,
-    // @LINE:21
+    // @LINE:22
     Assets_3: controllers.Assets
   ) = this(errorHandler, HomeController_1, UserController_2, BookController_0, Assets_3, "/")
 
@@ -228,7 +228,7 @@ class Routes(
     )
   )
 
-  // @LINE:18
+  // @LINE:19
   private[this] lazy val controllers_BookController_destroy9_route = Route("DELETE",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("books/delete/"), DynamicPart("id", """[^/]+""",true)))
   )
@@ -242,11 +242,11 @@ class Routes(
       "DELETE",
       this.prefix + """books/delete/""" + "$" + """id<[^/]+>""",
       """""",
-      Seq()
+      Seq("""nocsrf""")
     )
   )
 
-  // @LINE:21
+  // @LINE:22
   private[this] lazy val controllers_Assets_versioned10_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
@@ -321,13 +321,13 @@ class Routes(
         controllers_BookController_save8_invoker.call(BookController_0.save())
       }
   
-    // @LINE:18
+    // @LINE:19
     case controllers_BookController_destroy9_route(params) =>
       call(params.fromPath[Integer]("id", None)) { (id) =>
         controllers_BookController_destroy9_invoker.call(BookController_0.destroy(id))
       }
   
-    // @LINE:21
+    // @LINE:22
     case controllers_Assets_versioned10_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
         controllers_Assets_versioned10_invoker.call(Assets_3.versioned(path, file))

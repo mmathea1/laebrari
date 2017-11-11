@@ -135,3 +135,33 @@
 
 2017-11-11 16:02:17,582 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-452 - Application started (Dev)
 2017-11-11 16:05:43,638 [WARN] from play.filters.CSRF in play-dev-mode-akka.actor.default-dispatcher-543 - [CSRF] Check failed because none/none for request /books/delete/78
+2017-11-11 17:28:34,963 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-11 housekeeper - HikariPool-11 - Thread starvation or clock leap detected (housekeeper delta=1m16s545ms426µs621ns).
+2017-11-11 17:28:59,932 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-583 - Shutting down connection pool.
+2017-11-11 17:29:02,616 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-583 - Creating Pool for datasource 'default'
+2017-11-11 17:29:04,649 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-583 - datasource [default] bound to JNDI as DefaultDS
+2017-11-11 17:29:04,649 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-583 - Database [default] connected at jdbc:mysql://127.0.0.13:3306/laebrariDB?autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+2017-11-11 17:29:12,610 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-583 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-11-11 17:29:13,005 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-583 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.csrf.CSRFFilter
+
+2017-11-11 17:29:13,007 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-583 - Application started (Dev)
+2017-11-11 17:37:20,685 [WARN] from play.filters.CSRF in play-dev-mode-akka.actor.default-dispatcher-603 - [CSRF] Check failed because none/none for request /books/delete/9
+2017-11-11 17:38:34,075 [WARN] from play.filters.CSRF in play-dev-mode-akka.actor.default-dispatcher-609 - [CSRF] Check failed because none/none for request /books/delete/9
+2017-11-11 17:52:49,239 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-12 housekeeper - HikariPool-12 - Thread starvation or clock leap detected (housekeeper delta=1m57s600ms617µs994ns).
+2017-11-11 18:15:25,891 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-627 - Shutting down connection pool.
+2017-11-11 18:15:41,280 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-627 - Creating Pool for datasource 'default'
+2017-11-11 18:15:41,799 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-627 - datasource [default] bound to JNDI as DefaultDS
+2017-11-11 18:15:41,803 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-627 - Database [default] connected at jdbc:mysql://127.0.0.13:3306/laebrariDB?autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+2017-11-11 18:15:48,981 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-627 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2017-11-11 18:15:50,908 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-627 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.csrf.CSRFFilter
+
+2017-11-11 18:15:50,912 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-627 - Application started (Dev)

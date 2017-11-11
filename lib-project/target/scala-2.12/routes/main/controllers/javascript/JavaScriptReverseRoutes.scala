@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Mingina/Workspace/laebrari/lib-project/conf/routes
-// @DATE:Thu Nov 09 18:18:56 EAT 2017
+// @DATE:Sat Nov 11 17:48:04 EAT 2017
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -50,7 +50,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:18
+    // @LINE:19
     def destroy: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.BookController.destroy",
       """
@@ -112,7 +112,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:21
+  // @LINE:22
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -120,7 +120,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:21
+    // @LINE:22
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """

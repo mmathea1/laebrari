@@ -15,6 +15,7 @@ GET     /books/:id          controllers.BookController.show(id: Integer)
 GET     /books/edit/:id     controllers.BookController.edit(id: Integer)
 PUT    /books/edit         controllers.BookController.update()
 POST    /books/create       controllers.BookController.save()
++ nocsrf
 DELETE  /books/delete/:id   controllers.BookController.destroy(id: Integer)
 
 # Map static resources from the /public folder to the /assets URL path
