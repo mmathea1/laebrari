@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Mingina/Workspace/laebrari/lib-project/conf/routes
-// @DATE:Thu Nov 09 12:52:39 EAT 2017
+// @DATE:Thu Nov 09 18:18:56 EAT 2017
 
 package router
 
@@ -55,7 +55,7 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """books/create""", """controllers.BookController.create()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """books/""" + "$" + """id<[^/]+>""", """controllers.BookController.show(id:Integer)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """books/edit/""" + "$" + """id<[^/]+>""", """controllers.BookController.edit(id:Integer)"""),
-    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """books/edit""", """controllers.BookController.update()"""),
+    ("""PUT""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """books/edit""", """controllers.BookController.update()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """books/create""", """controllers.BookController.save()"""),
     ("""DELETE""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """books/delete/""" + "$" + """id<[^/]+>""", """controllers.BookController.destroy(id:Integer)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
@@ -193,7 +193,7 @@ class Routes(
   )
 
   // @LINE:16
-  private[this] lazy val controllers_BookController_update7_route = Route("POST",
+  private[this] lazy val controllers_BookController_update7_route = Route("PUT",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("books/edit")))
   )
   private[this] lazy val controllers_BookController_update7_invoker = createInvoker(
@@ -203,7 +203,7 @@ class Routes(
       "controllers.BookController",
       "update",
       Nil,
-      "POST",
+      "PUT",
       this.prefix + """books/edit""",
       """""",
       Seq()

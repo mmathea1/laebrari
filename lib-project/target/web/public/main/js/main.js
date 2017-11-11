@@ -10,3 +10,17 @@ function sendDeleteRequest(url, rUrl){
         }
    });
 }
+function sendPutRequest(formId, rUrl){
+    var form = $('#' +formId);
+    $.ajax({
+        url: form.attr( 'action'),
+        method: "PUT",
+        data: form.serialize(),
+        success: function(){
+            window .location = rUrl;
+        },
+        error: function(){
+        window.location.reload();
+        }
+    });
+}

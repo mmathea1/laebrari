@@ -8,7 +8,7 @@
 
 
 <a class="btn btn-success" href="@routes.BookController.edit(book.id)"><i class="glyphicon glyphicon-pencil"></i> Edit Book</a>
-<button class="btn btn-danger" onclick="sendDeleteRequest(
+<button type="submit" class="btn btn-danger" onclick="sendDeleteRequest(
     '@routes.BookController.destroy(book.id)',
     '@routes.BookController.index()')">
     <i class="glyphicon glyphicon-trash"></i> Delete Book</button>

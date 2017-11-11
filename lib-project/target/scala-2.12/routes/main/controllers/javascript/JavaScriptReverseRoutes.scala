@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Mingina/Workspace/laebrari/lib-project/conf/routes
-// @DATE:Thu Nov 09 12:52:39 EAT 2017
+// @DATE:Thu Nov 09 18:18:56 EAT 2017
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -75,7 +75,7 @@ package controllers.javascript {
       "controllers.BookController.update",
       """
         function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "books/edit"})
+          return _wA({method:"PUT", url:"""" + _prefix + { _defaultPrefix } + """" + "books/edit"})
         }
       """
     )

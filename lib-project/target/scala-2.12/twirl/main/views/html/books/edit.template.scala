@@ -34,12 +34,12 @@ object edit extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlF
 Seq[Any](format.raw/*1.31*/("""
 """),_display_(/*3.2*/layout("Edit Books")/*3.22*/{_display_(Seq[Any](format.raw/*3.23*/("""
     """),format.raw/*4.5*/("""<h1> Edit Book</h1>
-    """),_display_(/*5.6*/helper/*5.12*/.form(action = routes.BookController.update())/*5.58*/{_display_(Seq[Any](format.raw/*5.59*/("""
+    """),_display_(/*5.6*/helper/*5.12*/.form(action = routes.BookController.update(), 'id->"bookUpdateForm")/*5.81*/{_display_(Seq[Any](format.raw/*5.82*/("""
         """),_display_(/*6.10*/_booksFormFields(bookForm)),format.raw/*6.36*/("""
-
-
-"""),format.raw/*9.1*/("""<button class="btn btn-success" type="submit"><i class="glyphicon glyphicon-floppy-saved"></i> Save</button>
-   """)))}),format.raw/*10.5*/("""
+   """)))}),format.raw/*7.5*/("""
+"""),format.raw/*8.1*/("""<button class="btn btn-success" onclick="sendPutRequest(
+    'bookUpdateForm',
+    '"""),_display_(/*10.7*/routes/*10.13*/.BookController.index()),format.raw/*10.36*/("""')"><i class="glyphicon glyphicon-floppy"></i> Save</button>
 
 """)))}),format.raw/*12.2*/("""
 """))
@@ -58,11 +58,11 @@ Seq[Any](format.raw/*1.31*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Wed Nov 08 15:08:19 EAT 2017
+                  DATE: Sat Nov 11 16:01:20 EAT 2017
                   SOURCE: C:/Users/Mingina/Workspace/laebrari/lib-project/app/views/books/edit.scala.html
-                  HASH: d6b382884eb1fa895fe4eddf19f3d9bc3d94e0bf
-                  MATRIX: 963->1|1065->33|1138->30|1166->79|1194->99|1232->100|1264->106|1315->132|1329->138|1383->184|1421->185|1458->196|1504->222|1536->228|1680->342|1715->347
-                  LINES: 28->1|31->2|34->1|35->3|35->3|35->3|36->4|37->5|37->5|37->5|37->5|38->6|38->6|41->9|42->10|44->12
+                  HASH: cbb66fdd7b47eb508cc690ed58ff8d855533b73a
+                  MATRIX: 963->1|1065->33|1138->30|1166->79|1194->99|1232->100|1264->106|1315->132|1329->138|1406->207|1444->208|1481->219|1527->245|1562->251|1590->253|1703->340|1718->346|1762->369|1857->434
+                  LINES: 28->1|31->2|34->1|35->3|35->3|35->3|36->4|37->5|37->5|37->5|37->5|38->6|38->6|39->7|40->8|42->10|42->10|42->10|44->12
                   -- GENERATED --
               */
           

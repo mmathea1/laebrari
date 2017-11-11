@@ -85,7 +85,8 @@ public class BookController extends Controller {
             flash("warning", "Book not found");
             return notFound();
         }
-        bookModel.delete();
+  //TODO sort out later: delete button not working
+             bookModel.delete();
         flash("warning", bookModel.title + " deleted successfully!");
         return redirect(routes.BookController.index());
     }
@@ -94,7 +95,8 @@ public class BookController extends Controller {
     public Result show(Integer id){
         BooksModel booksModel = BooksModel.finder.byId(id);
         if (booksModel == null){
-            return notFound("Book Not Found");
+            flash("warning", "Book not found");
+            return notFound();
         }
 
         return ok(views.html.books.show.render(booksModel));
