@@ -4,11 +4,7 @@
 		module="lib-project_2.12"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-<<<<<<< HEAD
-		publication="20171107215354"
-=======
-		publication="20171107223611"
->>>>>>> exp-bootstrap
+		publication="20171112183403"
 	>
 		<description>
 		lib-project

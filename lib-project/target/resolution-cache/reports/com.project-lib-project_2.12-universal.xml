@@ -7,11 +7,7 @@
 		revision="1.0-SNAPSHOT"
 		conf="universal"
 		confs="universal, universal-docs, universal-src, compile, runtime, test, provided, optional, windows, docker, linux, rpm, debian, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-<<<<<<< HEAD
-		date="20171107215355"/>
-=======
-		date="20171107223611"/>
->>>>>>> exp-bootstrap
+		date="20171112183404"/>
 	<dependencies>
 	</dependencies>
 </ivy-report>

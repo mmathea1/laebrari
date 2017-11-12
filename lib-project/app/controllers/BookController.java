@@ -48,7 +48,7 @@ public class BookController extends Controller {
     public Result edit(Integer id){
         BooksModel book = BooksModel.finder.byId(id);
         if (book == null){
-            return notFound("Book Not Found");
+            return notFound(views.html.partials._404Error.render());
         }
         Form<BooksModel> editBookForm = modelForm.fill(book);
         return ok(views.html.books.edit.render(editBookForm));
@@ -64,7 +64,7 @@ public class BookController extends Controller {
         BooksModel book = updateForm.get();
         BooksModel oldBook = BooksModel.finder.byId(book.id);
         if (oldBook == null){
-            return notFound("Book Not Found");
+            return notFound(views.html.partials._404Error.render());
         }
 //        TODO: review tutorial, why have book.id if it's uneditable?
         oldBook.id = book.id;
@@ -82,7 +82,7 @@ public class BookController extends Controller {
     public Result destroy(Integer id){
         BooksModel bookModel = BooksModel.finder.byId(id);
         if (bookModel == null){
-            return notFound("Book not found");
+            return notFound(views.html.partials._404Error.render());
         }
         bookModel.delete();
         flash("warning", bookModel.title + " deleted successfully!");
@@ -94,7 +94,7 @@ public class BookController extends Controller {
     public Result show(Integer id){
         BooksModel booksModel = BooksModel.finder.byId(id);
         if (booksModel == null){
-            return notFound("Book Not Found");
+            return notFound(views.html.partials._404Error.render());
         }
 
         return ok(views.html.books.show.render(booksModel));
