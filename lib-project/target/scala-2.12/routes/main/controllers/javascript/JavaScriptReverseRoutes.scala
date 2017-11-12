@@ -1,7 +1,11 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Mingina/Workspace/laebrari/lib-project/conf/routes
+<<<<<<< HEAD
 // @DATE:Sun Nov 12 18:37:05 EAT 2017
+=======
+// @DATE:Sat Nov 11 17:48:04 EAT 2017
+>>>>>>> exp-bootstrap
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -50,12 +54,12 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:18
+    // @LINE:19
     def destroy: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.BookController.destroy",
       """
         function(id0) {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "books/delete/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Integer]].javascriptUnbind + """)("id", id0))})
+          return _wA({method:"DELETE", url:"""" + _prefix + { _defaultPrefix } + """" + "books/delete/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Integer]].javascriptUnbind + """)("id", id0))})
         }
       """
     )
@@ -75,7 +79,7 @@ package controllers.javascript {
       "controllers.BookController.update",
       """
         function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "books/edit"})
+          return _wA({method:"PUT", url:"""" + _prefix + { _defaultPrefix } + """" + "books/edit"})
         }
       """
     )
@@ -112,7 +116,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:21
+  // @LINE:22
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -120,7 +124,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:21
+    // @LINE:22
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """

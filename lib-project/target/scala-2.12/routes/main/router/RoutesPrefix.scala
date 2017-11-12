@@ -1,7 +1,11 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Mingina/Workspace/laebrari/lib-project/conf/routes
+<<<<<<< HEAD
 // @DATE:Sun Nov 12 18:37:05 EAT 2017
+=======
+// @DATE:Sat Nov 11 17:48:04 EAT 2017
+>>>>>>> exp-bootstrap
 
 
 package router {

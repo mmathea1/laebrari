@@ -39,8 +39,11 @@ Seq[Any](format.raw/*2.20*/("""
 
 
 <a class="btn btn-success" href=""""),_display_(/*10.35*/routes/*10.41*/.BookController.edit(book.id)),format.raw/*10.70*/(""""><i class="glyphicon glyphicon-pencil"></i> Edit Book</a>
-<a class="btn btn-danger" href=""""),_display_(/*11.34*/routes/*11.40*/.BookController.destroy(book.id)),format.raw/*11.72*/(""""><i class="glyphicon glyphicon-trash"></i> Delete Book</a>
-""")))}),format.raw/*12.2*/("""
+<button class="btn btn-danger" onclick="sendDeleteRequest(
+    '"""),_display_(/*12.7*/routes/*12.13*/.BookController.destroy(book.id)),format.raw/*12.45*/("""',
+    '"""),_display_(/*13.7*/routes/*13.13*/.BookController.index()),format.raw/*13.36*/("""')">
+    <i class="glyphicon glyphicon-trash"></i> Delete Book</button>
+""")))}),format.raw/*15.2*/("""
 
 """))
       }
@@ -58,11 +61,11 @@ Seq[Any](format.raw/*2.20*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Wed Nov 08 14:53:25 EAT 2017
+                  DATE: Sat Nov 11 17:24:31 EAT 2017
                   SOURCE: C:/Users/Mingina/Workspace/laebrari/lib-project/app/views/books/show.scala.html
-                  HASH: 16dc43c23641a04ffc5e095fc44bb982a5fe5425
-                  MATRIX: 957->3|1070->21|1098->24|1134->52|1172->53|1202->57|1233->63|1245->67|1271->73|1317->93|1329->97|1355->103|1400->122|1412->126|1439->133|1510->177|1525->183|1575->212|1695->305|1710->311|1763->343|1855->405
-                  LINES: 28->2|33->2|34->3|34->3|34->3|36->5|36->5|36->5|36->5|37->6|37->6|37->6|38->7|38->7|38->7|41->10|41->10|41->10|42->11|42->11|42->11|43->12
+                  HASH: b3239620850c56fb4c4798d21a93d0bd961172ab
+                  MATRIX: 957->3|1070->21|1098->24|1134->52|1172->53|1202->57|1233->63|1245->67|1271->73|1317->93|1329->97|1355->103|1400->122|1412->126|1439->133|1510->177|1525->183|1575->212|1727->338|1742->344|1795->376|1831->386|1846->392|1890->415|1995->490
+                  LINES: 28->2|33->2|34->3|34->3|34->3|36->5|36->5|36->5|36->5|37->6|37->6|37->6|38->7|38->7|38->7|41->10|41->10|41->10|43->12|43->12|43->12|44->13|44->13|44->13|46->15
                   -- GENERATED --
               */
           

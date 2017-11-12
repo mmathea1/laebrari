@@ -34,27 +34,29 @@ Seq[Any](format.raw/*1.32*/("""
 """),format.raw/*2.1*/("""<!--<!DOCTYPE html>-->
 <!--<html lang="en">-->
 <head>
-    <meta charset="UTF-8">
-    <title>"""),_display_(/*6.13*/title),format.raw/*6.18*/("""</title>
-    <link rel="stylesheet" href=""""),_display_(/*7.35*/routes/*7.41*/.Assets.versioned("css/bootstrap.min.css")),format.raw/*7.83*/("""">
-    <link rel="stylesheet" href=""""),_display_(/*8.35*/routes/*8.41*/.Assets.versioned("css/bootstrap.theme.min.css")),format.raw/*8.89*/("""">
-    <link rel="stylesheet" href=""""),_display_(/*9.35*/routes/*9.41*/.Assets.versioned("css/main.css")),format.raw/*9.74*/("""">
 
-    <link rel="shortcut icon" type="image/png" href=""""),_display_(/*11.55*/routes/*11.61*/.Assets.versioned("images/favicon.png")),format.raw/*11.100*/("""">
+    <meta charset="UTF-8">
+
+    <title>"""),_display_(/*8.13*/title),format.raw/*8.18*/("""</title>
+    <link rel="stylesheet" href='"""),_display_(/*9.35*/routes/*9.41*/.Assets.versioned("css/bootstrap.min.css")),format.raw/*9.83*/("""'>
+    <link rel="stylesheet" href='"""),_display_(/*10.35*/routes/*10.41*/.Assets.versioned("css/bootstrap-theme.min.css")),format.raw/*10.89*/("""'>
+    <link rel="stylesheet" href='"""),_display_(/*11.35*/routes/*11.41*/.Assets.versioned("css/main.css")),format.raw/*11.74*/("""'>
+
+    <link rel="shortcut icon" type="image/png" href='"""),_display_(/*13.55*/routes/*13.61*/.Assets.versioned("images/favicon.png")),format.raw/*13.100*/("""'>
 </head>
 <body>
 <header>
  <div class="navbar navbar-default">
      <div class="container">
          <div class="navbar-header">
-             <a href=""""),_display_(/*18.24*/routes/*18.30*/.HomeController.index()),format.raw/*18.53*/("""" class="navbar-brand">
+             <a href=""""),_display_(/*20.24*/routes/*20.30*/.HomeController.index()),format.raw/*20.53*/("""" class="navbar-brand">
                  <i class="glyphicon glyphicon-home"></i> Laebrari</a>
          </div>
          <div class="navbar-collapse">
              <ul class="nav navbar-nav navbar-left">
-                 <li><a href=""""),_display_(/*23.32*/routes/*23.38*/.BookController.index()),format.raw/*23.61*/("""">
+                 <li><a href=""""),_display_(/*25.32*/routes/*25.38*/.BookController.index()),format.raw/*25.61*/("""">
                      <i class="glyphicon glyphicon-book"> </i> All Books</a> </li>
-                 <li><a href=""""),_display_(/*25.32*/routes/*25.38*/.BookController.create()),format.raw/*25.62*/("""">
+                 <li><a href=""""),_display_(/*27.32*/routes/*27.38*/.BookController.create()),format.raw/*27.62*/("""">
                      <i class="glyphicon glyphicon-plus"> </i> New Book</a></li>
              </ul>
          </div>
@@ -62,22 +64,22 @@ Seq[Any](format.raw/*1.32*/("""
  </div>
 </header>
 <div class =" container">
-    """),_display_(/*33.6*/for(key <- Array("danger","success", "warning")) yield /*33.54*/{_display_(Seq[Any](format.raw/*33.55*/("""
-        """),_display_(/*34.10*/if(flash.containsKey(key))/*34.36*/{_display_(Seq[Any](format.raw/*34.37*/("""
-            """),format.raw/*35.13*/("""<div class="alert alert-"""),_display_(/*35.38*/key),format.raw/*35.41*/("""">
-                """),_display_(/*36.18*/flash/*36.23*/.get(key)),format.raw/*36.32*/("""
-                """),format.raw/*37.17*/("""<a href="#" class="close" data-dismiss="alert" aria-label="close"><i class="glyphicon glyphicon-remove"></i></a>
+    """),_display_(/*35.6*/for(key <- Array("danger","success", "warning")) yield /*35.54*/{_display_(Seq[Any](format.raw/*35.55*/("""
+        """),_display_(/*36.10*/if(flash.containsKey(key))/*36.36*/{_display_(Seq[Any](format.raw/*36.37*/("""
+            """),format.raw/*37.13*/("""<div class="alert alert-"""),_display_(/*37.38*/key),format.raw/*37.41*/("""">
+                """),_display_(/*38.18*/flash/*38.23*/.get(key)),format.raw/*38.32*/("""
+                """),format.raw/*39.17*/("""<a href="#" class="close" data-dismiss="alert" aria-label="close"><i class="glyphicon glyphicon-remove"></i></a>
             </div>
-        """)))}),format.raw/*39.10*/("""
-    """)))}),format.raw/*40.6*/("""
-    """),_display_(/*41.6*/body),format.raw/*41.10*/("""
-"""),format.raw/*42.1*/("""</div>
+        """)))}),format.raw/*41.10*/("""
+    """)))}),format.raw/*42.6*/("""
+    """),_display_(/*43.6*/body),format.raw/*43.10*/("""
+"""),format.raw/*44.1*/("""</div>
 
 
 
-<script src=""""),_display_(/*46.15*/routes/*46.21*/.Assets.versioned("js/jquery-3.2.1.min.js")),format.raw/*46.64*/("""" type="text/javascript"></script>
-<script src=""""),_display_(/*47.15*/routes/*47.21*/.Assets.versioned("js/bootstrap.min.js")),format.raw/*47.61*/("""" type="text/javascript"></script>
-<script src=""""),_display_(/*48.15*/routes/*48.21*/.Assets.versioned("js/main.js")),format.raw/*48.52*/("""" type="text/javascript"></script>
+<script type="text/javascript" src='"""),_display_(/*48.38*/routes/*48.44*/.Assets.versioned("js/jquery-3.2.1.min.js")),format.raw/*48.87*/("""'></script>
+<script type="text/javascript" src='"""),_display_(/*49.38*/routes/*49.44*/.Assets.versioned("js/bootstrap.min.js")),format.raw/*49.84*/("""'></script>
+<script type="text/javascript" src='"""),_display_(/*50.38*/routes/*50.44*/.Assets.versioned("js/main.js")),format.raw/*50.75*/("""'></script>
 
 </body>
 <!--</html>-->"""))
@@ -96,11 +98,11 @@ Seq[Any](format.raw/*1.32*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Thu Nov 09 12:05:28 EAT 2017
+                  DATE: Sat Nov 11 15:44:19 EAT 2017
                   SOURCE: C:/Users/Mingina/Workspace/laebrari/lib-project/app/views/layout.scala.html
-                  HASH: 6bd09f0598895d121ed723973f3108870fcd0851
-                  MATRIX: 954->1|1079->31|1107->33|1230->130|1255->135|1325->179|1339->185|1401->227|1465->265|1479->271|1547->319|1611->357|1625->363|1678->396|1765->456|1780->462|1841->501|2028->661|2043->667|2087->690|2353->929|2368->935|2412->958|2558->1077|2573->1083|2618->1107|2832->1295|2896->1343|2935->1344|2973->1355|3008->1381|3047->1382|3089->1396|3141->1421|3165->1424|3213->1445|3227->1450|3257->1459|3303->1477|3477->1620|3514->1627|3547->1634|3572->1638|3601->1640|3656->1668|3671->1674|3735->1717|3812->1767|3827->1773|3888->1813|3965->1863|3980->1869|4032->1900
-                  LINES: 28->1|33->1|34->2|38->6|38->6|39->7|39->7|39->7|40->8|40->8|40->8|41->9|41->9|41->9|43->11|43->11|43->11|50->18|50->18|50->18|55->23|55->23|55->23|57->25|57->25|57->25|65->33|65->33|65->33|66->34|66->34|66->34|67->35|67->35|67->35|68->36|68->36|68->36|69->37|71->39|72->40|73->41|73->41|74->42|78->46|78->46|78->46|79->47|79->47|79->47|80->48|80->48|80->48
+                  HASH: 21e243ac2aef368a3e8d0af2ed41fb93c12ab52d
+                  MATRIX: 954->1|1079->31|1107->33|1234->134|1259->139|1329->183|1343->189|1405->231|1470->269|1485->275|1554->323|1619->361|1634->367|1688->400|1775->460|1790->466|1851->505|2038->665|2053->671|2097->694|2363->933|2378->939|2422->962|2568->1081|2583->1087|2628->1111|2842->1299|2906->1347|2945->1348|2983->1359|3018->1385|3057->1386|3099->1400|3151->1425|3175->1428|3223->1449|3237->1454|3267->1463|3313->1481|3487->1624|3524->1631|3557->1638|3582->1642|3611->1644|3689->1695|3704->1701|3768->1744|3845->1794|3860->1800|3921->1840|3998->1890|4013->1896|4065->1927
+                  LINES: 28->1|33->1|34->2|40->8|40->8|41->9|41->9|41->9|42->10|42->10|42->10|43->11|43->11|43->11|45->13|45->13|45->13|52->20|52->20|52->20|57->25|57->25|57->25|59->27|59->27|59->27|67->35|67->35|67->35|68->36|68->36|68->36|69->37|69->37|69->37|70->38|70->38|70->38|71->39|73->41|74->42|75->43|75->43|76->44|80->48|80->48|80->48|81->49|81->49|81->49|82->50|82->50|82->50
                   -- GENERATED --
               */
           

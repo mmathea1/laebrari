@@ -4,7 +4,11 @@
 		module="lib-project-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
+<<<<<<< HEAD
 		publication="20171112183154"
+=======
+		publication="20171109165103"
+>>>>>>> exp-bootstrap
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

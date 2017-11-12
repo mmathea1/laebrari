@@ -83,10 +83,11 @@ public class BookController extends Controller {
         BooksModel bookModel = BooksModel.finder.byId(id);
         if (bookModel == null){
             return notFound(views.html.partials._404Error.render());
-        }
-        bookModel.delete();
-        flash("warning", bookModel.title + " deleted successfully!");
 
+        }
+  //TODO sort out later: delete button not working
+             bookModel.delete();
+        flash("warning", bookModel.title + " deleted successfully!");
         return redirect(routes.BookController.index());
     }
 

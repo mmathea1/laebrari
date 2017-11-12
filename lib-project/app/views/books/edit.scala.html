@@ -2,11 +2,11 @@
 @import views.html.partials._booksFormFields
 @layout("Edit Books"){
     <h1> Edit Book</h1>
-    @helper.form(action = routes.BookController.update()){
+    @helper.form(action = routes.BookController.update(), 'id->"bookUpdateForm"){
         @_booksFormFields(bookForm)
-
-
-<button class="btn btn-success" type="submit"><i class="glyphicon glyphicon-floppy-saved"></i> Save</button>
    }
+<button class="btn btn-success" onclick="sendPutRequest(
+    'bookUpdateForm',
+    '@routes.BookController.index()')"><i class="glyphicon glyphicon-floppy"></i> Save</button>
 
 }

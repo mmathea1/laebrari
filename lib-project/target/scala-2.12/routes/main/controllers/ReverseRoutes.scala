@@ -1,7 +1,11 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/Mingina/Workspace/laebrari/lib-project/conf/routes
+<<<<<<< HEAD
 // @DATE:Sun Nov 12 18:37:05 EAT 2017
+=======
+// @DATE:Sat Nov 11 17:48:04 EAT 2017
+>>>>>>> exp-bootstrap
 
 import play.api.mvc.Call
 
@@ -37,10 +41,10 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "books/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Integer]].unbind("id", id)))
     }
   
-    // @LINE:18
+    // @LINE:19
     def destroy(id:Integer): Call = {
       
-      Call("GET", _prefix + { _defaultPrefix } + "books/delete/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Integer]].unbind("id", id)))
+      Call("DELETE", _prefix + { _defaultPrefix } + "books/delete/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Integer]].unbind("id", id)))
     }
   
     // @LINE:17
@@ -52,7 +56,7 @@ package controllers {
     // @LINE:16
     def update(): Call = {
       
-      Call("POST", _prefix + { _defaultPrefix } + "books/edit")
+      Call("PUT", _prefix + { _defaultPrefix } + "books/edit")
     }
   
     // @LINE:12
@@ -78,14 +82,14 @@ package controllers {
   
   }
 
-  // @LINE:21
+  // @LINE:22
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:21
+    // @LINE:22
     def versioned(file:Asset): Call = {
       implicit val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public")))
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[play.api.mvc.PathBindable[Asset]].unbind("file", file))
