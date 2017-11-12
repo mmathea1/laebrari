@@ -1,0 +1,9 @@
+#Files to ignore in lib-project
+.idea
+/project/project
+/project/target
+/target
+/logs
+/generated-test
+
+
