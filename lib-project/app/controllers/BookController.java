@@ -73,9 +73,8 @@ public class BookController extends Controller {
         oldBook.author = book.author;
         oldBook.update();
         flash("success", oldBook.title + " edited successfully!");
-
-
         return redirect(routes.BookController.index());
+
     }
 
     //delete book
@@ -85,9 +84,8 @@ public class BookController extends Controller {
             return notFound(views.html.partials._404Error.render());
 
         }
-  //TODO sort out later: delete button not working
              bookModel.delete();
-        flash("warning", bookModel.title + " deleted successfully!");
+        flash("warning", "Book deleted successfully!");
         return redirect(routes.BookController.index());
     }
 
