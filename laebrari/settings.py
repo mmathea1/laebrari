@@ -76,6 +76,12 @@ WSGI_APPLICATION = 'laebrari.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'laebrari',
+        'USERNAME': 'admin',
+        'PASSWORD': 'admin2020',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+
     }
 }
 
