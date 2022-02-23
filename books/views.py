@@ -14,5 +14,3 @@ class BookViewSet(viewsets.ModelViewSet):
     serializer_class = BookSerializer
     permission_classes = [permissions.IsAuthenticated]
 
-    def create(self, request):
-        print("Request: ", request.data, request.user)
