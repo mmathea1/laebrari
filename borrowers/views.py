@@ -5,7 +5,7 @@ from rest_framework import viewsets, permissions
 # Create your views here.
 
 
-class BorrowersViewSet(viewsets.ModelViewSet):
+class BorrowerViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows users to be viewed or edited.
     """

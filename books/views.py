@@ -6,7 +6,7 @@ from rest_framework import permissions
 # Create your views here.
 
 
-class BooksViewSet(viewsets.ModelViewSet):
+class BookViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows users to be viewed or edited.
     """
