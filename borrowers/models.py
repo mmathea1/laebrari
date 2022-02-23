@@ -15,9 +15,5 @@ class Borrower(models.Model):
         auto_now=True, verbose_name="date_borrowed")
     return_date = models.DateField(verbose_name="return_date")
 
-    def save(self, *args, **kwargs):
-        self.return_date = self.date_borrowed + timedelta(weeks=2)
-        super(Borrower, self).save(*args, **kwargs)
-
     def __str__(self) -> str:
         return "{}{}".format(self.borrower, self.book_borrowed)

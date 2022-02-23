@@ -6,7 +6,7 @@ from rest_framework import permissions
 # Create your views here.
 
 
-class BooksViewSet(viewsets.ModelViewSet):
+class BookViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows users to be viewed or edited.
     """
@@ -14,5 +14,3 @@ class BooksViewSet(viewsets.ModelViewSet):
     serializer_class = BookSerializer
     permission_classes = [permissions.IsAuthenticated]
 
-    def create(self, request):
-        print("Request: ", request.data, request.user)
