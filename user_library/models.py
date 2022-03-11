@@ -24,9 +24,9 @@ class BookTransaction(models.Model):
     borrower = models.ForeignKey(
         to='users.User', on_delete=models.DO_NOTHING, related_name="borrower")
     buyer = models.ForeignKey(
-        to='users.User', on_delete=models.DO_NOTHING, related_name="borrower")
+        to='users.User', on_delete=models.DO_NOTHING, related_name="buyer")
     owner = models.ForeignKey(
-        to='users.User', on_delete=models.DO_NOTHING, related_name="owner")
+        to='users.User', on_delete=models.DO_NOTHING, related_name="transaction_owner")
     book_transacted = models.ForeignKey(
         to=Book, on_delete=models.DO_NOTHING, related_name="book_transacted")
     transaction_date = models.DateField(

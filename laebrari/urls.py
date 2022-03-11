@@ -4,8 +4,6 @@ laebrari URL Configuration
 from posixpath import basename
 from django.urls import path, include
 from django.contrib import admin
-from books.views import BookViewSet
-from borrowers.views import BorrowerViewSet
 from rest_framework import routers
 from user_library.views import UserLibraryViewSet
 from users.views import UserViewSet
