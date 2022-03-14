@@ -14,9 +14,11 @@ router.register(r'users', UserViewSet, basename='users')
 router.register(r'library', UserLibraryViewSet, basename='library')
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path('api_urls', include(router.urls)),
     path('api/', include('rest_framework.urls', namespace='rest_framework')),
     path('admin/', admin.site.urls),
+    path('accounts/', include('django.contrib.auth.urls')),
+    path('home/', include('users.urls')),
 
 
 ]
