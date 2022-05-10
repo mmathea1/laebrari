@@ -1,24 +1,14 @@
 """
 laebrari URL Configuration
 """
-from posixpath import basename
+
 from django.urls import path, include
 from django.contrib import admin
-from rest_framework import routers
-from user_library.views import UserLibraryViewSet
-from users.views import UserViewSet
+from django.contrib.auth import views as auth_views
 
-
-router = routers.DefaultRouter()
-router.register(r'users', UserViewSet, basename='users')
-router.register(r'library', UserLibraryViewSet, basename='library')
 
 urlpatterns = [
-    path('api_urls', include(router.urls)),
-    path('api/', include('rest_framework.urls', namespace='rest_framework')),
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
-    path('home/', include('users.urls')),
-
-
+    path('', include('users.urls')),
 ]
