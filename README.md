@@ -1,11 +1,10 @@
 # laebrari
 digital home library, allows users to lend, sell or borrow books
 - User - to allow login/logout, registration, pass reset
-- Profile - user id, first name, last name, email, phone number, location, date joined
+- Librarian - user id, first name, last name, email, phone number, location, date joined
 
         - lender info (rating, no. of books loaned) 
         - borrower info (rating, no. of books borrowed, no. of books returned)
-        - is librarian
 - Library 
     - librarian (profile)
     - rating
