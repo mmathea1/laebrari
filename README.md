@@ -13,14 +13,18 @@ digital home library, allows users to lend, sell or borrow books
     - library type(private, public, unlisted)
     - contact info
 - Book 
-    - title, author, isbn, note, 
-    - can_sell, can_loan, library id
+    - title, author, isbn, acquisition note, 
+    - can_sell, can_loan, 
+    - library id
     - date_acquired, book_condition
     - selling_price, borrowing_price
+    - for future (language, genre)
 - Book Transaction 
-    - transaction type, book, library, 
+    - transaction type,
+    - book, 
     - date of transaction, transaction end date
-    - lender, borrower, buyer
+    - transaction initator
+    - transaction status (borrowed, sold, reserved, overdue)
 - Transaction Rating 
     - borrower, lender, rating, lender's note, transaction ID
 - Library Rating 
