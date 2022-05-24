@@ -19,8 +19,7 @@ class UserRegistrationForm(UserCreationForm):
     
 # Create a UserUpdateForm to update username and email
 class UserUpdateForm(forms.ModelForm):
-    email = forms.EmailField(required=False)
-    username = forms.CharField(max_length=100, required=False)
+    # email = forms.EmailField(required=False)
 
     class Meta:
         model = User
@@ -28,11 +27,6 @@ class UserUpdateForm(forms.ModelForm):
 
 # Create a ProfileUpdateForm to update image
 class ProfileUpdateForm(forms.ModelForm):
-    profile_picture = forms.ImageField(widget=forms.FileInput(attrs={'class': 'form-control-file'}))
-    bio = forms.CharField(widget=forms.Textarea(attrs={'class': 'form-control', 'rows': 5}))
-    first_name = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))
-    address = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))
-    location = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))
 
     class Meta:
         model = Profile

@@ -1,8 +1,8 @@
 from django.dispatch import receiver
 from django.db.models.signals import post_save
 from user_library.models import Profile
+from users.models import User
 
-from django.contrib.auth.models import User
 
 @receiver(post_save, sender=User) 
 def create_profile(sender, instance, created, **kwargs):
