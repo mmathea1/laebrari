@@ -6,8 +6,12 @@ from users.models import Profile
 
 
 class UserLibrarySerializer(serializers.ModelSerializer):
-    librarian = serializers.PrimaryKeyRelatedField(read_only=True)
 
     class Meta:
         model = UserLibrary
-        fields = ['librarian', 'date_established', 'name']
+        fields = '__all__'
+
+class UserLibraryCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UserLibrary
+        fields = ['type', 'name', 'description', 'date_established', 'librarian']

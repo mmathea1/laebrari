@@ -18,7 +18,7 @@ class UserLibrary(models.Model):
     email = models.EmailField(blank=True, null=True)
     name = models.CharField(max_length=255, blank=True, null=True)
     date_established = models.DateTimeField(blank=True, null=True)
-    established_by = models.ForeignKey('users.Profile', on_delete=models.DO_NOTHING, related_name="library_owner")
+    established_by = models.CharField(max_length=255, blank=True, null=True)
     type = models.CharField(max_length=255, blank=True, null=True, choices=LIBRARY_TYPES)
 
 
