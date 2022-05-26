@@ -32,7 +32,7 @@ def profile(request):
         if p_form.is_valid():
             p_form.save()
             messages.success(request, f'Your account has been updated!')
-            return redirect('profile') # Redirect back to profile page
+            return redirect('home') # Redirect back to home page
     else:
         p_form = ProfileUpdateForm(instance=request.user.profile)
     
