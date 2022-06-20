@@ -11,7 +11,5 @@ class UserLibrarySerializer(serializers.ModelSerializer):
         model = UserLibrary
         fields = '__all__'
 
-class UserLibraryCreateSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = UserLibrary
-        fields = ['type', 'name', 'description', 'date_established', 'librarian']
+    def create(self, validated_data):
+        return UserLibrary(**validated_data)
