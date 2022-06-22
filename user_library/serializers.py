@@ -10,8 +10,3 @@ class UserLibrarySerializer(serializers.ModelSerializer):
     class Meta:
         model = UserLibrary
         fields = '__all__'
-
-class UserLibraryCreateSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = UserLibrary
-        fields = ['type', 'name', 'description', 'date_established', 'librarian']
