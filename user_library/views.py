@@ -18,14 +18,7 @@ class UserLibraryViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.IsAuthenticated]
 
     def create(self, request):
-        print("request data: ", request.data)
-        # TODO: dix data coming in list format?
-        # TODO: remove librarian field
-        data = {
-            'librarian': request.user.pk
-        }
-        data.update(request.data)
-        serializer = UserLibrarySerializer(data=data)
+        serializer = UserLibrarySerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_200_OK)

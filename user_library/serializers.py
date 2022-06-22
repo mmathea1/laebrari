@@ -10,6 +10,3 @@ class UserLibrarySerializer(serializers.ModelSerializer):
     class Meta:
         model = UserLibrary
         fields = '__all__'
-
-    def create(self, validated_data):
-        return UserLibrary(**validated_data)
