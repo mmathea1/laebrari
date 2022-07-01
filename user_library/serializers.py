@@ -5,7 +5,7 @@ from rest_framework import serializers
 
 from users.models import Profile
 
-
+# list libraries this profile is associated with
 class UserLibrarySerializer(serializers.ModelSerializer):
     class Meta:
         model = UserLibrary

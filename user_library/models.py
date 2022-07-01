@@ -9,7 +9,6 @@ LIBRARY_TYPES = (
 )
 
 # Create your models here.
-
 class UserLibrary(models.Model):
     librarian = models.ForeignKey('users.Profile', on_delete=models.DO_NOTHING, related_name='librarians')
     location = models.CharField(max_length=255, blank=True, null=True)
