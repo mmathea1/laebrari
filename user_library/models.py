@@ -1,4 +1,5 @@
 
+from dbm.ndbm import library
 from django.db import models
 from users.models import Profile
 LIBRARY_TYPES = (
@@ -8,7 +9,6 @@ LIBRARY_TYPES = (
 )
 
 # Create your models here.
-
 class UserLibrary(models.Model):
     librarian = models.ForeignKey('users.Profile', on_delete=models.DO_NOTHING, related_name='librarians')
     location = models.CharField(max_length=255, blank=True, null=True)
@@ -22,19 +22,20 @@ class UserLibrary(models.Model):
     type = models.CharField(max_length=255, blank=True, null=True, choices=LIBRARY_TYPES)
 
 
-# class Book(models.Model):
-#     title = models.CharField(verbose_name="book_title", max_length=255)
-#     author = models.CharField(verbose_name="author", max_length=255)
-#     date_acquired = models.DateField(verbose_name="date_acquired")
-#     owner = models.ForeignKey(
-#         to='users.User', on_delete=models.DO_NOTHING, related_name="book_owner")
-#     genre = models.CharField(max_length=255, blank=True, null=True)
-#     available_to_borrow = models.BooleanField(default=False)
-#     available_to_sell = models.BooleanField(default=False)
-#     private_library = models.BooleanField(default=True)
-#     borrowing_price = models.IntegerField()
-#     selling_price = models.FloatField()
-#     book_condition = models.CharField(max_length=255, blank=True)
+class Book(models.Model):
+    title = models.CharField(verbose_name="book_title", max_length=255)
+    author = models.CharField(verbose_name="author", max_length=255)
+    date_acquired = models.DateField(verbose_name="date_acquired")
+    owner = models.ForeignKey(
+        to='users.User', on_delete=models.DO_NOTHING, related_name="book_owner")
+    genre = models.CharField(max_length=255, blank=True, null=True)
+    available_to_borrow = models.BooleanField(default=False)
+    available_to_sell = models.BooleanField(default=False)
+    private_library = models.BooleanField(default=True)
+    borrowing_price = models.IntegerField()
+    selling_price = models.FloatField()
+    book_condition = models.CharField(max_length=255, blank=True)
+    library = models.ForeignKey(to=UserLibrary, on_delete=models.DO_NOTHING, related_name="library_book")
 
 
 # class BookTransaction(models.Model):
