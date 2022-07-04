@@ -1,9 +1,12 @@
 import re
+from requests import Response
 from rest_framework import viewsets, generics, permissions
+from user_library.models import UserLibrary
+from user_library.serializers import UserLibrarySerializer
 from users.forms import  ProfileUpdateForm, UserRegistrationForm, UserUpdateForm
-from users.models import User
-from users.serializers import UserSerializer
-from django.shortcuts import render, redirect
+from users.models import Profile, User
+from users.serializers import LibrarianSerializer, ProfileSerializer, UserSerializer
+from django.shortcuts import get_object_or_404, render, redirect
 from django.urls import reverse_lazy
 from django.contrib.auth.forms import UserCreationForm
 from django.views.generic.edit import CreateView
@@ -50,3 +53,22 @@ class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all().order_by('id')
     serializer_class = UserSerializer
     permission_classes = [permissions.IsAuthenticated]
+
+class ProfileViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint for Profile 
+    """
+    queryset = Profile.objects.all().order_by('id')
+    serializer_class = ProfileSerializer
+    permission_classes = [permissions.IsAuthenticated] 
+
+class LibrarianViewSet(viewsets.ViewSet):
+    permission_classes = [permissions.IsAuthenticated]
+
+    def retrieve(self, request, pk=None):    
+        queryset = Profile.objects.all()
+        user = get_object_or_404(queryset, pk=pk)
+        library = UserLibrary.objects.filter(librarian__user=user)
+        data = {"library" : library, "librarian": user}
+        serializer = LibrarianSerializer(data)
+        return Response(serializer.data)

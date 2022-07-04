@@ -1,22 +1,22 @@
-from django.shortcuts import render
+from django.shortcuts import get_object_or_404
+from rest_framework import generics
 from rest_framework.response import Response
 
 from user_library.models import Book, UserLibrary
 from rest_framework import viewsets, status
 from rest_framework import permissions
-from user_library.serializers import UserLibrarySerializer
-from rest_framework.parsers import MultiPartParser, FormParser, JSONParser
-from rest_framework import generics
+from user_library.serializers import UserLibraryBooksSerializer, UserLibrarySerializer
 # Create your views here.
 
 
 class UserLibraryViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows users to be viewed or edited.
+    API endpoint that allows users create, view or edit libraries.
     """
     queryset = UserLibrary.objects.all().order_by('id')
     serializer_class = UserLibrarySerializer
     permission_classes = [permissions.IsAuthenticated]
+
 
     def create(self, request):
         serializer = UserLibrarySerializer(data=request.data)
@@ -25,11 +25,21 @@ class UserLibraryViewSet(viewsets.ModelViewSet):
             return Response(serializer.data, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-class UpdateLibraryViewSet(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Book.objects.all()
-    parser_classes = (MultiPartParser, FormParser, JSONParser)
-    serializer_class = UserLibrarySerializer
-    lookup_field = 'id'
 
-    def get(self, request, format=None):
-        return Response(request.data, status=status.HTTP_200_OK)
+class LibraryBookView(generics.ListCreateAPIView):
+    """
+    API endpoint that allows users to add, view or edit books in libraries.
+    """
+    serializer_class = UserLibraryBooksSerializer
+
+    def get_queryset(self):
+        queryset = Book.objects.all()
+        library = self.request.query_params.get('id')
+        if library is not None:
+            queryset = queryset.filter(library=library)
+        return queryset
+
+
+    def post(self, request, *args, **kwargs):
+        pass
+
