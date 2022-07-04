@@ -66,9 +66,7 @@ class LibrarianViewSet(viewsets.ViewSet):
     permission_classes = [permissions.IsAuthenticated]
 
     def retrieve(self, request, pk=None):    
-        queryset = Profile.objects.all()
-        user = get_object_or_404(queryset, pk=pk)
-        library = UserLibrary.objects.filter(librarian__user=user)
-        data = {"library" : library, "librarian": user}
+        queryset = UserLibrary.objects.filter(librarian__user=request.user)
+        data = {"library" : queryset, "librarian": request.user}
         serializer = LibrarianSerializer(data)
         return Response(serializer.data)

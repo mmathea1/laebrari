@@ -1,3 +1,7 @@
+## [0.1.3] - 2022-07-05
+### Updated
+- Made API browsable
+
 ## [0.1.2] - 2022-07-01
 ### Added
 - User can only see libraries assigned to them

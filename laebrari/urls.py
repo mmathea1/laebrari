@@ -16,9 +16,8 @@ from users.views import LibrarianViewSet, ProfileViewSet, UserViewSet, home, pro
 
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet, basename="user")
-router.register(r'profiles', ProfileViewSet, basename="profile")
+router.register(r'librarians', ProfileViewSet, basename="librarian")
 router.register(r'libraries', UserLibraryViewSet, basename="library")
-router.register(r'librarians', LibrarianViewSet, basename="librarian")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
