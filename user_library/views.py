@@ -5,7 +5,7 @@ from rest_framework.response import Response
 from user_library.models import Book, UserLibrary
 from rest_framework import viewsets, status
 from rest_framework import permissions
-from user_library.serializers import UserLibraryBooksSerializer, UserLibrarySerializer
+from user_library.serializers import BookSerializer, UserLibraryBooksSerializer, UserLibrarySerializer
 # Create your views here.
 
 
@@ -25,12 +25,17 @@ class UserLibraryViewSet(viewsets.ModelViewSet):
             return Response(serializer.data, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+class LibraryBookViewSet(viewsets.ModelViewSet):
+    queryset = Book.objects.all()
+    serializer_class = BookSerializer
+    permission_classes = [permissions.IsAuthenticated]
 
 class LibraryBookView(generics.ListCreateAPIView):
     """
     API endpoint that allows users to add, view or edit books in libraries.
     """
-    serializer_class = UserLibraryBooksSerializer
+    serializer_class = BookSerializer
+    permission_classes = [permissions.IsAuthenticated]
 
     def get_queryset(self):
         queryset = Book.objects.all()
