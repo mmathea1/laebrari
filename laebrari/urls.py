@@ -9,7 +9,7 @@ from django.contrib.auth import views as auth_views
 from django.conf.urls.static import static
 from rest_framework import routers
 from django.urls import include, path
-from user_library.views import UserLibraryViewSet
+from user_library.views import LibraryBookViewSet, UserLibraryViewSet
 
 from users.views import LibrarianViewSet, ProfileViewSet, UserViewSet, home, profile, user_registration
 
@@ -18,13 +18,14 @@ router = routers.DefaultRouter()
 router.register(r'users', UserViewSet, basename="user")
 router.register(r'librarians', ProfileViewSet, basename="librarian")
 router.register(r'libraries', UserLibraryViewSet, basename="library")
+router.register(r'books', LibraryBookViewSet, basename="library_books")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
     path("signup/", user_registration, name="signup"),
     path('admin/profile/', profile, name='profile'),
-    path('home/', home, name='home'),
+    path('login/', home, name='login'),
     path('', include(router.urls))
 ]
 

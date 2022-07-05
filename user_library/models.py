@@ -8,6 +8,12 @@ LIBRARY_TYPES = (
     ('UNLISTED', 'UNLISTED'),
 )
 
+BOOK_CONDITIONS = (
+    ('NEW', 'NEW'),
+    ('OLD', 'OLD'),
+    ('GOOD CONDITION', 'GOOD CONDITION'),
+)
+
 # Create your models here.
 class UserLibrary(models.Model):
     librarian = models.ForeignKey('users.Profile', on_delete=models.DO_NOTHING, related_name='librarians')
@@ -22,20 +28,29 @@ class UserLibrary(models.Model):
     type = models.CharField(max_length=255, blank=True, null=True, choices=LIBRARY_TYPES)
 
 
+    def __str__(self):
+        return "{} - {}".format(self.name, self.location)
+
+
 class Book(models.Model):
-    title = models.CharField(verbose_name="book_title", max_length=255)
+    title = models.CharField(verbose_name="book title", max_length=255)
     author = models.CharField(verbose_name="author", max_length=255)
-    date_acquired = models.DateField(verbose_name="date_acquired")
+    memo = models.CharField(verbose_name="author", max_length=255)
+    isbn = models.CharField(verbose_name="author", max_length=255)
+    date_acquired = models.DateField(verbose_name="date acquired")
     owner = models.ForeignKey(
-        to='users.User', on_delete=models.DO_NOTHING, related_name="book_owner")
+        to='users.Profile', on_delete=models.DO_NOTHING, related_name="book_owner")
     genre = models.CharField(max_length=255, blank=True, null=True)
     available_to_borrow = models.BooleanField(default=False)
     available_to_sell = models.BooleanField(default=False)
-    private_library = models.BooleanField(default=True)
     borrowing_price = models.IntegerField()
     selling_price = models.FloatField()
-    book_condition = models.CharField(max_length=255, blank=True)
+    book_condition = models.CharField(max_length=255, blank=True, choices=BOOK_CONDITIONS)
     library = models.ForeignKey(to=UserLibrary, on_delete=models.DO_NOTHING, related_name="library_book")
+
+
+    def __str__(self):
+        return "{}".format(self.title)
 
 
 # class BookTransaction(models.Model):
