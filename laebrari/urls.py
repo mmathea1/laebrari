@@ -22,11 +22,11 @@ router.register(r'books', LibraryBookViewSet, basename="library_books")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', home, name='login'),
     path('accounts/', include('django.contrib.auth.urls')),
-    path("signup/", user_registration, name="signup"),
-    path('admin/profile/', profile, name='profile'),
-    path('login/', home, name='login'),
-    path('', include(router.urls))
+    path('signup/', user_registration, name='signup'),
+    path('profile/', profile, name='profile'),
+    path('api/', include(router.urls), name='api')
 ]
 
 if settings.DEBUG:
