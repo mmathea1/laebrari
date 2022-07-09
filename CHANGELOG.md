@@ -1,4 +1,8 @@
-## [0.1.3] - 2022-07-05
+## [0.2.2] - 2022-07-09
+### Updated
+- Made browsable API and Admin site only to Admin users
+
+## [0.2.1] - 2022-07-05
 ### Updated
 - Made API browsable
 
