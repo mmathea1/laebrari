@@ -11,7 +11,7 @@ from rest_framework import routers
 from django.urls import include, path
 from user_library.views import LibraryBookViewSet, UserLibraryViewSet
 
-from users.views import LibrarianViewSet, ProfileViewSet, UserViewSet, home, profile, user_registration
+from users.views import ProfileViewSet, UserViewSet, home, profile, user_registration
 
 
 router = routers.DefaultRouter()

@@ -1,5 +1,5 @@
-from user_library.models import UserLibrary
-from user_library.serializers import UserLibrarySerializer
+
+# from user_library.serializers import UserLibrarySerializer
 from users.models import Profile, User
 from rest_framework import serializers
 
@@ -14,6 +14,6 @@ class ProfileSerializer(serializers.ModelSerializer):
         model = Profile
         fields = '__all__'
 
-class LibrarianSerializer(serializers.Serializer):
-    library = UserLibrarySerializer()
-    librarian = ProfileSerializer()
+# class LibrarianSerializer(serializers.Serializer):
+#     library = UserLibrarySerializer()
+#     librarian = ProfileSerializer()

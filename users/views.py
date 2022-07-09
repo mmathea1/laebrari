@@ -5,7 +5,7 @@ from user_library.models import UserLibrary
 from user_library.serializers import UserLibrarySerializer
 from users.forms import  ProfileUpdateForm, UserRegistrationForm, UserUpdateForm
 from users.models import Profile, User
-from users.serializers import LibrarianSerializer, ProfileSerializer, UserSerializer
+from users.serializers import ProfileSerializer, UserSerializer
 from django.shortcuts import get_object_or_404, render, redirect
 from django.urls import reverse_lazy
 from django.contrib.auth.forms import UserCreationForm
