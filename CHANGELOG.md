@@ -1,3 +1,9 @@
+## [0.3.0] - 2022-07-12
+### Added
+- Ability to add books to libraries
+- View all books if user is admin
+- View books in public libraries or those that belog to the current user
+
 ## [0.2.2] - 2022-07-09
 ### Updated
 - Made browsable API and Admin site only accesible to Admin users
