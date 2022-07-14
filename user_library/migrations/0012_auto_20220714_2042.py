@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='booktransaction',
             name='library',
-            field=models.ForeignKey(default=19, on_delete=django.db.models.deletion.DO_NOTHING, related_name='transaction_owner', to='user_library.userlibrary'),
+            field=models.ForeignKey(default=2, on_delete=django.db.models.deletion.DO_NOTHING, related_name='transaction_owner', to='user_library.userlibrary'),
             preserve_default=False,
         ),
         migrations.AlterField(
