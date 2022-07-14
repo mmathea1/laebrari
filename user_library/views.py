@@ -1,11 +1,11 @@
-from dbm.ndbm import library
-import re
+import queue
+from rest_framework import generics
 from rest_framework.response import Response
 
-from user_library.models import Book, UserLibrary
+from user_library.models import Book, BookTransaction, UserLibrary
 from rest_framework import viewsets, status
 from rest_framework import permissions
-from user_library.serializers import BookSerializer, UserLibrarySerializer
+from user_library.serializers import BookSerializer, BookTransactionSerializer, UserLibrarySerializer
 from users.models import Profile, User
 from users.serializers import UserSerializer
 from django.db.models import Q
@@ -56,5 +56,14 @@ class LibraryBookViewSet(viewsets.ModelViewSet):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class BookTransactionViewSet(viewsets.ModelViewSet):
+    # create a new book transaction
+    queryset = BookTransaction.objects.all().order_by('id')
+    serializer_class = BookTransactionSerializer
+
+    def create(self, request, *args, **kwargs):
+        return super().create(request, *args, **kwargs)
 
 
