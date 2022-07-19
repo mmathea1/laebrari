@@ -53,21 +53,21 @@ class Book(models.Model):
         return "{}".format(self.title)
 
 
-# class BookTransaction(models.Model):
-#     transaction_type = models.CharField(
-#         max_length=255, choices=[['borrow', 'Borrow'], ['sell', 'Sell']])
-#     borrower = models.ForeignKey(
-#         to='users.User', on_delete=models.DO_NOTHING, related_name="borrower")
-#     buyer = models.ForeignKey(
-#         to='users.User', on_delete=models.DO_NOTHING, related_name="buyer")
-#     owner = models.ForeignKey(
-#         to='users.User', on_delete=models.DO_NOTHING, related_name="transaction_owner")
-#     book_transacted = models.ForeignKey(
-#         to=Book, on_delete=models.DO_NOTHING, related_name="book_transacted")
-#     transaction_date = models.DateField(
-#         auto_now=True, verbose_name="date_borrowed")
-#     return_date = models.DateField(verbose_name="return_date")
+class BookTransaction(models.Model):
+    transaction_type = models.CharField(
+        max_length=255, choices=[['borrow', 'Borrow'], ['buy', 'Buy']])
+    borrower = models.ForeignKey(
+        to='users.Profile', on_delete=models.DO_NOTHING, related_name="borrower",  null=True, blank=True)
+    buyer = models.ForeignKey(
+        to='users.Profile', on_delete=models.DO_NOTHING, related_name="buyer", null=True, blank=True)
+    library = models.ForeignKey(
+        to=UserLibrary, on_delete=models.DO_NOTHING, related_name="transaction_owner")
+    book_transacted = models.ForeignKey(
+        to=Book, on_delete=models.DO_NOTHING, related_name="book_transacted")
+    transaction_date = models.DateField(
+        auto_now=True, verbose_name="date_borrowed")
+    return_date = models.DateField(verbose_name="return_date",null=True, blank=True)
 
-#     def __str__(self) -> str:
-#         return "{}{}".format(self.borrower, self.book_borrowed)
+    def __str__(self) -> str:
+        return "{}{}".format(self.borrower, self.book_borrowed)
 
