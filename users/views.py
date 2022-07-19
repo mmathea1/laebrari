@@ -12,6 +12,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.views.generic.edit import CreateView
 from django.contrib.auth import login
 from django.contrib import messages
+from rest_framework import authentication, permissions
 
 def home(request):
     return render(request, "users/home.html")
@@ -27,6 +28,11 @@ def user_registration(request):
         messages.error(request, "Unsuccessful registration. Invalid information.")
     form = UserRegistrationForm()
     return render (request=request, template_name="users/signup.html", context={"register_form":form})
+
+class ProfileView(generics.RetrieveUpdateAPIView):
+    authentication_classes = [authentication.TokenAuthentication]
+    permission_classes = [permissions.IsAdminUser]
+
 
 def profile(request):
     if request.method == "POST": 
