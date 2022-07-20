@@ -1,4 +1,4 @@
-import queue
+
 from rest_framework import generics
 from rest_framework.response import Response
 
@@ -6,11 +6,34 @@ from user_library.models import Book, BookTransaction, UserLibrary
 from rest_framework import viewsets, status
 from rest_framework import permissions
 from user_library.serializers import BookSerializer, BookTransactionSerializer, UserLibrarySerializer
-from users.models import Profile, User
+from users.models import Profile
 from users.serializers import UserSerializer
 from django.db.models import Q
+from rest_framework.renderers import TemplateHTMLRenderer
 # Create your views here.
 
+class LibraryDetail(generics.RetrieveAPIView):
+    serializer_class = UserLibrarySerializer
+    permission_classes = [permissions.IsAuthenticated]
+    renderer_classes = [TemplateHTMLRenderer]
+
+    def get_queryset(self):
+        req_user = self.request.user
+        user = UserSerializer(req_user)
+        if user['is_staff'].value is True:
+            queryset = UserLibrary.objects.all().order_by('id')
+        else:
+            queryset = UserLibrary.objects.filter(librarian__user=req_user).order_by('id')    
+        return queryset
+    
+    def get(self, request, pk, format=None):
+        lib = UserLibrary.objects.get(pk=pk)
+        libraries = UserLibrarySerializer(lib)
+        queryset = Book.objects.filter(library=pk)
+        books = BookSerializer(queryset, many=True)
+        data = {"library": libraries.data, "books": books.data}
+        return Response(data, status=status.HTTP_200_OK, template_name="userlibraries/library-detail.html")
+      
 
 class UserLibraryViewSet(viewsets.ModelViewSet):
     """
