@@ -18,26 +18,41 @@
     <div class="container py-5">
         <div class="content-section">
             <div class="media">
-                <img class="rounded-circle account-img" src="{{ user.profile.image.url }}">
+                <img class="rounded-circle account-img" src="{{ profile.profile_picture }}">
                 <div class="media-body">
-                    <h2 class="account-heading">{{ user.username }}</h2>
-                    <p class="text-secondary">{{ user.email }}</p>
+                    <h2 class="account-heading">{{ profile.first_name }} {{ profile.last_name}}</h2>
+                    <p class="text-secondary">{{ profile.bio }}</p>
+                    <p class="text-secondary">{{ profile.date_joined}}</p>
+                    <p class="text-secondary">{{ profile.location }}</p>
+                    <p class="text-secondary">{{ profile.address }}</p>
+                    <p class="text-secondary">{{ profile.phone_number }}</p>
                 </div>
             </div>
-            <!-- FORM HERE -->
-            <form method="POST" enctype="multipart/form-data">
-                {% csrf_token %}
-                <fieldset class="form-group">
-                    <legend class="border-bottom mb-4">Profile Info</legend>
-                    {{ u_form|crispy }}
-                    <!-- User form -->
-                    {{ p_form|crispy }}
-                    <!-- Profile form -->
-                </fieldset>
-                <div class="form-group">
-                    <button class="btn btn-outline-info" type="submit">Update</button>
-                </div>
-            </form>
+        </div>
+        <div>
+            <h2>Libraries</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Library Type</th>
+                        <th scope="col">Librarian</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for library in libraries %}
+                    <tr>
+                        <th scope="row">{{ library.name }}</th>
+                        <td>{{ library.email }}</td>
+                        <td>{{ library.type }}</td>
+                        <td>{{ library.librarian }}</td>
+                        <td><button type="button" class="btn btn-primary">View</button></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
         </div>
     </div>
 </body>
