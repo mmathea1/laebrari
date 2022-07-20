@@ -9,9 +9,9 @@ from django.contrib.auth import views as auth_views
 from django.conf.urls.static import static
 from rest_framework import routers
 from django.urls import include, path
-from user_library.views import BookTransactionViewSet, LibraryBookViewSet, UserLibraryViewSet
+from user_library.views import BookTransactionViewSet, LibraryBookViewSet, LibraryDetail, UserLibraryViewSet
 
-from users.views import ProfileViewSet, UserViewSet, home, profile, user_registration
+from users.views import ProfileView, ProfileViewSet, UserViewSet, home, user_registration
 
 
 router = routers.DefaultRouter()
@@ -26,8 +26,8 @@ urlpatterns = [
     path('', home, name='login'),
     path('accounts/', include('django.contrib.auth.urls')),
     path('signup/', user_registration, name='signup'),
-    path('profile/', profile, name='profile'),
-    path('library/', profile, name='library'),
+    path('profile/', ProfileView.as_view(), name='profile'),
+    path('library/<int:pk>/', LibraryDetail.as_view()),
     path('api/', include(router.urls))
 ]
 

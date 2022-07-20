@@ -1,18 +1,14 @@
-import re
-from requests import Response
-from rest_framework import viewsets, generics, permissions
+from rest_framework import viewsets, generics, permissions, status
 from user_library.models import UserLibrary
 from user_library.serializers import UserLibrarySerializer
-from users.forms import  ProfileUpdateForm, UserRegistrationForm, UserUpdateForm
+from users.forms import  ProfileUpdateForm, UserRegistrationForm
 from users.models import Profile, User
 from users.serializers import ProfileSerializer, UserSerializer
-from django.shortcuts import get_object_or_404, render, redirect
-from django.urls import reverse_lazy
-from django.contrib.auth.forms import UserCreationForm
-from django.views.generic.edit import CreateView
+from django.shortcuts import  render, redirect
 from django.contrib.auth import login
 from django.contrib import messages
-from rest_framework import authentication, permissions
+from rest_framework.response import Response
+from rest_framework.renderers import TemplateHTMLRenderer
 
 def home(request):
     return render(request, "users/home.html")
@@ -30,27 +26,27 @@ def user_registration(request):
     return render (request=request, template_name="users/signup.html", context={"register_form":form})
 
 class ProfileView(generics.RetrieveUpdateAPIView):
-    authentication_classes = [authentication.TokenAuthentication]
-    permission_classes = [permissions.IsAdminUser]
+    queryset = Profile.objects.all().order_by('id')
+    serializer_class = ProfileSerializer
+    permission_classes = [permissions.IsAuthenticated]
+    renderer_classes = [TemplateHTMLRenderer]
+    
+    def get(self, request, *args, **kwargs):
+        profile = ProfileSerializer(request.user.profile)
+        if profile:
+            libs = UserLibrary.objects.filter(librarian=profile['id'].value)  
+            libraries = UserLibrarySerializer(libs, many=True)
+            data = {"profile": profile.data, "libraries": libraries.data}
+            return Response(data, status=status.HTTP_200_OK, template_name="users/profile.html")
+        return Response('PROFILE_NOT_FOUND', status.HTTP_404_NOT_FOUND)
 
 
-def profile(request):
-    if request.method == "POST": 
+    def patch(self, request, *args, **kwargs):
         p_form = ProfileUpdateForm(request.POST, request.FILES, instance=request.user.profile) 
-
         if p_form.is_valid():
             p_form.save()
             messages.success(request, f'Your account has been updated!')
-            return redirect('home') # Redirect back to home page
-    else:
-        p_form = ProfileUpdateForm(instance=request.user.profile)
-    
-    context = {
-        'user': request.user,
-        'p_form': p_form
-    }
-
-    return render(request, 'users/profile.html', context)
+        return Response('Your account has been updated!', status=status.HTTP_200_OK)
 
 class UserViewSet(viewsets.ModelViewSet):
     """
