@@ -9,7 +9,7 @@ from django.contrib.auth import views as auth_views
 from django.conf.urls.static import static
 from rest_framework import routers
 from django.urls import include, path
-from user_library.views import BookTransactionViewSet, LibraryBookViewSet, LibraryDetail, UserLibraryViewSet
+from user_library.views import BookTransactionViewSet, LibraryBookCreateView, LibraryBookViewSet, LibraryDetail, UserLibraryViewSet
 
 from users.views import ProfileView, ProfileViewSet, UserViewSet, home, user_registration
 
@@ -27,7 +27,11 @@ urlpatterns = [
     path('accounts/', include('django.contrib.auth.urls')),
     path('signup/', user_registration, name='signup'),
     path('profile/', ProfileView.as_view(), name='profile'),
-    path('library/<int:pk>/', LibraryDetail.as_view()),
+    # add book to library
+    path('library/<int:pk>/book/', LibraryBookCreateView.as_view(), name='add_book'),
+    # view book detail
+    # view all public books
+    # view library with book list
     path('api/', include(router.urls))
 ]
 
