@@ -1,8 +1,13 @@
+## [0.3.1] - 2022-07-28
+### Updated
+- Updated view to create book with owner as current user
+
+
 ## [0.3.0] - 2022-07-12
 ### Added
 - Ability to add books to libraries
 - View all books if user is admin
-- View books in public libraries or those that belog to the current user
+- View books in public libraries or those that belong to the current user
 
 ## [0.2.2] - 2022-07-09
 ### Updated
