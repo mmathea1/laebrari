@@ -6,28 +6,41 @@ from user_library.models import Book, BookTransaction, UserLibrary
 from rest_framework import viewsets, status
 from rest_framework import permissions
 from user_library.serializers import BookSerializer, BookTransactionSerializer, UserLibrarySerializer
-from users.models import Profile
+from users.models import Profile, User
 from users.serializers import UserSerializer
 from django.db.models import Q
 from rest_framework.renderers import TemplateHTMLRenderer
 # Create your views here.
 
 class LibraryBookCreateView(generics.ListCreateAPIView):
-    # create a book in library pk specified
     queryset = Book.objects.all().order_by('id')
     serializer_class = BookSerializer
     permission_classes = [permissions.IsAuthenticated]
-    form_class = BookCreateForm
-    renderer_classes = [TemplateHTMLRenderer]
-    template_name = 'userlibraries/add_book.html'
     
     def post(self, request, *args, **kwargs):
-        form = self.form_class(request.POST)  
-        if form.is_valid():
-            form.save()
-            return Response({'new_book_form': form}, status=status.HTTP_201_CREATED)
-        return Response(form.errors, status=status.HTTP_400_BAD_REQUEST)
+        owner = Profile.objects.get(user=request.user)
+        request.data._mutable=True
+        request.data['owner'] = owner.pk
+        request.data._mutable=False
+        serializer = BookSerializer(data=request.data) 
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+class LibraryListCreateView(generics.ListCreateAPIView):
+    serializer_class = UserLibrarySerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get_queryset(self):
+        req_user = self.request.user
+        queryset = UserLibrary.objects.filter(librarian__user=req_user).order_by('id') 
+        return queryset
+
+    def list(self, request, *args, **kwargs):
+        queryset = self.get_queryset()
+        serializer = UserLibrarySerializer(queryset, many=True)
+        return Response(serializer.data)
 
 class LibraryDetail(generics.RetrieveAPIView):
     serializer_class = UserLibrarySerializer

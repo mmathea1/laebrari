@@ -1,4 +1,3 @@
-from dbm.ndbm import library
 from user_library.models import Book, BookTransaction, UserLibrary
 from rest_framework import serializers
 
@@ -12,6 +11,13 @@ class BookSerializer(serializers.ModelSerializer):
     class Meta:
         model = Book
         fields = '__all__'
+    
+    def create(self, validated_data):
+        instance, created = Book.objects.get_or_create(**validated_data)
+        if not created:
+            raise serializers.ValidationError({'message': instance.title + ' already exists.'})
+        return instance
+
 
 class LibBookSerializer(serializers.ModelSerializer):
     library = UserLibrarySerializer()

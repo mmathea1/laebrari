@@ -28,7 +28,7 @@ urlpatterns = [
     path('signup/', user_registration, name='signup'),
     path('profile/', ProfileView.as_view(), name='profile'),
     # add book to library
-    path('library/<int:pk>/book/', LibraryBookCreateView.as_view(), name='add_book'),
+    path('book/add/', LibraryBookCreateView.as_view(), name='add_book'),
     # view book detail
     # view all public books
     # view library with book list
