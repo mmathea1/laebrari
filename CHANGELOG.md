@@ -1,3 +1,7 @@
+## [0.4.0] - 2022-08-01
+### Updated
+- Updated root url to list books in public libraries when current user is authenticated.
+
 ## [0.3.1] - 2022-07-28
 ### Updated
 - Updated view to create book with owner as current user
