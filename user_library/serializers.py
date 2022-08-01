@@ -7,6 +7,11 @@ class UserLibrarySerializer(serializers.ModelSerializer):
         model = UserLibrary
         fields = '__all__'
 
+class PublicBookSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Book
+        fields = ['title', 'author', 'genre', 'isbn', 'book_condition', 'library' ]
+
 class BookSerializer(serializers.ModelSerializer):
     class Meta:
         model = Book

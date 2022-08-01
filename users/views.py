@@ -1,6 +1,8 @@
+
+from re import template
 from rest_framework import viewsets, generics, permissions, status
-from user_library.models import UserLibrary
-from user_library.serializers import UserLibrarySerializer
+from user_library.models import Book, UserLibrary
+from user_library.serializers import BookSerializer, PublicBookSerializer, UserLibrarySerializer
 from users.forms import  ProfileUpdateForm, UserRegistrationForm
 from users.models import Profile, User
 from users.serializers import ProfileSerializer, UserSerializer
@@ -9,9 +11,18 @@ from django.contrib.auth import login
 from django.contrib import messages
 from rest_framework.response import Response
 from rest_framework.renderers import TemplateHTMLRenderer
+from rest_framework import generics
 
-def home(request):
-    return render(request, "users/home.html")
+class HomeViewPage(generics.ListAPIView):
+    queryset = Book.objects.filter(library__type='PUBLIC')
+    serializer_class = BookSerializer
+    permission_classes = [permissions.IsAuthenticated]
+ 
+
+    def get(self, request):
+        queryset = self.get_queryset()
+        serializer = PublicBookSerializer(queryset, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
 
 def user_registration(request):
     if request.method == "POST":
