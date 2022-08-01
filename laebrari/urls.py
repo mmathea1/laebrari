@@ -11,7 +11,7 @@ from rest_framework import routers
 from django.urls import include, path
 from user_library.views import BookTransactionViewSet, LibraryBookCreateView, LibraryBookViewSet, LibraryDetail, UserLibraryViewSet
 
-from users.views import ProfileView, ProfileViewSet, UserViewSet, home, user_registration
+from users.views import HomeViewPage, ProfileView, ProfileViewSet, UserViewSet, user_registration
 
 
 router = routers.DefaultRouter()
@@ -23,7 +23,7 @@ router.register(r'transactions', BookTransactionViewSet, basename="book_transact
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home, name='login'),
+    path('', HomeViewPage.as_view(), name='login'),
     path('accounts/', include('django.contrib.auth.urls')),
     path('signup/', user_registration, name='signup'),
     path('profile/', ProfileView.as_view(), name='profile'),
