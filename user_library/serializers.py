@@ -10,7 +10,7 @@ class UserLibrarySerializer(serializers.ModelSerializer):
 class PublicBookSerializer(serializers.ModelSerializer):
     class Meta:
         model = Book
-        fields = ['title', 'author', 'genre', 'isbn', 'book_condition', 'library' ]
+        fields = ['id', 'title', 'author', 'genre', 'isbn', 'book_condition', 'library' ]
 
 class BookSerializer(serializers.ModelSerializer):
     class Meta:
@@ -33,6 +33,6 @@ class LibBookSerializer(serializers.ModelSerializer):
 class BookTransactionSerializer(serializers.ModelSerializer):
     class Meta:
         model = BookTransaction
-        fields = '__all__'
+        fields = ['book', 'transaction_type', 'transactor']
 
 

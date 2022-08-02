@@ -1,3 +1,4 @@
+from urllib.parse import quote_from_bytes
 from rest_framework import generics
 from rest_framework.response import Response
 
@@ -26,6 +27,22 @@ class LibraryBookCreateView(generics.ListCreateAPIView):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class BorrowBookView(generics.CreateAPIView):
+    queryset = Book.objects.all().order_by('id')
+    serializer_class = BookTransactionSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    def post(self, request, *args, **kwargs):
+        transaction = request.data['transaction_type'].strip()
+        transactor= Profile.objects.get(user=request.user);
+        data = dict(book=kwargs['pk'], transaction_type=transaction, transactor=transactor.pk)
+        bt = BookTransactionSerializer(data=data)
+        if bt.is_valid(raise_exception=True):
+            bt.save()
+            return Response(bt.data, status=status.HTTP_201_CREATED)
+        return Response(bt.errors, status=status.HTTP_400_BAD_REQUEST)
+
 
 class LibraryListCreateView(generics.ListCreateAPIView):
     serializer_class = UserLibrarySerializer

@@ -56,13 +56,9 @@ class Book(models.Model):
 class BookTransaction(models.Model):
     transaction_type = models.CharField(
         max_length=255, choices=[['borrow', 'Borrow'], ['buy', 'Buy']])
-    borrower = models.ForeignKey(
+    transactor = models.ForeignKey(
         to='users.Profile', on_delete=models.DO_NOTHING, related_name="borrower",  null=True, blank=True)
-    buyer = models.ForeignKey(
-        to='users.Profile', on_delete=models.DO_NOTHING, related_name="buyer", null=True, blank=True)
-    library = models.ForeignKey(
-        to=UserLibrary, on_delete=models.DO_NOTHING, related_name="transaction_owner")
-    book_transacted = models.ForeignKey(
+    book = models.ForeignKey(
         to=Book, on_delete=models.DO_NOTHING, related_name="book_transacted")
     transaction_date = models.DateField(
         auto_now=True, verbose_name="date_borrowed")
