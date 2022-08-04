@@ -1,7 +1,5 @@
 
-from dbm.ndbm import library
 from django.db import models
-from users.models import Profile
 LIBRARY_TYPES = (
     ('PRIVATE', 'PRIVATE'),
     ('PUBLIC', 'PUBLIC'),
@@ -14,7 +12,9 @@ BOOK_CONDITIONS = (
     ('GOOD CONDITION', 'GOOD CONDITION'),
 )
 
-# Create your models here.
+TRANSACTION_TYPES = (('LOAN', 'LOAN'), ('SELL', 'SELL'))
+
+
 class UserLibrary(models.Model):
     librarian = models.ForeignKey('users.Profile', on_delete=models.DO_NOTHING, related_name='librarians')
     location = models.CharField(max_length=255, blank=True, null=True)
@@ -55,15 +55,15 @@ class Book(models.Model):
 
 class BookTransaction(models.Model):
     transaction_type = models.CharField(
-        max_length=255, choices=[['borrow', 'Borrow'], ['buy', 'Buy']])
-    transactor = models.ForeignKey(
+        max_length=255, choices=TRANSACTION_TYPES)
+    patron = models.ForeignKey(
         to='users.Profile', on_delete=models.DO_NOTHING, related_name="borrower",  null=True, blank=True)
     book = models.ForeignKey(
         to=Book, on_delete=models.DO_NOTHING, related_name="book_transacted")
     transaction_date = models.DateField(
-        auto_now=True, verbose_name="date_borrowed")
-    return_date = models.DateField(verbose_name="return_date",null=True, blank=True)
+        auto_now=True, verbose_name="transaction_date")
+    end_of_transaction = models.DateField(verbose_name="return_date",null=True, blank=True)
 
     def __str__(self) -> str:
-        return "{}{}".format(self.borrower, self.book_borrowed)
+        return "{} - {}".format(self.patron, self.book)
 
