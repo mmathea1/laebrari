@@ -55,15 +55,14 @@ class Book(models.Model):
 
 class BookTransaction(models.Model):
     transaction_type = models.CharField(
-        max_length=255, choices=TRANSACTION_TYPES)
+        max_length=255, choices=TRANSACTION_TYPES, blank=False, verbose_name="Transaction Type")
     patron = models.ForeignKey(
-        to='users.Profile', on_delete=models.DO_NOTHING, related_name="borrower",  null=True, blank=True)
+        to='users.Profile', on_delete=models.DO_NOTHING, related_name="borrower", blank=False)
     book = models.ForeignKey(
-        to=Book, on_delete=models.DO_NOTHING, related_name="book_transacted")
+        to=Book, on_delete=models.DO_NOTHING, related_name="book_transacted", blank=False)
     transaction_date = models.DateField(
-        auto_now=True, verbose_name="transaction_date")
-    end_of_transaction = models.DateField(verbose_name="return_date",null=True, blank=True)
+        auto_now=True, verbose_name="transaction_date", blank=False)
+    end_of_transaction = models.DateField(verbose_name="return_date",null=True, blank=False)
 
     def __str__(self) -> str:
         return "{} - {}".format(self.patron, self.book)
-
