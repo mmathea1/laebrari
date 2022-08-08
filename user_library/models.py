@@ -33,20 +33,20 @@ class UserLibrary(models.Model):
 
 
 class Book(models.Model):
-    title = models.CharField(verbose_name="book title", max_length=255)
-    author = models.CharField(verbose_name="author", max_length=255)
+    title = models.CharField(verbose_name="book title", max_length=255, blank=False)
+    author = models.CharField(verbose_name="author", max_length=255, blank=False)
     memo = models.CharField(verbose_name="author", max_length=255)
-    isbn = models.CharField(verbose_name="author", max_length=255)
+    isbn = models.CharField(verbose_name="author", max_length=255, blank=False)
     date_acquired = models.DateField(verbose_name="date acquired")
     owner = models.ForeignKey(
-        to='users.Profile', on_delete=models.DO_NOTHING, related_name="book_owner")
-    genre = models.CharField(max_length=255, blank=True, null=True)
+        to='users.Profile', on_delete=models.DO_NOTHING, related_name="book_owner", blank=False)
+    genre = models.CharField(max_length=255, blank=False)
     available_to_borrow = models.BooleanField(default=False)
     available_to_sell = models.BooleanField(default=False)
     borrowing_price = models.IntegerField()
     selling_price = models.FloatField()
-    book_condition = models.CharField(max_length=255, blank=True, choices=BOOK_CONDITIONS)
-    library = models.ForeignKey(to=UserLibrary, on_delete=models.DO_NOTHING, related_name="library_book")
+    book_condition = models.CharField(max_length=255, blank=False, choices=BOOK_CONDITIONS)
+    library = models.ForeignKey(to=UserLibrary, blank=False, on_delete=models.DO_NOTHING, related_name="library_book")
 
 
     def __str__(self):
