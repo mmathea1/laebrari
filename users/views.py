@@ -1,8 +1,7 @@
 
-from re import template
 from rest_framework import viewsets, generics, permissions, status
 from user_library.models import Book, UserLibrary
-from user_library.serializers import BookSerializer, PublicBookSerializer, UserLibrarySerializer
+from user_library.serializers import BookSerializer, UserLibrarySerializer
 from users.forms import  ProfileUpdateForm, UserRegistrationForm
 from users.models import Profile, User
 from users.serializers import ProfileSerializer, UserSerializer
@@ -13,15 +12,14 @@ from rest_framework.response import Response
 from rest_framework.renderers import TemplateHTMLRenderer
 from rest_framework import generics
 
-class HomeViewPage(generics.ListAPIView):
+class HomeView(generics.ListAPIView):
     queryset = Book.objects.filter(library__type='PUBLIC')
     serializer_class = BookSerializer
     permission_classes = [permissions.IsAuthenticated]
- 
 
     def get(self, request):
         queryset = self.get_queryset()
-        serializer = PublicBookSerializer(queryset, many=True)
+        serializer = ProfileSerializer(queryset, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
 def user_registration(request):
@@ -81,5 +79,5 @@ class LibrarianViewSet(viewsets.ViewSet):
     def retrieve(self, request, pk=None):    
         queryset = UserLibrary.objects.filter(librarian__user=request.user)
         data = {"library" : queryset, "librarian": request.user}
-        serializer = LibrarianSerializer(data)
+        serializer = ProfileSerializer(data)
         return Response(serializer.data)
