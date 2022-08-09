@@ -1,7 +1,5 @@
 
-from dbm.ndbm import library
 from django.db import models
-from users.models import Profile
 LIBRARY_TYPES = (
     ('PRIVATE', 'PRIVATE'),
     ('PUBLIC', 'PUBLIC'),
@@ -14,7 +12,9 @@ BOOK_CONDITIONS = (
     ('GOOD CONDITION', 'GOOD CONDITION'),
 )
 
-# Create your models here.
+TRANSACTION_TYPES = (('LOAN', 'LOAN'), ('SELL', 'SELL'))
+
+
 class UserLibrary(models.Model):
     librarian = models.ForeignKey('users.Profile', on_delete=models.DO_NOTHING, related_name='librarians')
     location = models.CharField(max_length=255, blank=True, null=True)
@@ -33,20 +33,20 @@ class UserLibrary(models.Model):
 
 
 class Book(models.Model):
-    title = models.CharField(verbose_name="book title", max_length=255)
-    author = models.CharField(verbose_name="author", max_length=255)
+    title = models.CharField(verbose_name="book title", max_length=255, blank=False)
+    author = models.CharField(verbose_name="author", max_length=255, blank=False)
     memo = models.CharField(verbose_name="author", max_length=255)
-    isbn = models.CharField(verbose_name="author", max_length=255)
+    isbn = models.CharField(verbose_name="author", max_length=255, blank=False)
     date_acquired = models.DateField(verbose_name="date acquired")
     owner = models.ForeignKey(
-        to='users.Profile', on_delete=models.DO_NOTHING, related_name="book_owner")
-    genre = models.CharField(max_length=255, blank=True, null=True)
+        to='users.Profile', on_delete=models.DO_NOTHING, related_name="book_owner", blank=False)
+    genre = models.CharField(max_length=255, blank=False)
     available_to_borrow = models.BooleanField(default=False)
     available_to_sell = models.BooleanField(default=False)
     borrowing_price = models.IntegerField()
     selling_price = models.FloatField()
-    book_condition = models.CharField(max_length=255, blank=True, choices=BOOK_CONDITIONS)
-    library = models.ForeignKey(to=UserLibrary, on_delete=models.DO_NOTHING, related_name="library_book")
+    book_condition = models.CharField(max_length=255, blank=False, choices=BOOK_CONDITIONS)
+    library = models.ForeignKey(to=UserLibrary, blank=False, on_delete=models.DO_NOTHING, related_name="library_book")
 
 
     def __str__(self):
@@ -55,19 +55,14 @@ class Book(models.Model):
 
 class BookTransaction(models.Model):
     transaction_type = models.CharField(
-        max_length=255, choices=[['borrow', 'Borrow'], ['buy', 'Buy']])
-    borrower = models.ForeignKey(
-        to='users.Profile', on_delete=models.DO_NOTHING, related_name="borrower",  null=True, blank=True)
-    buyer = models.ForeignKey(
-        to='users.Profile', on_delete=models.DO_NOTHING, related_name="buyer", null=True, blank=True)
-    library = models.ForeignKey(
-        to=UserLibrary, on_delete=models.DO_NOTHING, related_name="transaction_owner")
-    book_transacted = models.ForeignKey(
-        to=Book, on_delete=models.DO_NOTHING, related_name="book_transacted")
+        max_length=255, choices=TRANSACTION_TYPES, blank=False, verbose_name="Transaction Type")
+    patron = models.ForeignKey(
+        to='users.Profile', on_delete=models.DO_NOTHING, related_name="borrower", blank=False)
+    book = models.ForeignKey(
+        to=Book, on_delete=models.DO_NOTHING, related_name="book_transacted", blank=False)
     transaction_date = models.DateField(
-        auto_now=True, verbose_name="date_borrowed")
-    return_date = models.DateField(verbose_name="return_date",null=True, blank=True)
+        auto_now=True, verbose_name="transaction_date", blank=False)
+    end_of_transaction = models.DateField(verbose_name="return_date",null=True, blank=False)
 
     def __str__(self) -> str:
-        return "{}{}".format(self.borrower, self.book_borrowed)
-
+        return "{} - {}".format(self.patron, self.book)
