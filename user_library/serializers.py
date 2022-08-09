@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import date, datetime, timedelta
 from user_library.models import  Book, BookTransaction, UserLibrary
 from rest_framework import serializers
 
@@ -36,14 +36,10 @@ class BookTransactionSerializer(serializers.ModelSerializer):
         model = BookTransaction
         fields = ['book', 'transaction_type', 'patron', 'end_of_transaction']
     
-    def create(self, validated_data):
-        instance, created = BookTransaction.objects.get_or_create(**validated_data)
-        print(instance, created)
-        if created:
-            if validated_data.get('transaction_type') == 'LOAN' and validated_data.get('end_of_transaction') == '':
-                end_of_transaction = datetime.now() + datetime.timedelta(days=14)
-                validated_data['end_of_transaction'] =  end_of_transaction  
-                instance.save()
-                return instance
-        else:
-            raise serializers.ValidationError({'message': instance.book.title +' is already taken.'})
+    def create(self, validated_data): 
+        if validated_data['transaction_type'] == 'LOAN' and 'end_of_transaction' not in validated_data:
+            validated_data['end_of_transaction'] = date.today() + timedelta(days=14)
+            print('Creating transaction: '+ str(validated_data))
+            # validated_data = self.validated_data
+        return BookTransaction.objects.create(**validated_data)
+
