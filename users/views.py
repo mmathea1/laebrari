@@ -19,7 +19,7 @@ class HomeView(generics.ListAPIView):
 
     def get(self, request):
         queryset = self.get_queryset()
-        serializer = ProfileSerializer(queryset, many=True)
+        serializer = BookSerializer(queryset, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
 def user_registration(request):

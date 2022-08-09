@@ -106,7 +106,6 @@ class BookTransactionList(generics.ListAPIView):
     permission_classes = [permissions.IsAuthenticated]
 
 
-
 class UserLibraryViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows users create, view or edit libraries.
@@ -154,11 +153,10 @@ class LibraryBookViewSet(viewsets.ModelViewSet):
 
 
 class BookTransactionViewSet(viewsets.ModelViewSet):
-    # create a new book transaction
     queryset = BookTransaction.objects.all().order_by('id')
     serializer_class = BookTransactionSerializer
+    permission_classes = [permissions.IsAuthenticated]
 
-    def create(self, request, *args, **kwargs):
-        return super().create(request, *args, **kwargs)
+
 
 

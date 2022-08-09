@@ -1,4 +1,5 @@
 
+from datetime import date, timedelta
 from django.db import models
 LIBRARY_TYPES = (
     ('PRIVATE', 'PRIVATE'),
@@ -62,7 +63,7 @@ class BookTransaction(models.Model):
         to=Book, on_delete=models.DO_NOTHING, related_name="book_transacted", blank=False)
     transaction_date = models.DateField(
         auto_now=True, verbose_name="transaction_date", blank=False)
-    end_of_transaction = models.DateField(verbose_name="return_date",null=True, blank=False)
+    end_of_transaction = models.DateField(verbose_name="return_date", blank=True, null=True)
 
     def __str__(self) -> str:
         return "{} - {}".format(self.patron, self.book)
