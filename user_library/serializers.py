@@ -41,7 +41,6 @@ class CreateBookTransactionSerializer(serializers.ModelSerializer):
             validated_data['end_of_transaction'] = date.today() + timedelta(days=14)
         elif validated_data['transaction_type'] == 'SALE':
             validated_data['end_of_transaction'] = date.today()
-        print('Creating transaction: '+ str(validated_data))
         return BookTransaction.objects.create(**validated_data)
 
 class BookTransactionSerializer(serializers.ModelSerializer):
