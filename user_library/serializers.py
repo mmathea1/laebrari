@@ -31,15 +31,20 @@ class LibBookSerializer(serializers.ModelSerializer):
         model = Book
         fields = ['title', 'author', 'date_acquired', 'owner', 'memo', 'genre', 'book_condition', 'borrowing_price', 'selling_price', 'available_to_borrow', 'isbn', 'library']
 
+class CreateBookTransactionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = BookTransaction
+        fields = ['book', 'transaction_type', 'patron']
+ 
+    def create(self, validated_data): 
+        if validated_data['transaction_type'] == 'LOAN':
+            validated_data['end_of_transaction'] = date.today() + timedelta(days=14)
+        elif validated_data['transaction_type'] == 'SALE':
+            validated_data['end_of_transaction'] = date.today()
+        print('Creating transaction: '+ str(validated_data))
+        return BookTransaction.objects.create(**validated_data)
+
 class BookTransactionSerializer(serializers.ModelSerializer):
     class Meta:
         model = BookTransaction
-        fields = ['book', 'transaction_type', 'patron', 'end_of_transaction']
-    
-    def create(self, validated_data): 
-        if validated_data['transaction_type'] == 'LOAN' and 'end_of_transaction' not in validated_data:
-            validated_data['end_of_transaction'] = date.today() + timedelta(days=14)
-            print('Creating transaction: '+ str(validated_data))
-            # validated_data = self.validated_data
-        return BookTransaction.objects.create(**validated_data)
-
+        fields = '__all__'
