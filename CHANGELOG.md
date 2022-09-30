@@ -1,3 +1,8 @@
+## [0.5.0] - 2022-09-30
+### Updated
+- View list of transactions made on book if request user is book owner, librarian or transaction patron
+- Allow user to create transactions on a book
+
 ## [0.4.0] - 2022-08-01
 ### Updated
 - Updated root url to list books in public libraries when current user is authenticated.

@@ -8,7 +8,7 @@ from django.contrib import admin
 from django.conf.urls.static import static
 from rest_framework import routers
 from django.urls import include, path
-from user_library.views import BookDetailView, BookTransactionList, BookTransactionViewSet, BorrowBookView, LibraryBookView, LibraryBookViewSet, UserLibraryViewSet
+from user_library.views import BookTransactionViewSet,  LibraryBookViewSet, UserLibraryViewSet
 from users.views import HomeView, ProfileView, ProfileViewSet, UserViewSet, user_registration
 
 
@@ -26,10 +26,6 @@ urlpatterns = [
     path('', HomeView.as_view(), name='home'),
     path('signup/', user_registration, name='signup'),
     path('profile/', ProfileView.as_view(), name='profile'),
-    path('book/add/', LibraryBookView.as_view(), name='add_book'),
-    path('book/<int:pk>/', BookDetailView.as_view(), name='book-detail'),
-    path('book/borrow/', BorrowBookView.as_view(), name='borrow-book'),
-    path('transactions/', BookTransactionList.as_view(), name='book-transaction'),
 ]
 
 if settings.DEBUG:
