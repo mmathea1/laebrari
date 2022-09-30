@@ -26,7 +26,7 @@ class UserLibrary(models.Model):
     name = models.CharField(max_length=255, blank=False, null=False, default="None")
     date_established = models.DateTimeField(blank=True, null=True)
     established_by = models.CharField(max_length=255, blank=True, null=True)
-    type = models.CharField(max_length=255, blank=True, null=True, choices=LIBRARY_TYPES)
+    type = models.CharField(max_length=255, blank=True, null=True, choices=LIBRARY_TYPES, default=LIBRARY_TYPES[0])
 
 
     def __str__(self):
