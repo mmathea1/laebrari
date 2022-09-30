@@ -1,7 +1,6 @@
 from django.http import Http404
 from rest_framework import generics
 from rest_framework.response import Response
-
 from user_library.models import Book, BookTransaction, UserLibrary
 from rest_framework import viewsets, status
 from rest_framework import permissions
@@ -9,7 +8,6 @@ from user_library.serializers import BookSerializer, BookTransactionSerializer, 
 from users.models import Profile
 from users.serializers import UserSerializer
 from django.db.models import Q
-from rest_framework.renderers import TemplateHTMLRenderer
 
 class LibraryBookView(generics.ListCreateAPIView):
     queryset = Book.objects.all().order_by('id')
@@ -64,41 +62,6 @@ class BorrowBookView(generics.CreateAPIView):
         else:
             return Response(bt.errors, status=status.HTTP_400_BAD_REQUEST)
 
-class LibraryView(generics.ListCreateAPIView):
-    serializer_class = UserLibrarySerializer
-    permission_classes = [permissions.IsAuthenticated]
-
-    def get_queryset(self):
-        req_user = self.request.user
-        queryset = UserLibrary.objects.filter(librarian__user=req_user).order_by('id') 
-        return queryset
-
-    def list(self, request, *args, **kwargs):
-        queryset = self.get_queryset()
-        serializer = UserLibrarySerializer(queryset, many=True)
-        return Response(serializer.data)
-
-class LibraryDetail(generics.RetrieveAPIView):
-    serializer_class = UserLibrarySerializer
-    permission_classes = [permissions.IsAuthenticated]
-    renderer_classes = [TemplateHTMLRenderer]
-
-    def get_queryset(self):
-        req_user = self.request.user
-        user = UserSerializer(req_user)
-        if user['is_staff'].value is True:
-            queryset = UserLibrary.objects.all().order_by('id')
-        else:
-            queryset = UserLibrary.objects.filter(librarian__user=req_user).order_by('id')    
-        return queryset
-    
-    def get(self, request, pk, format=None):
-        lib = UserLibrary.objects.get(pk=pk)
-        libraries = UserLibrarySerializer(lib)
-        queryset = Book.objects.filter(library=pk)
-        books = BookSerializer(queryset, many=True)
-        data = {"library": libraries.data, "books": books.data}
-        return Response(data, status=status.HTTP_200_OK, template_name="userlibraries/library-detail.html")
       
 class BookTransactionList(generics.ListAPIView):
     queryset = BookTransaction.objects.all().order_by('id')
@@ -128,6 +91,23 @@ class UserLibraryViewSet(viewsets.ModelViewSet):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
+
+    def list(self, request, *args, **kwargs):
+        queryset = self.get_queryset()
+        serializer = UserLibrarySerializer(queryset, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+    
+    def retrieve(self, request, pk=None):
+        lib = UserLibrary.objects.get(pk=pk)
+        if lib.type == 'PUBLIC' or lib.librarian != request.user:
+            libraries = UserLibrarySerializer(lib)
+            queryset = Book.objects.filter(library=pk)
+            books = BookSerializer(queryset, many=True)
+            data = {"library": libraries.data, "books": books.data}
+            return Response(data, status=status.HTTP_200_OK)
+        return Response('Library not found', status=status.HTTP_404_NOT_FOUND)
+
 
 
 class LibraryBookViewSet(viewsets.ModelViewSet):
