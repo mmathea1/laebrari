@@ -15,11 +15,10 @@ from rest_framework import generics
 class HomeView(generics.ListAPIView):
     queryset = Book.objects.filter(library__type='PUBLIC')
     serializer_class = BookSerializer
-    permission_classes = [permissions.IsAuthenticated]
 
     def get(self, request):
         queryset = self.get_queryset()
-        serializer = ProfileSerializer(queryset, many=True)
+        serializer = BookSerializer(queryset, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
 def user_registration(request):
