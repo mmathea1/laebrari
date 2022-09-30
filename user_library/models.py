@@ -1,5 +1,6 @@
 
 from datetime import date, timedelta
+from enum import unique
 from django.db import models
 LIBRARY_TYPES = (
     ('PRIVATE', 'PRIVATE'),
@@ -39,8 +40,8 @@ class UserLibrary(models.Model):
 class Book(models.Model):
     title = models.CharField(verbose_name="book title", max_length=255, blank=False)
     author = models.CharField(verbose_name="author", max_length=255, blank=False)
-    memo = models.CharField(verbose_name="author", max_length=255)
-    isbn = models.CharField(verbose_name="author", max_length=255, blank=False)
+    memo = models.CharField(verbose_name="memo", max_length=255)
+    isbn = models.CharField(verbose_name="isbn", max_length=255, blank=False)
     date_acquired = models.DateField(verbose_name="date acquired")
     owner = models.ForeignKey(
         to='users.Profile', on_delete=models.DO_NOTHING, related_name="book_owner", blank=False)
@@ -52,9 +53,11 @@ class Book(models.Model):
     book_condition = models.CharField(max_length=255, blank=False, choices=BOOK_CONDITIONS)
     library = models.ForeignKey(to=UserLibrary, blank=False, on_delete=models.DO_NOTHING, related_name="library_book")
 
-
     def __str__(self):
-        return "{}".format(self.title)
+        return "{} - {}".format(self.title, self.author)
+    
+    class Meta:
+        unique_together = ('title', 'author')
 
 
 class BookTransaction(models.Model):
