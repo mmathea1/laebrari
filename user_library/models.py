@@ -1,7 +1,7 @@
 
-from datetime import date, timedelta
-from enum import unique
 from django.db import models
+from users.models import Profile
+
 LIBRARY_TYPES = (
     ('PRIVATE', 'PRIVATE'),
     ('PUBLIC', 'PUBLIC'),
@@ -73,3 +73,9 @@ class BookTransaction(models.Model):
 
     def __str__(self) -> str:
         return "{} - {}".format(self.patron, self.book)
+
+class TransactionRating(models.Model):
+    rating = models.IntegerField(verbose_name="rating", blank=False, null=False)
+    transaction = models.ForeignKey(to=BookTransaction, on_delete=models.DO_NOTHING, null=False, related_name='transactions', blank=False)
+    rated_by = models.ForeignKey(to=Profile, on_delete=models.DO_NOTHING, null=False, related_name='rated_by', blank=False)
+    rating_date = models.DateTimeField(verbose_name="rating_date", blank=False, null=False, auto_now=True)
