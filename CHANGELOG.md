@@ -1,3 +1,7 @@
+## [0.6.0] - 2022-09-30
+### Added
+- Allow users to rate transactions
+
 ## [0.5.0] - 2022-09-30
 ### Updated
 - View list of transactions made on book if request user is book owner, librarian or transaction patron

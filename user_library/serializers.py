@@ -1,5 +1,5 @@
 from datetime import date, datetime, timedelta
-from user_library.models import  Book, BookTransaction, UserLibrary
+from user_library.models import  TRANSACTION_TYPES, Book, BookTransaction, TransactionRating, UserLibrary
 from rest_framework import serializers
 
 
@@ -37,13 +37,20 @@ class CreateBookTransactionSerializer(serializers.ModelSerializer):
         fields = ['book', 'transaction_type', 'patron']
  
     def create(self, validated_data): 
-        if validated_data['transaction_type'] == 'LOAN':
+        print(TRANSACTION_TYPES[0])
+        print(TRANSACTION_TYPES[0])
+        if validated_data['transaction_type'] == TRANSACTION_TYPES[0]:
             validated_data['end_of_transaction'] = date.today() + timedelta(days=14)
-        elif validated_data['transaction_type'] == 'SALE':
+        elif validated_data['transaction_type'] == TRANSACTION_TYPES[1]:
             validated_data['end_of_transaction'] = date.today()
         return BookTransaction.objects.create(**validated_data)
 
 class BookTransactionSerializer(serializers.ModelSerializer):
     class Meta:
         model = BookTransaction
+        fields = '__all__'
+
+class TransactionRatingSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TransactionRating
         fields = '__all__'

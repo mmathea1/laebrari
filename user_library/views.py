@@ -1,10 +1,11 @@
 from django.http import Http404
 from rest_framework import generics
 from rest_framework.response import Response
-from user_library.models import Book, BookTransaction, UserLibrary
+from user_library import serializers
+from user_library.models import Book, BookTransaction, TransactionRating, UserLibrary
 from rest_framework import viewsets, status
 from rest_framework import permissions
-from user_library.serializers import BookSerializer, BookTransactionSerializer, CreateBookTransactionSerializer, UserLibrarySerializer
+from user_library.serializers import BookSerializer, BookTransactionSerializer, CreateBookTransactionSerializer, TransactionRatingSerializer, UserLibrarySerializer
 from users.models import Profile
 from users.serializers import UserSerializer
 from django.db.models import Q
@@ -110,6 +111,26 @@ class BookTransactionViewSet(viewsets.ModelViewSet):
         queryset = BookTransaction.objects.filter(Q(patron=request.user.id) | Q(book__owner=request.user.id) | Q(book__library__librarian=request.user.id)).order_by('id')
         serializer = BookTransactionSerializer(queryset, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
+    
+    @action(detail=False)
+    def list_user_transactions(self, request, *args, **kwargs):
+        queryset = BookTransaction.objects.filter(patron=request.user.id)
+        serializer = BookTransactionSerializer(queryset, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
+    
+    @action(detail=True, methods=['POST'])
+    def rate_book_transaction(self, request, *args, **kwargs):
+        data = {"transaction":self.get_object().id, "rated_by":request.user.id, "rating":request.data['rating']}
+        serializer = TransactionRatingSerializer(data=data) 
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        else:
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+
 
 
 
