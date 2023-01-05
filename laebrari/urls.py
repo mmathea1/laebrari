@@ -26,6 +26,7 @@ urlpatterns = [
     path('', HomeView.as_view(), name='home'),
     path('signup/', user_registration, name='signup'),
     path('profile/', ProfileView.as_view(), name='profile'),
+    path('__debug__/', include('debug_toolbar.urls')),
 ]
 
 if settings.DEBUG:

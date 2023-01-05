@@ -33,7 +33,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'crispy_forms',
     'users.apps.UsersConfig',
-    'user_library.apps.LibraryConfig'
+    'user_library.apps.LibraryConfig',
+     'debug_toolbar'
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -46,6 +47,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'laebrari.urls'
@@ -126,4 +128,7 @@ LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
 
