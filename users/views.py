@@ -1,5 +1,7 @@
 
 from rest_framework import viewsets, generics, permissions, status
+from rest_framework.authtoken.views import ObtainAuthToken
+from rest_framework.authtoken.models import Token
 from user_library.models import Book, UserLibrary
 from user_library.serializers import BookSerializer, UserLibrarySerializer
 from users.forms import  ProfileUpdateForm, UserRegistrationForm
@@ -11,6 +13,26 @@ from django.contrib import messages
 from rest_framework.response import Response
 from rest_framework.renderers import TemplateHTMLRenderer
 from rest_framework import generics
+
+class UserViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows users to be viewed or edited.
+    """
+    queryset = User.objects.all().order_by('id')
+    serializer_class = UserSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+class UserLogin(ObtainAuthToken):
+    def post(self, request):
+        serializer = self.serializer_class(data=request.data, context={'request': request})
+        serializer.is_valid(raise_exception=True)
+        user = serializer.validated_data['user']
+        token = Token.objects.get(user=user)
+        return Response({
+            'token': token,
+            'id': user.pk,
+            'username': user.username
+        })
 
 class HomeView(generics.ListAPIView):
     queryset = Book.objects.filter(library__type='PUBLIC')
@@ -56,13 +78,6 @@ class ProfileView(generics.RetrieveUpdateAPIView):
             messages.success(request, f'Your account has been updated!')
         return Response('Your account has been updated!', status=status.HTTP_200_OK)
 
-class UserViewSet(viewsets.ModelViewSet):
-    """
-    API endpoint that allows users to be viewed or edited.
-    """
-    queryset = User.objects.all().order_by('id')
-    serializer_class = UserSerializer
-    permission_classes = [permissions.IsAuthenticated]
 
 class ProfileViewSet(viewsets.ModelViewSet):
     """
