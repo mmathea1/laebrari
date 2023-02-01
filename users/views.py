@@ -11,8 +11,10 @@ from django.contrib import messages
 from rest_framework.response import Response
 from rest_framework.renderers import TemplateHTMLRenderer
 from rest_framework import generics
+from rest_framework.permissions import IsAuthenticated 
 
 class HomeView(generics.ListAPIView):
+    permission_classes = (IsAuthenticated,) 
     queryset = Book.objects.filter(library__type='PUBLIC')
     serializer_class = BookSerializer
 
