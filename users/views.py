@@ -4,6 +4,7 @@ from users.models import  User
 from users.serializers import RegisterSerializer, UserSerializer
 from django.contrib.auth import login, logout
 from rest_framework.response import Response
+from rest_framework import status
 from rest_framework import generics
 from rest_framework.permissions import IsAuthenticated 
 from rest_framework.permissions import AllowAny
@@ -30,19 +31,17 @@ class RegisterUserView(generics.CreateAPIView):
     def post(self,request,*args,**kwargs):
         try:
             data = {}
-            print(request.data)
             serializer = RegisterSerializer(data=request.data)
             if serializer.is_valid(raise_exception=True):
                 account = serializer.save()
                 account.is_active = True
                 token = Token.objects.get_or_create(user=account)[0].key
-                data['message']= "Account created successfully"
                 data['email'] = account.email
                 data['token'] = token
                 data['username'] = account.username
             else:
                 data = serializer.errors
-            return Response(data)
+            return Response(data=data, status=status.HTTP_201_CREATED)
         except IntegrityError as i:
             account = User.objects.get(username='')
             account.delete()
@@ -69,10 +68,9 @@ class LoginUserView(ObtainAuthToken):
         if account:
             if account.is_active:
                 login(request, account)
-                data['message']= "login successful"
                 data['email'] = account.email
-                response = {"data": data, "token": token}
-                return Response(response)
+                data['token'] = token
+                return Response(data=data, status=status.HTTP_200_OK)
             else:
                 raise ValidationError({"400": f'Account inactive'})
         else:
