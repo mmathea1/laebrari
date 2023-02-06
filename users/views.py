@@ -60,10 +60,10 @@ class LoginUserView(ObtainAuthToken):
         try:
             account = User.objects.get(username=username)
         except BaseException as e:
-            raise ValidationError({"400": f'{str(e)}'})
+            return Response(data={"message": f'{str(e)}'}, status=status.HTTP_400_BAD_REQUEST)
         token = Token.objects.get_or_create(user=account)[0].key
         if not check_password(password, account.password):
-            raise ValidationError({"message": "Incorrect login credentials."})
+            return Response(status=status.HTTP_400_BAD_REQUEST, data={"message": "Incorrect login credentials."})
         
         if account:
             if account.is_active:
@@ -72,13 +72,13 @@ class LoginUserView(ObtainAuthToken):
                 data['token'] = token
                 return Response(data=data, status=status.HTTP_200_OK)
             else:
-                raise ValidationError({"400": f'Account inactive'})
+                return Response(status=status.HTTP_400_BAD_REQUEST, data={"message": "Account inactive."})
         else:
-            raise ValidationError({"Account does not exist."})
+            return Response(data={"message": "Account does not exist."}, status=status.HTTP_404_NOT_FOUND)
         
 class LogOutView(APIView):
     permission_classes = (IsAuthenticated, )
     def get(self, request, *args, **kwargs):
         request.user.auth_token.delete()
         logout(request)
-        return Response({"message": "User logged out."})
+        return Response(status=status.HTTP_200_OK, data={"message": "User logged out."})
