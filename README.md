@@ -1,30 +1,37 @@
 # laebrari
-digital home library, allows users to lend, sell or borrow books
-- User - to allow login/logout, registration, pass reset
-- Librarian - user id, first name, last name, email, phone number, location, date joined
+A digital home, school or office library, that allows users to lend, sell or borrow books and subscribe to libraries.
 
-        - lender info (rating, no. of books loaned) 
-        - borrower info (rating, no. of books borrowed, no. of books returned)
+### Entities
+
+- User
+- Librarian
 - Library 
-    - librarian (profile)
-    - rating
-    - location
-    - library type(private, public, unlisted)
-    - contact info
 - Book 
-    - title, author, isbn, acquisition note, 
-    - can_sell, can_loan, 
-    - library id
-    - date_acquired, book_condition
-    - selling_price, borrowing_price
-    - for future (language, genre)
 - Book Transaction 
-    - transaction type,
-    - book, 
-    - date of transaction, transaction end date
-    - transaction initator
-    - transaction status (borrowed, sold, reserved, overdue)
-- Transaction Rating 
-    - borrower, lender, rating, lender's note, transaction ID
-- Library Rating 
-    - rating, borrower's note, transaction ID
+- Transaction Review 
+- Library Review
+
+### Requirements
+
+- A user can create an account
+- A user can login to their account
+- A user can edit/delete their account information
+- A user can create a library
+- A user can set a library type
+- A user can add a book to their library
+- A user can view books in public or subscribed libraries
+- A user can subscribe to a library
+- A user can borrow from public libraries or libraries they are subscribed to
+- A user can sell a book from their library
+- A user can edit their library subscription
+- A user can write a review of a previous transaction
+- A user can write a review of a library they have transacted with
+- A user can read review from previous transactions
+- A user can read reviews about a public or subscribed library
+- A user can share a library url
+- A user can sell a book from their library
+
+### Environment
+### How to run
+### Docker
+### Support
