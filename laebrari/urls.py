@@ -18,7 +18,7 @@ urlpatterns = [
     path('register/', RegisterUserView.as_view(), name='register'),
     path('login/', LoginUserView.as_view()),
     path('api/', include(router.urls)),
-    path('user-details/', UserDetailView.as_view(), name='user-detail')
+    path('profile/', UserDetailView.as_view(), name='profile')
 ]
 
 if settings.DEBUG:
