@@ -1,12 +1,13 @@
 
-# from datetime import date, timedelta
-# from enum import unique
-# from django.db import models
-# LIBRARY_TYPES = (
-#     ('PRIVATE', 'PRIVATE'),
-#     ('PUBLIC', 'PUBLIC'),
-#     ('UNLISTED', 'UNLISTED'),
-# )
+from datetime import date, timedelta
+from enum import unique
+from django.db import models
+
+LIBRARY_TYPES = (
+    ('PRIVATE', 'PRIVATE'),
+    ('PUBLIC', 'PUBLIC'),
+    ('UNLISTED', 'UNLISTED'),
+)
 
 # BOOK_CONDITIONS = (
 #     ('NEW', 'NEW'),
@@ -17,24 +18,24 @@
 # TRANSACTION_TYPES = (('LOAN', 'LOAN'), ('SELL', 'SELL'))
 
 
-# class UserLibrary(models.Model):
-#     librarian = models.ForeignKey('users.Profile', on_delete=models.DO_NOTHING, related_name='librarians')
-#     location = models.CharField(max_length=255, blank=False, null=False, default="Kenya")
-#     address = models.CharField(max_length=255, blank=True, null=True)
-#     description = models.TextField(blank=True, null=True)
-#     phone_number = models.CharField(max_length=255, blank=True, null=True)
-#     email = models.EmailField(blank=True, null=True)
-#     name = models.CharField(max_length=255, blank=False, null=False, default="None")
-#     date_established = models.DateTimeField(blank=True, null=True)
-#     established_by = models.CharField(max_length=255, blank=True, null=True)
-#     type = models.CharField(max_length=255, blank=True, null=True, choices=LIBRARY_TYPES, default=LIBRARY_TYPES[0])
+class UserLibrary(models.Model):
+    librarian = models.ForeignKey('users.User', on_delete=models.DO_NOTHING, related_name='librarians')
+    name = models.CharField(max_length=255, blank=False, null=False, default="None")
+    location = models.CharField(max_length=255, blank=False, null=False, default="Kenya")
+    address = models.CharField(max_length=255, blank=True, null=True)
+    description = models.TextField(blank=True, null=True)
+    phone_number = models.CharField(max_length=255, blank=True, null=True)
+    email = models.EmailField(blank=True, null=True)
+    date_established = models.DateField(blank=True, null=True)
+    established_by = models.CharField(max_length=255, blank=True, null=True)
+    type = models.CharField(max_length=255, blank=True, null=True, choices=LIBRARY_TYPES, default=LIBRARY_TYPES[0])
 
 
-#     def __str__(self):
-#         return "{} - {}".format(self.name, self.location)
+    def __str__(self):
+        return "{} - {}".format(self.name, self.location)
 
-#     class  Meta:
-#         unique_together = ('name', 'location')
+    class  Meta:
+        unique_together = ('name', 'location')
 
 
 # class Book(models.Model):

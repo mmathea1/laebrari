@@ -1,18 +1,18 @@
-# from datetime import date, datetime, timedelta
-# from user_library.models import  Book, BookTransaction, UserLibrary
-# from rest_framework import serializers
+
+from user_library.models import UserLibrary
+from rest_framework import serializers
 
 
-# class UserLibrarySerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = UserLibrary
-#         fields = '__all__'
+class UserLibrarySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UserLibrary
+        fields = '__all__'
     
-#     def create(self, validated_data):
-#         instance, created = UserLibrary.objects.get_or_create(**validated_data)
-#         if not created:
-#             raise serializers.ValidationError({'message': instance.name + ' already exists.'})
-#         return instance
+    def create(self, validated_data):
+        instance, created = UserLibrary.objects.get_or_create(**validated_data)
+        if not created:
+            raise serializers.ValidationError({'message': instance.name + ' already exists.'})
+        return instance
 
 # class BookSerializer(serializers.ModelSerializer):
 #     class Meta:

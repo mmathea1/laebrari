@@ -1,53 +1,50 @@
-# from django.http import Http404
-# from rest_framework import generics
-# from rest_framework.response import Response
-# from user_library.models import Book, BookTransaction, UserLibrary
-# from rest_framework import viewsets, status
-# from rest_framework import permissions
-# from user_library.serializers import BookSerializer, BookTransactionSerializer, CreateBookTransactionSerializer, UserLibrarySerializer
-# from users.models import Profile
-# from users.serializers import UserSerializer
-# from django.db.models import Q
-# from rest_framework.decorators import action
+from rest_framework.response import Response
+from user_library.models import UserLibrary
+from rest_framework import viewsets, status, permissions
+from user_library.serializers import UserLibrarySerializer
+from users.serializers import UserSerializer
 
-# class UserLibraryViewSet(viewsets.ModelViewSet):
-#     """
-#     API endpoint that allows users create, view or edit libraries.
-#     """
-#     serializer_class = UserLibrarySerializer
-#     permission_classes = [permissions.IsAuthenticated]
 
-#     def get_queryset(self):
-#         req_user = self.request.user
-#         user = UserSerializer(req_user)
-#         if user['is_staff'].value is True:
-#             queryset = UserLibrary.objects.all().order_by('id')
-#         else:
-#             queryset = UserLibrary.objects.filter(librarian__user=req_user).order_by('id')    
-#         return queryset
+class UserLibraryViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows users create, view or edit libraries.
+    """
+    serializer_class = UserLibrarySerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get_queryset(self):
+        req_user = self.request.user
+        user = UserSerializer(req_user)
+        if user['is_staff'].value is True:
+            queryset = UserLibrary.objects.all().order_by('id')
+        else:
+            queryset = UserLibrary.objects.filter(librarian__user=req_user).order_by('id')    
+        return queryset
             
-#     def create(self, request):
-#         serializer = UserLibrarySerializer(data=request.data)
-#         if serializer.is_valid():
-#             serializer.save()
-#             return Response(serializer.data, status=status.HTTP_201_CREATED)
-#         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    def create(self, request):
+        data = request.data
+        data['librarian'] = self.request.user.pk
+        serializer = UserLibrarySerializer(data=data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
 
-#     def list(self, request, *args, **kwargs):
-#         queryset = self.get_queryset()
-#         serializer = UserLibrarySerializer(queryset, many=True)
-#         return Response(serializer.data, status=status.HTTP_200_OK)
+    # def list(self, request, *args, **kwargs):
+    #     queryset = self.get_queryset()
+    #     serializer = UserLibrarySerializer(queryset, many=True)
+    #     return Response(serializer.data, status=status.HTTP_200_OK)
     
-#     def retrieve(self, request, pk=None):
-#         lib = UserLibrary.objects.get(pk=pk)
-#         if lib.type == 'PUBLIC' or lib.librarian != request.user:
-#             libraries = UserLibrarySerializer(lib)
-#             queryset = Book.objects.filter(library=pk)
-#             books = BookSerializer(queryset, many=True)
-#             data = {"library": libraries.data, "books": books.data}
-#             return Response(data, status=status.HTTP_200_OK)
-#         return Response('Library not found', status=status.HTTP_404_NOT_FOUND)
+    # def retrieve(self, request, pk=None):
+    #     lib = UserLibrary.objects.get(pk=pk)
+    #     if lib.type == 'PUBLIC' or lib.librarian != request.user:
+    #         libraries = UserLibrarySerializer(lib)
+    #         queryset = Book.objects.filter(library=pk)
+    #         books = BookSerializer(queryset, many=True)
+    #         data = {"library": libraries.data, "books": books.data}
+    #         return Response(data, status=status.HTTP_200_OK)
+    #     return Response('Library not found', status=status.HTTP_404_NOT_FOUND)
 
 # class LibraryBookViewSet(viewsets.ModelViewSet):
 #     serializer_class = BookSerializer
