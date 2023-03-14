@@ -1,5 +1,5 @@
 
-from user_library.models import UserLibrary
+from user_library.models import Book, UserLibrary
 from rest_framework import serializers
 
 
@@ -14,16 +14,16 @@ class UserLibrarySerializer(serializers.ModelSerializer):
             raise serializers.ValidationError({'message': instance.name + ' already exists.'})
         return instance
 
-# class BookSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Book
-#         fields = '__all__'
+class BookSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Book
+        fields = ['id', 'title', 'author', 'date_acquired', 'owner', 'memo', 'genre', 'book_condition', 'borrowing_price', 'selling_price', 'available_to_borrow', 'isbn', 'library']
     
-#     def create(self, validated_data):
-#         instance, created = Book.objects.get_or_create(**validated_data)
-#         if not created:
-#             raise serializers.ValidationError({'message': instance.title + ' already exists.'})
-#         return instance
+    def create(self, validated_data):
+        instance, created = Book.objects.get_or_create(**validated_data)
+        if not created:
+            raise serializers.ValidationError({'message': instance.title + ' already exists.'})
+        return instance
 
 # class LibBookSerializer(serializers.ModelSerializer):
 #     library = UserLibrarySerializer()

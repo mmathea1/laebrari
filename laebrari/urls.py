@@ -8,11 +8,12 @@ from django.contrib import admin
 from django.conf.urls.static import static
 from rest_framework import routers
 from django.urls import include, path
-from user_library.views import UserLibraryViewSet
+from user_library.views import LibraryBookViewSet, UserLibraryViewSet
 from users.views import LoginUserView, RegisterUserView, UserDetailView
 
 router = routers.DefaultRouter()
 router.register(r'library', UserLibraryViewSet, basename='library')
+router.register(r'book', LibraryBookViewSet, basename='library-book')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
