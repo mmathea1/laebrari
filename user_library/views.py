@@ -1,9 +1,10 @@
 from rest_framework.response import Response
-from user_library.models import UserLibrary
+from user_library.models import Book, UserLibrary
 from rest_framework import viewsets, status, permissions
-from user_library.serializers import UserLibrarySerializer
+from user_library.serializers import BookSerializer, UserLibrarySerializer
+from users.models import User
 from users.serializers import UserSerializer
-
+from django.db.models import Q
 
 class UserLibraryViewSet(viewsets.ModelViewSet):
     """
@@ -46,28 +47,20 @@ class UserLibraryViewSet(viewsets.ModelViewSet):
     #         return Response(data, status=status.HTTP_200_OK)
     #     return Response('Library not found', status=status.HTTP_404_NOT_FOUND)
 
-# class LibraryBookViewSet(viewsets.ModelViewSet):
-#     serializer_class = BookSerializer
-#     permission_classes = [permissions.IsAuthenticated]
-
-#     def get_queryset(self):
-#         req_user = self.request.user
-#         user = UserSerializer(req_user)
-#         profile = Profile.objects.get(user=req_user)
-#         if user['is_staff'].value is True:
-#             queryset = Book.objects.all()
-#         else:
-#             queryset = Book.objects.filter(Q(owner=profile) | Q(library__librarian=profile) | Q(library__type="PUBLIC"))
-#         return queryset
+class LibraryBookViewSet(viewsets.ModelViewSet):
+    serializer_class = BookSerializer
+    permission_classes = [permissions.IsAuthenticated]
+    queryset = Book.objects.all()
     
-#     def create(self, request, *args, **kwargs):
-#         data = request.data.copy()
-#         data['owner'] = Profile.objects.get(user=request.user).pk
-#         serializer = BookSerializer(data=request.data)
-#         if serializer.is_valid(raise_exception=True):
-#             serializer.save()
-#             return Response(serializer.data, status=status.HTTP_201_CREATED)
-#         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    def create(self, request, *args, **kwargs):
+        data = request.data
+        data['owner'] = request.user.pk
+        print(data)
+        serializer = BookSerializer(data=request.data)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
 #     @action(detail=True, methods=['post'])
 #     def create_book_transaction(self, request, pk=None):
