@@ -1,7 +1,7 @@
 from rest_framework.response import Response
 from user_library.models import Book, UserLibrary
 from rest_framework import viewsets, status, permissions
-from user_library.serializers import BookSerializer, UserLibrarySerializer
+from user_library.serializers import  BookSerializer, UserLibrarySerializer
 from users.models import User
 from users.serializers import UserSerializer
 from django.db.models import Q
@@ -55,12 +55,19 @@ class LibraryBookViewSet(viewsets.ModelViewSet):
     def create(self, request, *args, **kwargs):
         data = request.data
         data['owner'] = request.user.pk
-        print(data)
         serializer = BookSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
+    def retrieve(self, request, pk, format=None):
+        book = Book.objects.get(pk=pk)
+        serializer = BookSerializer(book)
+        if(serializer.data):
+             return Response(serializer.data, status=status.HTTP_200_OK)
+        return Response('Book not found', status=status.HTTP_404_NOT_FOUND)
+        
     
 #     @action(detail=True, methods=['post'])
 #     def create_book_transaction(self, request, pk=None):
@@ -86,10 +93,7 @@ class LibraryBookViewSet(viewsets.ModelViewSet):
 #         serializer = BookSerializer(queryset, many=True)
 #         return Response(serializer.data, status=status.HTTP_200_OK)
         
-#     def retrieve(self, request, pk, format=None):
-#         book = self.get_object(pk)
-#         serializer = BookSerializer(book)
-#         return Response(serializer.data, status=status.HTTP_200_OK)
+
 
 # class BookTransactionViewSet(viewsets.ModelViewSet):
 #     queryset = BookTransaction.objects.all().order_by('id')
