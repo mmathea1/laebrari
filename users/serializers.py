@@ -14,7 +14,7 @@ class LoginUserSerializer(serializers.ModelSerializer):
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = '__all__'
+        fields = ['id','first_name', 'last_name', 'email', 'phone_number', 'username', 'location', 'bio']
 
 class RegisterSerializer(serializers.Serializer):
     username = serializers.CharField(required=True, validators=[UniqueValidator(User.objects.all())])

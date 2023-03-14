@@ -68,7 +68,7 @@ class LoginUserView(ObtainAuthToken):
         if account:
             if account.is_active:
                 login(request, account)
-                data['email'] = account.email
+                data['user'] = UserSerializer(account).data
                 data['token'] = token
                 return Response(data=data, status=status.HTTP_200_OK)
             else:
