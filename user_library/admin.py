@@ -4,5 +4,7 @@ from user_library.models import UserLibrary
 
 
 
-# Register your models here.
+# # Register your models here.
 admin.site.register(UserLibrary)
+# admin.site.register(Book)
+# admin.site.register(BookTransaction)

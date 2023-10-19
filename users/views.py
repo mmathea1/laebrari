@@ -1,52 +1,84 @@
-import re
-from rest_framework import viewsets, generics, permissions
-from users.forms import  ProfileUpdateForm, UserRegistrationForm, UserUpdateForm
-from users.models import User
-from users.serializers import UserSerializer
-from django.shortcuts import render, redirect
-from django.urls import reverse_lazy
-from django.contrib.auth.forms import UserCreationForm
-from django.views.generic.edit import CreateView
-from django.contrib.auth import login
-from django.contrib import messages
 
-def home(request):
-    return render(request, "users/home.html")
+from rest_framework import generics
+from users.models import  User
+from users.serializers import RegisterSerializer, UserSerializer
+from django.contrib.auth import login, logout
+from rest_framework.response import Response
+from rest_framework import status
+from rest_framework import generics
+from rest_framework.permissions import IsAuthenticated 
+from rest_framework.permissions import AllowAny
+from rest_framework.views import APIView
+from rest_framework.authentication import TokenAuthentication
+from rest_framework.authtoken.views import ObtainAuthToken
+from rest_framework.authtoken.models import Token
+from django.core.exceptions import ValidationError
+from django.contrib.auth.hashers import check_password
+from django.db import IntegrityError
 
-def user_registration(request):
-    if request.method == "POST":
-        form = UserRegistrationForm(request.POST)
-        if form.is_valid():
-            user = form.save()
-            login(request, user)
-            messages.success(request, "Registration successful." )
-            return redirect("home")
-        messages.error(request, "Unsuccessful registration. Invalid information.")
-    form = UserRegistrationForm()
-    return render (request=request, template_name="users/signup.html", context={"register_form":form})
+class UserDetailView(APIView):
+    authentication_classes = (TokenAuthentication,)
+    permission_classes = (AllowAny,)
+    def get(self,request,*args,**kwargs):
+        user=User.objects.get(id=request.user.id)
+        serializer=UserSerializer(user)
+        return Response(serializer.data)
 
-def profile(request):
-    if request.method == "POST": 
-        p_form = ProfileUpdateForm(request.POST, request.FILES, instance=request.user.profile) 
+class RegisterUserView(generics.CreateAPIView):
+    permission_classes = (AllowAny, )
+    serializer_class = RegisterSerializer
 
-        if p_form.is_valid():
-            p_form.save()
-            messages.success(request, f'Your account has been updated!')
-            return redirect('home') # Redirect back to home page
-    else:
-        p_form = ProfileUpdateForm(instance=request.user.profile)
-    
-    context = {
-        'user': request.user,
-        'p_form': p_form
-    }
+    def post(self,request,*args,**kwargs):
+        try:
+            data = {}
+            serializer = RegisterSerializer(data=request.data)
+            if serializer.is_valid(raise_exception=True):
+                account = serializer.save()
+                account.is_active = True
+                token = Token.objects.get_or_create(user=account)[0].key
+                data['email'] = account.email
+                data['token'] = token
+                data['username'] = account.username
+            else:
+                data = serializer.errors
+            return Response(data=data, status=status.HTTP_201_CREATED)
+        except IntegrityError as i:
+            account = User.objects.get(username='')
+            account.delete()
+            raise ValidationError({"400": f'{str(i)}'})
+        except KeyError as k:
+            raise ValidationError({"400": f'Field {str(k)} missing'})
 
-    return render(request, 'users/profile.html', context)
 
-class UserViewSet(viewsets.ModelViewSet):
-    """
-    API endpoint that allows users to be viewed or edited.
-    """
-    queryset = User.objects.all().order_by('id')
-    serializer_class = UserSerializer
-    permission_classes = [permissions.IsAuthenticated]
+class LoginUserView(ObtainAuthToken):
+    authentication_classes = (TokenAuthentication,)
+    permission_classes = (AllowAny,)
+    def post(self, request, *args, **kwargs):
+        data = {}
+        username = request.data.get('username')
+        password = request.data.get('password')
+        try:
+            account = User.objects.get(username=username)
+        except BaseException as e:
+            return Response(data={"message": f'{str(e)}'}, status=status.HTTP_400_BAD_REQUEST)
+        token = Token.objects.get_or_create(user=account)[0].key
+        if not check_password(password, account.password):
+            return Response(status=status.HTTP_400_BAD_REQUEST, data={"message": "Incorrect login credentials."})
+        
+        if account:
+            if account.is_active:
+                login(request, account)
+                data['user'] = UserSerializer(account).data
+                data['token'] = token
+                return Response(data=data, status=status.HTTP_200_OK)
+            else:
+                return Response(status=status.HTTP_400_BAD_REQUEST, data={"message": "Account inactive."})
+        else:
+            return Response(data={"message": "Account does not exist."}, status=status.HTTP_404_NOT_FOUND)
+        
+class LogOutView(APIView):
+    permission_classes = (IsAuthenticated, )
+    def get(self, request, *args, **kwargs):
+        request.user.auth_token.delete()
+        logout(request)
+        return Response(status=status.HTTP_200_OK, data={"message": "User logged out."})

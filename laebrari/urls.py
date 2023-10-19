@@ -5,17 +5,22 @@ laebrari URL Configuration
 from django.conf import settings
 from django.urls import path, include
 from django.contrib import admin
-from django.contrib.auth import views as auth_views
 from django.conf.urls.static import static
+from rest_framework import routers
+from django.urls import include, path
+from user_library.views import LibraryBookViewSet, UserLibraryViewSet
+from users.views import LoginUserView, RegisterUserView, UserDetailView
 
+router = routers.DefaultRouter()
+router.register(r'library', UserLibraryViewSet, basename='library')
+router.register(r'book', LibraryBookViewSet, basename='library-book')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('accounts/', include('django.contrib.auth.urls')),
-    path('api/', include('rest_framework.urls', namespace='rest_framework')),
-    path('', include('users.urls')),
-    path('', include('user_library.urls')),
-
+    path('register/', RegisterUserView.as_view(), name='register'),
+    path('login/', LoginUserView.as_view()),
+    path('api/', include(router.urls)),
+    path('profile/', UserDetailView.as_view(), name='profile')
 ]
 
 if settings.DEBUG:

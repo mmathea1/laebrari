@@ -1,0 +1,60 @@
+{% extends 'users/home.html' %}
+{% block content %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--Contact form-->
+    <div class="container py-5">
+        <div class="content-section">
+            <div class="media">
+                <img class="rounded-circle account-img" src="{{ profile.profile_picture }}">
+                <div class="media-body">
+                    <h2 class="account-heading">{{ profile.first_name }} {{ profile.last_name}}</h2>
+                    <p class="text-secondary">{{ profile.bio }}</p>
+                    <p class="text-secondary">{{ profile.date_joined}}</p>
+                    <p class="text-secondary">{{ profile.location }}</p>
+                    <p class="text-secondary">{{ profile.address }}</p>
+                    <p class="text-secondary">{{ profile.phone_number }}</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>Libraries</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Library Type</th>
+                        <th scope="col">Librarian</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for library in libraries %}
+                    <tr>
+                        <th scope="row">{{ library.name }}</th>
+                        <td>{{ library.email }}</td>
+                        <td>{{ library.type }}</td>
+                        <td>{{ library.librarian }}</td>
+                        <td><button type="button" class="btn btn-primary">View</button></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+{% endblock content %}
