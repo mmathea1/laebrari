@@ -8,6 +8,7 @@ from users.serializers import UserSerializer
 from django.db.models import Q
 
 class HomeView(APIView):
+    permission_classes = []
     def get(self, request):
         libraries = UserLibrary.objects.filter(type='PUBLIC')
         serializer = UserLibrarySerializer(libraries, many=True)
