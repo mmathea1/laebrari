@@ -22,7 +22,7 @@ class BookGenreSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = BookGenre
-        fields = ('genre', )
+        fields = ['id', 'genre'] 
 
 class BookSerializer(serializers.ModelSerializer):
     genre = BookGenreSerializer(many=True, read_only=True)
