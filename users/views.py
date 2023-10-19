@@ -17,8 +17,8 @@ from django.contrib.auth.hashers import check_password
 from django.db import IntegrityError
 
 class UserDetailView(APIView):
-    authentication_classes = (TokenAuthentication,)
-    permission_classes = (AllowAny,)
+    permission_classes = (IsAuthenticated, )
+    
     def get(self,request,*args,**kwargs):
         user=User.objects.get(id=request.user.id)
         serializer=UserSerializer(user)
