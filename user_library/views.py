@@ -61,8 +61,6 @@ class LibraryBookViewSet(viewsets.ModelViewSet):
     queryset = Book.objects.all()
     
     def create(self, request, *args, **kwargs):
-        data = request.data
-        data['owner'] = request.user.pk
         serializer = BookSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
             serializer.save()
