@@ -1,7 +1,5 @@
-
-from datetime import date, timedelta
-from enum import unique
 from django.db import models
+from django.db.models import ManyToManyField
 
 LIBRARY_TYPES = (
     ('PRIVATE', 'PRIVATE'),
@@ -16,6 +14,14 @@ BOOK_CONDITIONS = (
 
 # TRANSACTION_TYPES = (('LOAN', 'LOAN'), ('SELL', 'SELL'))
 
+class BookGenre(models.Model):
+    genre = models.CharField(max_length=255, blank=False, null=False, default="None")
+
+    class Meta:
+        ordering = ['genre']
+
+    def __str__(self):
+        return f'{self.genre}'
 
 class UserLibrary(models.Model):
     librarian = models.ForeignKey('users.User', on_delete=models.DO_NOTHING, related_name='librarians')
@@ -45,7 +51,7 @@ class Book(models.Model):
     date_acquired = models.DateField(verbose_name="date acquired")
     owner = models.ForeignKey(
         to='users.User', on_delete=models.DO_NOTHING, related_name="book_owner", blank=False)
-    genre = models.CharField(max_length=255, blank=False)
+    genre = ManyToManyField(BookGenre, related_name='books')
     available_to_borrow = models.BooleanField(default=False)
     available_to_sell = models.BooleanField(default=False)
     borrowing_price = models.IntegerField()
