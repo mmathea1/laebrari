@@ -1,3 +1,4 @@
+from rest_framework.views import APIView
 from rest_framework.response import Response
 from user_library.models import Book, UserLibrary
 from rest_framework import viewsets, status, permissions
@@ -5,6 +6,13 @@ from user_library.serializers import  BookSerializer, UserLibrarySerializer
 from users.models import User
 from users.serializers import UserSerializer
 from django.db.models import Q
+
+class HomeView(APIView):
+    permission_classes = []
+    def get(self, request):
+        libraries = UserLibrary.objects.filter(type='PUBLIC')
+        serializer = UserLibrarySerializer(libraries, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
 
 class UserLibraryViewSet(viewsets.ModelViewSet):
     """
