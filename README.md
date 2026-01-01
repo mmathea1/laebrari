@@ -7,7 +7,7 @@ The goal is to make personal and community libraries easier to manage — while 
 
 ## Why I Built This
 
-Many people own books — but they sit on shelves, forgotten.
+Many people own books but they sit on shelves, forgotten.
 Borrowing is informal, books get lost, people forget who has what, and small libraries struggle to stay organized.
 
 Laebrari explores how a simple shared system could:
