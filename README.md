@@ -1,37 +1,50 @@
-# laebrari
-A digital home, school or office library, that allows users to lend, sell or borrow books and subscribe to libraries.
+# Laebrari — Digital Library & Borrowing Platform
 
-### Entities
+Laebrari is a digital library system for homes, schools and offices.
+It allows users to build their own libraries, lend or sell books, borrow from other libraries, and subscribe to libraries they like.
 
-- User
-- Librarian
-- Library 
-- Book 
-- Book Transaction 
-- Transaction Review 
-- Library Review
+The goal is to make personal and community libraries easier to manage — while encouraging sharing instead of hoarding.
 
-### Requirements
+## Why I Built This
 
-- A user can create an account
-- A user can login to their account
-- A user can edit/delete their account information
-- A user can create a library
-- A user can set a library type
-- A user can add a book to their library
-- A user can view books in public or subscribed libraries
-- A user can subscribe to a library
-- A user can borrow from public libraries or libraries they are subscribed to
-- A user can sell a book from their library
-- A user can edit their library subscription
-- A user can write a review of a previous transaction
-- A user can write a review of a library they have transacted with
-- A user can read review from previous transactions
-- A user can read reviews about a public or subscribed library
-- A user can share a library url
-- A user can sell a book from their library
+Many people own books — but they sit on shelves, forgotten.
+Borrowing is informal, books get lost, people forget who has what, and small libraries struggle to stay organized.
 
-### Environment
-### How to run
-### Docker
-### Support
+Laebrari explores how a simple shared system could:
+
+- organize personal & community collections
+
+- make borrowing and lending traceable
+
+- support library owners with subscriptions or book sales
+
+- help people actually use the books they already have
+
+## Tech Stack
+
+Frontend: 
+
+Backend: 
+
+Database: 
+
+Auth: 
+
+
+##  Project Status
+
+In progress — designing workflows for sharing, borrowing and trust between users.
+
+## What I’m Learning
+
+- modeling relationships between people, books and transactions
+
+- thinking about trust and reputation systems
+
+- designing UI for non-technical users
+
+- balancing flexibility with simplicity
+
+## Next Steps
+
+## Screenshots
